@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="KCGStudyDXLibProject/KCGStudyDXLibProject.vcxproj" />
+  <Project Path="KCGStudyDXLibProject/KCGStudyDXLibProject.vcxproj" Id="c705e89f-9113-4220-a691-37aeed23070a" />
 </Solution>
