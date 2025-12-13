@@ -9,6 +9,14 @@
 #include "resource.h"
 
 /// <summary>
+/// コンストラクタ
+/// </summary>
+Game::Builder::Builder()
+	:_fps(60.0f) {
+
+}
+
+/// <summary>
 /// ウィンドウのサイズを設定する
 /// </summary>
 /// <param name="width">ウィンドウの幅</param>
@@ -49,7 +57,7 @@ Game::Builder& Game::Builder::setScreenMode(const bool isWindow) {
 /// <returns>メソッドチェーンを可能にするBuilderオブジェクトへの参照</returns>
 Game::Builder& Game::Builder::setFPS(const float fps) {
 
-	this->fps = fps;
+	this->_fps = fps;
 	return *this;
 }
 
@@ -69,7 +77,7 @@ Game* Game::Builder::build() {
 /// <returns>FPS</returns>
 constexpr float Game::Builder::getFPS() const {
 
-	return fps;
+	return _fps;
 }
 
 /// <summary>

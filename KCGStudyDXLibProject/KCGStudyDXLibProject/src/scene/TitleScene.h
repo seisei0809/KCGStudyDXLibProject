@@ -5,13 +5,8 @@ class TitleScene : public IScene{
 public:
 
 	/// <summary>
-	/// シーン開始時処理
+	/// オブジェクト配置場所
 	/// </summary>
-	void start() override;
-
-	/// <summary>
-	/// シーン破棄時処理
-	/// </summary>
-	void destroy() override;
+	void SetGameObject() override;
 };
 

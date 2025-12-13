@@ -13,6 +13,11 @@ public:
 	public:
 
 		/// <summary>
+		/// コンストラクタ
+		/// </summary>
+		Builder();
+
+		/// <summary>
 		/// ウィンドウのサイズを設定する
 		/// </summary>
 		/// <param name="width">ウィンドウの幅</param>
@@ -54,8 +59,9 @@ public:
 		constexpr float getFPS() const;
 
 	private:
+
 		// デフォルトFPS値
-		float fps = 60.0;
+		float _fps;
 	};
 
 	/// <summary>

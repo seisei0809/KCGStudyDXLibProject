@@ -23,15 +23,12 @@ void SceneManager::updateScene() {
 		// 全てのゲームオブジェクトを破棄
 		GameObjectManager::getInstance().destroyAllGameObject();
 
-		// 現在のシーンを破棄
-		if (_nowScene) {
+		// 現在のシーンを終了
+		endScene();
 
-			_nowScene->destroy();
-			delete _nowScene;
-		}
 		// 新しいシーンの開始
 		_nowScene = _GetChangeSceneInstance();
-		_nowScene->start();
+		_nowScene->SetGameObject();
 		_isChange = false;
 	}
 }
@@ -46,13 +43,12 @@ IScene* SceneManager::getNowScene() {
 }
 
 /// <summary>
-/// シーンを終わらせる(ゲーム終了時)
+/// シーンを終わらせる
 /// </summary>
 void SceneManager::endScene() {
 
 	if (_nowScene) {
 
-		_nowScene->destroy();
 		delete _nowScene;
 	}
 }

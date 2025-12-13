@@ -6,24 +6,17 @@
 using namespace AllEnumSpace;
 
 /// <summary>
-/// シーン開始時処理
+/// オブジェクト配置場所
 /// </summary>
-void TitleScene::start() {
+void TitleScene::SetGameObject() {
 
-	auto* title = GameObject::Builder()
-		.build();
-	title->AddComponent<UIText>()
+	// タイトルテキスト
+	GameObject::Builder()
+		.build()->AddComponent<UIText>()
 		->setText(L"タイトル")
 		->setColor(GetColor(255, 0, 0))
 		->setUIScale(1)
 		->setAnchor(Anchor::Center)
 		->setCenter(true)
 		->setLayer(100);
-}
-
-/// <summary>
-/// シーン破棄時処理
-/// </summary>
-void TitleScene::destroy() {
-
 }

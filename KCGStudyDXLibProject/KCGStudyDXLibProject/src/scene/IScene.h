@@ -17,13 +17,8 @@ public:
 	virtual ~IScene() = default;
 
 	/// <summary>
-	/// シーン開始時処理
+	/// オブジェクト配置場所
 	/// </summary>
-	virtual void start() = 0;
-
-	/// <summary>
-	/// シーン破棄時処理
-	/// </summary>
-	virtual void destroy() = 0;
+	virtual void SetGameObject() = 0;
 };
 
