@@ -3,6 +3,9 @@
 
 namespace Utility {
 
+	/// <summary>
+	/// 入力管理
+	/// </summary>
 	class InputManager {
 	public:
 
