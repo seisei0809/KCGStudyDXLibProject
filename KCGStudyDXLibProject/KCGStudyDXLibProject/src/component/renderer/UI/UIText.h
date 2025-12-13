@@ -60,4 +60,6 @@ private:
 	unsigned int _color;
 	// フォントハンドル
 	int _fontHandle;
+	// 前フレームのスケール
+	float _preUIScale;
 };

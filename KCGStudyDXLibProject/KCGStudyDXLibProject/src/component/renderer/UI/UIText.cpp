@@ -78,8 +78,9 @@ void UIText::render() {
 	float rotationRad = _GetRotationRadian();
 
 	// フォントハンドルを作成・更新
-	if (_fontHandle == -1 || GetFontSizeToHandle(_fontHandle) != 1) {
+	if (_fontHandle == -1 && _preUIScale != _uiScale) {
 
+		_preUIScale = _uiScale;
 		if (_fontHandle != -1) {
 
 			DeleteFontToHandle(_fontHandle);
