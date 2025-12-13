@@ -233,7 +233,10 @@ void Game::_Run() const {
 /// <summary>
 /// 終了処理
 /// </summary>
-void Game::_End() {
+void Game::_End() {		
+	
+	// 全てのゲームオブジェクトを破棄
+	GameObjectManager::getInstance().destroyAllGameObject();
 
 	// シーン終了
 	SceneManager::getInstance().endScene();
