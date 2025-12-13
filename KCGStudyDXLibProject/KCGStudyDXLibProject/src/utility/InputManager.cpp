@@ -3,6 +3,9 @@
 
 using namespace Utility;
 
+Event<bool, bool> InputManager::_uiDir2DownEvent;
+Event <bool, bool, bool, bool> InputManager::_dir4Event;
+Event<> InputManager::_jumpEvent;
 char InputManager::_prevKey[256] = { 0 };
 char InputManager::_currKey[256] = { 0 };
 
@@ -11,6 +14,7 @@ char InputManager::_currKey[256] = { 0 };
 /// </summary>
 void InputManager::update() {
 
+	// 前回の入力を更新
 	if (_currKey) {
 
 		for (int i = 0; i < 256; i++) {
@@ -18,104 +22,57 @@ void InputManager::update() {
 			_prevKey[i] = _currKey[i];
 		}
 	}
+	// 現在の入力を取得
 	GetHitKeyStateAll(_currKey);
+
+	// UI操作の上下入力イベント発火
+	if(_currKey[KEY_INPUT_UP] != _prevKey[KEY_INPUT_UP] ||
+		_currKey[KEY_INPUT_DOWN] != _prevKey[KEY_INPUT_DOWN]) {
+
+		_uiDir2DownEvent.invoke(_currKey[KEY_INPUT_UP], _currKey[KEY_INPUT_DOWN]);
+	}
+	// ゲーム操作の4方向入力イベント発火
+	if (_currKey[KEY_INPUT_UP] != _prevKey[KEY_INPUT_UP] ||
+		_currKey[KEY_INPUT_DOWN] != _prevKey[KEY_INPUT_DOWN] ||
+		_currKey[KEY_INPUT_RIGHT] != _prevKey[KEY_INPUT_RIGHT] ||
+		_currKey[KEY_INPUT_LEFT] != _prevKey[KEY_INPUT_LEFT]) {
+
+		_dir4Event.invoke(
+			_currKey[KEY_INPUT_UP],
+			_currKey[KEY_INPUT_DOWN],
+			_currKey[KEY_INPUT_RIGHT],
+			_currKey[KEY_INPUT_LEFT]);
+	}
+	// ジャンプボタンイベント発火
+	if (_currKey[KEY_INPUT_SPACE] && !_prevKey[KEY_INPUT_SPACE]) {
+
+		_jumpEvent.invoke();
+	}
 }
 
 /// <summary>
-/// UI操作の上入力を取得する
+/// UI操作の上下入力イベントを登録する
 /// </summary>
-/// <returns>押してるならtrue</returns>
-const bool InputManager::getUIUpButton() {
+/// <param name="handler">(上下)入力変更されたら呼ばれる</param>
+void InputManager::registerUI2DirEvent(void(*handler)(bool, bool)) {
 
-	return CheckHitKey(KEY_INPUT_UP);
+	_uiDir2DownEvent += handler;
 }
 
 /// <summary>
-/// UI操作の下入力を取得する
+/// ゲーム操作の4方向入力イベントを登録する
 /// </summary>
-/// <returns>押してるならtrue</returns>
-const bool InputManager::getUIDownButton() {
+/// <param name="handler">(上下右左)入力変更されたら呼ばれる</param>
+void InputManager::registerDir4Event(void(*handler)(bool, bool, bool, bool)) {
 
-	return CheckHitKey(KEY_INPUT_DOWN);
+	_dir4Event += handler;
 }
 
 /// <summary>
-/// ゲーム操作の上入力を取得する
+/// ジャンプボタンイベントを登録する
 /// </summary>
-/// <returns>押してるならtrue</returns>
-const bool InputManager::getUpButton() {
+/// <param name="handler">入力変更されたら呼ばれる</param>
+void InputManager::registerJumpEvent(void(*handler)()) {
 
-	return CheckHitKey(KEY_INPUT_UP);
-}
-
-/// <summary>
-/// ゲーム操作の下入力を取得する
-/// </summary>
-/// <returns>押してるならtrue</returns>
-const bool InputManager::getDownButton() {
-
-	return CheckHitKey(KEY_INPUT_DOWN);
-}
-
-/// <summary>
-/// ゲーム操作の右入力を取得する
-/// </summary>
-/// <returns>押してるならtrue</returns>
-const bool InputManager::getRightButton() {
-
-	return CheckHitKey(KEY_INPUT_RIGHT);
-}
-
-/// <summary>
-/// ゲーム操作の左入力を取得する
-/// </summary>
-/// <returns>押してるならtrue</returns>
-const bool InputManager::getLeftButton() {
-
-	return CheckHitKey(KEY_INPUT_LEFT);
-}
-
-/// <summary>
-/// ゲーム操作のダッシュ入力を取得する
-/// </summary>
-/// <returns>押してるならtrue</returns>
-const bool InputManager::getDashButton() {
-
-	return CheckHitKey(KEY_INPUT_LSHIFT);
-}
-
-/// <summary>
-/// ゲーム操作のジャンプ入力を取得する
-/// </summary>
-/// <returns>押してるならtrue</returns>
-const bool InputManager::getJumpButton() {
-
-	return _currKey[KEY_INPUT_SPACE];
-}
-
-/// <summary>
-/// UI操作の上入力がそのフレームで押されたか
-/// </summary>
-/// <returns>そのフレームで押してるならtrue</returns>
-const bool InputManager::getUIUpButtonDown() {
-
-	return _currKey[KEY_INPUT_UP] && !_prevKey[KEY_INPUT_UP];
-}
-
-/// <summary>
-/// UI操作の下入力がそのフレームで押されたか
-/// </summary>
-/// <returns>そのフレームで押してるならtrue</returns>
-const bool InputManager::getUIDownButtonDown() {
-
-	return _currKey[KEY_INPUT_DOWN] && !_prevKey[KEY_INPUT_DOWN];
-}
-
-/// <summary>
-/// ゲーム操作のジャンプ入力がそのフレームで押されたか
-/// </summary>
-/// <returns>そのフレームで押してるならtrue</returns>
-const bool InputManager::getJumpButtonDown() {
-
-	return _currKey[KEY_INPUT_SPACE] && !_prevKey[KEY_INPUT_SPACE];
+	_jumpEvent += handler;
 }

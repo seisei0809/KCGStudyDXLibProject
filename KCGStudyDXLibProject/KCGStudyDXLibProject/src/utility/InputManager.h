@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "stdafx.h"
+#include "utility/Event.h"
 
 namespace Utility {
 
@@ -15,75 +16,34 @@ namespace Utility {
 		static void update();
 
 		/// <summary>
-		/// UI操作の上入力を取得する
+		/// UI操作の上下入力イベントを登録する
 		/// </summary>
-		/// <returns>押してるならtrue</returns>
-		static const bool getUIUpButton();
+		/// <param name="handler">(上下)入力変更されたら呼ばれる</param>
+		static void registerUI2DirEvent(void(*handler)(bool,bool));
 
 		/// <summary>
-		/// UI操作の下入力を取得する
+		/// ゲーム操作の4方向入力イベントを登録する
 		/// </summary>
-		/// <returns>押してるならtrue</returns>
-		static const bool getUIDownButton();
+		/// <param name="handler">(上下右左)入力変更されたら呼ばれる</param>
+		static void registerDir4Event(void(*handler)(bool,bool,bool,bool));
 
 		/// <summary>
-		/// ゲーム操作の上入力を取得する
+		/// ジャンプボタンイベントを登録する
 		/// </summary>
-		/// <returns>押してるならtrue</returns>
-		static const bool getUpButton();
+		/// <param name="handler">入力変更されたら呼ばれる</param>
+		static void registerJumpEvent(void(*handler)());
 
-		/// <summary>
-		/// ゲーム操作の下入力を取得する
-		/// </summary>
-		/// <returns>押してるならtrue</returns>
-		static const bool getDownButton();
-
-		/// <summary>
-		/// ゲーム操作の右入力を取得する
-		/// </summary>
-		/// <returns>押してるならtrue</returns>
-		static const bool getRightButton();
-
-		/// <summary>
-		/// ゲーム操作の左入力を取得する
-		/// </summary>
-		/// <returns>押してるならtrue</returns>
-		static const bool getLeftButton();
-
-		/// <summary>
-		/// ゲーム操作のダッシュ入力を取得する
-		/// </summary>
-		/// <returns>押してるならtrue</returns>
-		static const bool getDashButton();
-
-		/// <summary>
-		/// ゲーム操作のジャンプ入力を取得する
-		/// </summary>
-		/// <returns>押してるならtrue</returns>
-		static const bool getJumpButton();
-
-		/// <summary>
-		/// UI操作の上入力がそのフレームで押されたか
-		/// </summary>
-		/// <returns>そのフレームで押してるならtrue</returns>
-		static const bool getUIUpButtonDown();
-
-		/// <summary>
-		/// UI操作の下入力がそのフレームで押されたか
-		/// </summary>
-		/// <returns>そのフレームで押してるならtrue</returns>
-		static const bool getUIDownButtonDown();
-
-		/// <summary>
-		/// ゲーム操作のジャンプ入力がそのフレームで押されたか
-		/// </summary>
-		/// <returns>そのフレームで押してるならtrue</returns>
-		static const bool getJumpButtonDown();
 
 	private:
+
+		// UI二方向入力イベント
+		static Utility::Event<bool,bool> _uiDir2DownEvent;
+		// 四方向入力イベント
+		static Utility::Event <bool,bool,bool,bool> _dir4Event;
+		// ジャンプ入力イベント
+		static Utility::Event<> _jumpEvent;
 		// 前フレームのキー状態
 		static char _prevKey[256];
-
 		// 現在のキー状態
 		static char _currKey[256];
 	};

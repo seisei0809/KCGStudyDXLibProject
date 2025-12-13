@@ -13,14 +13,10 @@ void TitleScene::SetGameObject() {
 
 	// タイトルテキスト
 	GameObject::Builder()
-		//.build()->addComponent<UIText>()
-		//->setText(L"タイトル")
-		//->setColor(GetColor(255, 0, 0))
-		//->setUIScale(50)
-		//->setAnchor(Anchor::BottomRight)
-		//->setLayer(100);
-		.build()->addComponent<UIImage>()
-		->loadImage(L"asset/icon.png")
-		->setUIScale(0.1f)
-		->setAnchor(Anchor::BottomRight);
+		.build()->addComponent<UIText>()
+		->setText(L"タイトル")
+		->setColor(GetColor(255, 0, 0))
+		->setUIScale(50)
+		->setAnchor(Anchor::BottomRight)
+		->setLayer(100);
 }

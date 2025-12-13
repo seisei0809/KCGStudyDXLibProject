@@ -6,6 +6,7 @@
 #include "TimeManager.h"
 #include "RendererManager.h"
 #include "TitleScene.h"
+#include "InputManager.h"
 #include "resource.h"
 
 /// <summary>
@@ -178,6 +179,8 @@ void Game::_Run() const {
 
 		// 時間管理の更新
 		TimeManager::update(deltaTime);
+		// 入力状態の更新
+		InputManager::update();
 
 #ifdef _DEBUG
 		// フレームカウント
