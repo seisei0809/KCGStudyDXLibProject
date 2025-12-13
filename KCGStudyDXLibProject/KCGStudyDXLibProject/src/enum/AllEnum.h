@@ -26,6 +26,7 @@ namespace AllEnumSpace
 	/// アンカー位置
 	/// </summary>
 	enum class Anchor {
+
 		// 左上
 		TopLeft,
 		// 上中央
@@ -35,7 +36,7 @@ namespace AllEnumSpace
 		// 左中央
 		MiddleLeft,
 		// 中央
-		Center,
+		MiddleCenter,
 		// 右中央
 		MiddleRight,
 		// 左下

@@ -21,13 +21,6 @@ public:
 	UIText* setText(const std::wstring& text);
 
 	/// <summary>
-	/// フォントの大きさをセットする
-	/// </summary>
-	/// <param name="size">大きさ</param>
-	/// <returns>メソッドチェーン用</returns>
-	UIText* setFontSize(int size);
-
-	/// <summary>
 	/// 文字の色をセットする
 	/// </summary>
 	/// <param name="color">色(GetColor)</param>
@@ -63,8 +56,6 @@ private:
 
 	// 表示テキスト
 	std::wstring _text;
-	// フォントサイズ
-	int _fontSize;
 	// 色
 	unsigned int _color;
 	// フォントハンドル

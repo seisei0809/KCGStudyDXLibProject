@@ -102,25 +102,21 @@ void UIImage::render() {
 
 	// 画面座標を取得
 	float screenX, screenY;
-	_GetScreenPosition(screenX, screenY);
+	_GetScreenPosition(screenX, screenY,_imageWidth * _uiScale,_imageHeight * _uiScale);
 
 	// 回転角度を取得
 	float rotationRad = _GetRotationRadian();
-
-	float offsetX = 0.0f;
-	float offsetY = 0.0f;
-	// 中心なら中心にオフセット
-	if (_isCenter) {
-
-		offsetX = _imageWidth / 2.0f;
-		offsetY = _imageHeight / 2.0f;
-	}
+	
+	// 回転中心を設定
+	float rotaCenterX = _imageWidth / 2.0f;
+	float rotaCenterY = _imageHeight / 2.0f;
 
 	// 回転ありで拡大描画
 	DrawRotaGraph3(
 		static_cast<int>(screenX),
 		static_cast<int>(screenY),
-		offsetX, offsetY,
+		static_cast<int>(rotaCenterX),
+		static_cast<int>(rotaCenterY),
 		_uiScale,
 		_uiScale,
 		rotationRad,

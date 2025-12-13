@@ -114,6 +114,16 @@ void Game::_Setting() {
 	// 初期化
 	DxLib_Init();
 
+	// フルスクリーンなら再セット
+	if (!WINDOW_MODE) {
+
+		// 現在のウィンドウサイズを取得
+		int windowWidth, windowHeight;
+		GetWindowSize(&windowWidth, &windowHeight);
+
+		SetGraphMode(windowWidth, windowHeight, 32);
+	}
+
 	// 垂直同期は切る
 	SetWaitVSyncFlag(false);
 	// Zバッファを有効にする

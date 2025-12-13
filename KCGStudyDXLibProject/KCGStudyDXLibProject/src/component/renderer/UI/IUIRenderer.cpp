@@ -10,8 +10,6 @@ using namespace AllEnumSpace;
 IUIRenderer::IUIRenderer()
 	: IRenderer()
 	, _anchor(Anchor::TopLeft)
-	, _uiX(0.0f)
-	, _uiY(0.0f)
 	, _uiScale(1.0f)
 	, _rotation(0.0f){
 
@@ -25,19 +23,6 @@ IUIRenderer::IUIRenderer()
 IUIRenderer* IUIRenderer::setAnchor(Anchor anchor) {
 
 	_anchor = anchor;
-	return this;
-}
-
-/// <summary>
-/// UI位置座標を設定
-/// </summary>
-/// <param name="x">X位置</param>
-/// <param name="y">Y位置</param>
-/// <returns>メソッドチェーン用</returns>
-IUIRenderer* IUIRenderer::setUIPosition(float x, float y) {
-
-	_uiX = x;
-	_uiY = y;
 	return this;
 }
 
@@ -64,30 +49,21 @@ IUIRenderer* IUIRenderer::setRotation(float degrees) {
 }
 
 /// <summary>
-/// UIの基準点を中央にするか設定
-/// </summary>
-/// <param name="center">trueで中央基準</param>
-/// <returns>メソッドチェーン用</returns>
-IUIRenderer* IUIRenderer::setCenter(bool center) {
-
-	_isCenter = center;
-	return this;
-}
-
-/// <summary>
 /// 実際の画面座標を取得
 /// </summary>
 /// <param name="x">X位置</param>
 /// <param name="y">Y位置</param>
-void IUIRenderer::_GetScreenPosition(float& x, float& y) const {
+/// <param name="width">幅</param>
+/// <param name="height">高さ</param>
+void IUIRenderer::_GetScreenPosition(float& x, float& y,float width,float height) const {
 
 	// アンカー基準点を取得
 	float anchorX, anchorY;
-	_GetAnchorPoint(anchorX, anchorY);
+	_GetAnchorPoint(anchorX, anchorY,width,height);
 
 	// UI座標を加算
-	x = anchorX + _uiX;
-	y = anchorY + _uiY;
+	x = anchorX + _gameObject->getTransform().position.x;
+	y = anchorY + _gameObject->getTransform().position.y;
 }
 
 /// <summary>
@@ -104,53 +80,59 @@ float IUIRenderer::_GetRotationRadian() const {
 /// </summary>
 /// <param name="x">X位置</param>
 /// <param name="y">Y位置</param>
-void IUIRenderer::_GetAnchorPoint(float& x, float& y) const {
+	/// <param name="width">幅</param>
+	/// <param name="height">高さ</param>
+void IUIRenderer::_GetAnchorPoint(float& x, float& y, float width, float height) const {
+
+	// 現在のウィンドウサイズを取得
+	int windowWidth, windowHeight;
+	GetWindowSize(&windowWidth, &windowHeight);
 
 	switch (_anchor) {
 
 	case Anchor::TopLeft:
-		x = 0.0f;
-		y = 0.0f;
+		x = width * 0.5f;
+		y = height * 0.5f;
 		break;
 
 	case Anchor::TopCenter:
-		x = WINDOW_WIDTH * 0.5f;
+		x = windowWidth * 0.5f;
 		y = 0.0f;
 		break;
 
 	case Anchor::TopRight:
-		x = static_cast<float>(WINDOW_WIDTH);
-		y = 0.0f;
+		x = windowWidth - width * 0.5f;
+		y = height * 0.5f;
 		break;
 
 	case Anchor::MiddleLeft:
-		x = 0.0f;
-		y = WINDOW_HEIGHT * 0.5f;
+		x = width * 0.5f;
+		y = windowHeight * 0.5f - height * 0.5f;
 		break;
 
-	case Anchor::Center:
-		x = WINDOW_WIDTH * 0.5f;
-		y = WINDOW_HEIGHT * 0.5f;
+	case Anchor::MiddleCenter:
+		x = windowWidth * 0.5f;
+		y = windowHeight * 0.5f - height * 0.5f;
 		break;
 
 	case Anchor::MiddleRight:
-		x = static_cast<float>(WINDOW_WIDTH);
-		y = WINDOW_HEIGHT * 0.5f;
+		x = windowWidth - width * 0.5f;
+		y = windowHeight * 0.5f - height * 0.5f;
 		break;
 
 	case Anchor::BottomLeft:
-		x = 0.0f;
-		y = static_cast<float>(WINDOW_HEIGHT);
+		x = width * 0.5f;
+		y = windowHeight - height * 0.5f;
 		break;
 
 	case Anchor::BottomCenter:
-		x = WINDOW_WIDTH * 0.5f;
-		y = static_cast<float>(WINDOW_HEIGHT);
+		x = windowWidth * 0.5f;
+		y = windowHeight - height * 0.5f;
 		break;
 
 	case Anchor::BottomRight:
-		x = static_cast<float>(WINDOW_WIDTH);
-		y = static_cast<float>(WINDOW_HEIGHT);
+		x = windowWidth - width * 0.5f;
+		y = windowHeight - height * 0.5f;
 		break;
 	}
 }

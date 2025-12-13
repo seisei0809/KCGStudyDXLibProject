@@ -1,6 +1,7 @@
 ﻿#include "stdafx.h"
 #include "TitleScene.h"
 #include "renderer/UI/UIText.h"
+#include "renderer/UI/UIImage.h"
 #include "GameObject.h"
 
 using namespace AllEnumSpace;
@@ -12,11 +13,14 @@ void TitleScene::SetGameObject() {
 
 	// タイトルテキスト
 	GameObject::Builder()
-		.build()->AddComponent<UIText>()
-		->setText(L"タイトル")
-		->setColor(GetColor(255, 0, 0))
-		->setUIScale(1)
-		->setAnchor(Anchor::Center)
-		->setCenter(true)
-		->setLayer(100);
+		//.build()->addComponent<UIText>()
+		//->setText(L"タイトル")
+		//->setColor(GetColor(255, 0, 0))
+		//->setUIScale(50)
+		//->setAnchor(Anchor::BottomRight)
+		//->setLayer(100);
+		.build()->addComponent<UIImage>()
+		->loadImage(L"asset/icon.png")
+		->setUIScale(0.1f)
+		->setAnchor(Anchor::BottomRight);
 }

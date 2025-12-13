@@ -89,7 +89,7 @@ public:
 	/// コンポーネントを削除する
 	/// </summary>
 	/// <param name="component">コンポーネント</param>
-	void RemoveComponent(IComponent* component);
+	void removeComponent(IComponent* component);
 
 	/// <summary>
 	/// コンポーネントを追加する
@@ -97,7 +97,7 @@ public:
 	/// <typeparam name="T">Component基底クラス</typeparam>
 	/// <returns>コンポーネント</returns>
 	template<typename T>
-	inline T* AddComponent() {
+	inline T* addComponent() {
 
 		// 生成して追加予定配列に追加
 		T* component = new T();
@@ -112,7 +112,7 @@ public:
 	/// <typeparam name="T">Component基底クラス</typeparam>
 	/// <returns>コンポーネント</returns>
 	template<typename T>
-	inline T* GetComponent() {
+	inline T* getComponent() {
 
 		for (auto& component : _components) {
 

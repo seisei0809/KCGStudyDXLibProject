@@ -6,7 +6,7 @@ namespace Utility
 	/// <summary>
 	/// 時間管理
 	/// </summary>
-	static class TimeManager{
+	class TimeManager{
 	public:
 
 		/// <summary>

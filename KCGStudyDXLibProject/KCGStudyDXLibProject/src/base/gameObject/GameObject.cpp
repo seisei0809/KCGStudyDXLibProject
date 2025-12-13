@@ -160,7 +160,7 @@ void GameObject::destroy() {
 /// <summary>
 /// コンポーネントを削除する
 /// </summary>
-void GameObject::RemoveComponent(IComponent* component) {
+void GameObject::removeComponent(IComponent* component) {
 
 	if (component == nullptr) return;
 
