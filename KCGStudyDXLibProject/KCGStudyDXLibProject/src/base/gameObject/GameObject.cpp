@@ -89,11 +89,13 @@ GameObject::~GameObject() {
 
 	// 破棄時コンポーネントを全て破棄
 	for (auto& component : _components) {
+
 		delete component;
 	}
 	_components.clear();
 
 	for (auto& component : _addComponents) {
+
 		delete component;
 	}
 	_addComponents.clear();
@@ -107,6 +109,7 @@ GameObject::~GameObject() {
 void GameObject::start() {
 
 	for (auto& component : _components) {
+
 		component->start();
 	}
 }
@@ -121,6 +124,7 @@ void GameObject::update() {
 	_UpdateComponentArray();
 
 	for (auto& component : _components) {
+
 		component->update();
 	}
 
@@ -153,6 +157,7 @@ void GameObject::fixedUpdate() {
 void GameObject::destroy() {
 
 	for (auto& component : _components) {
+
 		component->destroy();
 	}
 }
