@@ -2,6 +2,8 @@
 #include "IUIRenderer.h"
 #include "AllSettings.h"
 
+using namespace AllEnumSpace;
+
 /// <summary>
 /// コンストラクタ
 /// </summary>

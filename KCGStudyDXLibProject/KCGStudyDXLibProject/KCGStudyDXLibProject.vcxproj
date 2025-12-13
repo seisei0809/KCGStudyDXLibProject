@@ -78,7 +78,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -97,7 +97,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -114,7 +114,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -133,7 +133,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -178,6 +178,7 @@
     <ClInclude Include="src\component\renderer\UI\IUIRenderer.h" />
     <ClInclude Include="src\component\renderer\UI\UIImage.h" />
     <ClInclude Include="src\component\renderer\UI\UIText.h" />
+    <ClInclude Include="src\enum\AllEnum.h" />
     <ClInclude Include="src\scene\TitleScene.h" />
     <ClInclude Include="src\utility\ModelCacheManager.h" />
     <ClInclude Include="src\base\gameObject\RendererManager.h" />

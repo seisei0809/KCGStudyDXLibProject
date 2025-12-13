@@ -13,17 +13,3 @@ struct Transform {
 	// スケール
 	VECTOR scale;
 };
-
-enum class Tag{
-
-	// 無し
-	None,
-	// プレイヤー
-	Player,
-	// 敵
-	Enemy,
-	// 弾
-	Bullet,
-	// ステージ
-	Stage,
-};

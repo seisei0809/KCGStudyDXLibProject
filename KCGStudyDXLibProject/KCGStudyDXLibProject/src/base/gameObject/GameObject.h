@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "GameObjectAny.h"
+#include "AllEnum.h"
 
 class IComponent;
 
@@ -13,6 +14,11 @@ public:
 	public:
 
 		/// <summary>
+		/// コンストラクタ
+		/// </summary>
+		Builder();
+
+		/// <summary>
 		/// 名前を設定する
 		/// </summary>
 		/// <param name="name">名前</param>
@@ -24,7 +30,7 @@ public:
 		/// </summary>
 		/// <param name="tag">タグ</param>
 		/// <returns>メソッドチェーンを可能にするBuilderオブジェクトへの参照</returns>
-		Builder& setTag(const Tag tag);
+		Builder& setTag(const AllEnumSpace::Tag tag);
 
 		/// <summary>
 		/// ビルドする
@@ -42,14 +48,14 @@ public:
 		/// タグを取得する
 		/// </summary>
 		/// <returns>タグ</returns>
-		constexpr Tag getTag() const;
+		constexpr AllEnumSpace::Tag getTag() const;
 
 	private:
 
 		// デフォルト名前
-		std::string _name = std::string("GameObject");
+		std::string _name;
 		// デフォルトタグ
-		Tag _tag = Tag::None;
+		AllEnumSpace::Tag _tag;
 	};
 
 	GameObject(const Builder& builder);
@@ -144,7 +150,7 @@ private:
 	// 名前
 	std::string _name;
 	// タグ
-	Tag _tag;
+	AllEnumSpace::Tag _tag;
 	/// <summary>
 	/// オブジェクトのアクティブ状態
 	/// trueならアクティブ

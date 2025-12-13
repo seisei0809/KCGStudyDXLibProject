@@ -3,6 +3,17 @@
 #include "IComponent.h"
 #include "GameObjectManager.h"
 
+using namespace AllEnumSpace;
+
+/// <summary>
+/// コンストラクタ
+/// </summary>
+GameObject::Builder::Builder()
+	:_name("GameObject"),
+	_tag(Tag::None) {
+
+}
+
 /// <summary>
 /// 名前を設定する
 /// </summary>

@@ -3,6 +3,8 @@
 #include "renderer/UI/UIText.h"
 #include "GameObject.h"
 
+using namespace AllEnumSpace;
+
 /// <summary>
 /// シーン開始時処理
 /// </summary>
@@ -14,7 +16,7 @@ void TitleScene::start() {
 		->setText(L"タイトル")
 		->setColor(GetColor(255, 0, 0))
 		->setUIScale(1)
-		->setAnchor(IUIRenderer::Anchor::Center)
+		->setAnchor(Anchor::Center)
 		->setCenter(true)
 		->setLayer(100);
 }

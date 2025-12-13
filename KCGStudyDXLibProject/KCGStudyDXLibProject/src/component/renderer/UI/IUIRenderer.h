@@ -1,26 +1,12 @@
 ﻿#pragma once
 #include "renderer/IRenderer.h"
+#include "AllEnum.h"
 
 /// <summary>
 /// UI描画基底（画面比率対応・回転対応）
 /// </summary>
 class IUIRenderer : public IRenderer {
 public:
-
-	/// <summary>
-	/// アンカー位置
-	/// </summary>
-	enum class Anchor {
-		TopLeft,       // 左上
-		TopCenter,     // 上中央
-		TopRight,      // 右上
-		MiddleLeft,    // 左中央
-		Center,        // 中央
-		MiddleRight,   // 右中央
-		BottomLeft,    // 左下
-		BottomCenter,  // 下中央
-		BottomRight    // 右下
-	};
 
 	/// <summary>
 	/// コンストラクタ
@@ -32,7 +18,7 @@ public:
 	/// </summary>
 	/// <param name="anchor">アンカー列挙</param>
 	/// <returns>メソッドチェーン用</returns>
-	IUIRenderer* setAnchor(Anchor anchor);
+	IUIRenderer* setAnchor(AllEnumSpace::Anchor anchor);
 
 	/// <summary>
 	/// UI位置座標を設定
@@ -78,7 +64,7 @@ protected:
 	float _GetRotationRadian() const;
 
 	// アンカー位置
-	Anchor _anchor;
+	AllEnumSpace::Anchor _anchor;
 	// UIのX位置
 	float _uiX;
 	// UIのY位置
