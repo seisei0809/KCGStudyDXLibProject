@@ -18,21 +18,50 @@ namespace Utility {
 		/// <summary>
 		/// UI操作の上下入力イベントを登録する
 		/// </summary>
-		/// <param name="handler">(上下)入力変更されたら呼ばれる</param>
-		static void registerUI2DirEvent(void(*handler)(bool,bool));
+		/// <typeparam name="T">インスタンスの型</typeparam>
+		/// <param name="object">インスタンス</param>
+		/// <param name="method">メンバ関数のポインタ</param>
+		template<typename T>
+		static void addUI2DirEvent(T* object, void (T::* method)(bool, bool)) {
+
+			_uiDir2DownEvent.add(object, method);
+		}
 
 		/// <summary>
 		/// ゲーム操作の4方向入力イベントを登録する
 		/// </summary>
-		/// <param name="handler">(上下右左)入力変更されたら呼ばれる</param>
-		static void registerDir4Event(void(*handler)(bool,bool,bool,bool));
+		/// <typeparam name="T">インスタンスの型</typeparam>
+		/// <param name="object">インスタンス</param>
+		/// <param name="method">メンバ関数のポインタ</param>
+		template<typename T>
+		static void addDir4Event(T* object, void (T::* method)(bool, bool, bool, bool)) {
+
+			_dir4Event.add(object, method);
+		}
 
 		/// <summary>
 		/// ジャンプボタンイベントを登録する
 		/// </summary>
-		/// <param name="handler">入力変更されたら呼ばれる</param>
-		static void registerJumpEvent(void(*handler)());
+		/// <typeparam name="T">インスタンスの型</typeparam>
+		/// <param name="object">インスタンス</param>
+		/// <param name="method">メンバ関数のポインタ</param>
+		template<typename T>
+		static void addJumpEvent(T* object, void (T::* method)(bool)) {
 
+			_jumpEvent.add(object, method);
+		}
+
+		/// <summary>
+		/// スペースキーイベントを登録する
+		/// </summary>
+		/// <typeparam name="T">インスタンスの型</typeparam>
+		/// <param name="object">インスタンス</param>
+		/// <param name="method">メンバ関数のポインタ</param>
+		template<typename T>
+		static void addEnterKeyEvent(T* object, void (T::* method)(bool)) {
+
+			_enterKeyEvent.add(object, method);
+		}
 
 	private:
 
@@ -41,7 +70,9 @@ namespace Utility {
 		// 四方向入力イベント
 		static Utility::Event <bool,bool,bool,bool> _dir4Event;
 		// ジャンプ入力イベント
-		static Utility::Event<> _jumpEvent;
+		static Utility::Event<bool> _jumpEvent;
+		// エンターキー入力イベント
+		static Utility::Event<bool> _enterKeyEvent;
 		// 前フレームのキー状態
 		static char _prevKey[256];
 		// 現在のキー状態

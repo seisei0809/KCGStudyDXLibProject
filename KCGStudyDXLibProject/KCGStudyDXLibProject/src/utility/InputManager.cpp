@@ -5,7 +5,8 @@ using namespace Utility;
 
 Event<bool, bool> InputManager::_uiDir2DownEvent;
 Event <bool, bool, bool, bool> InputManager::_dir4Event;
-Event<> InputManager::_jumpEvent;
+Event<bool> InputManager::_jumpEvent;
+Event<bool> InputManager::_enterKeyEvent;
 char InputManager::_prevKey[256] = { 0 };
 char InputManager::_currKey[256] = { 0 };
 
@@ -46,33 +47,11 @@ void InputManager::update() {
 	// ジャンプボタンイベント発火
 	if (_currKey[KEY_INPUT_SPACE] && !_prevKey[KEY_INPUT_SPACE]) {
 
-		_jumpEvent.invoke();
+		_jumpEvent.invoke(_currKey[KEY_INPUT_SPACE]);
 	}
-}
+	// エンターキーイベント発火
+	if (_currKey[KEY_INPUT_RETURN] && !_prevKey[KEY_INPUT_RETURN]) {
 
-/// <summary>
-/// UI操作の上下入力イベントを登録する
-/// </summary>
-/// <param name="handler">(上下)入力変更されたら呼ばれる</param>
-void InputManager::registerUI2DirEvent(void(*handler)(bool, bool)) {
-
-	_uiDir2DownEvent += handler;
-}
-
-/// <summary>
-/// ゲーム操作の4方向入力イベントを登録する
-/// </summary>
-/// <param name="handler">(上下右左)入力変更されたら呼ばれる</param>
-void InputManager::registerDir4Event(void(*handler)(bool, bool, bool, bool)) {
-
-	_dir4Event += handler;
-}
-
-/// <summary>
-/// ジャンプボタンイベントを登録する
-/// </summary>
-/// <param name="handler">入力変更されたら呼ばれる</param>
-void InputManager::registerJumpEvent(void(*handler)()) {
-
-	_jumpEvent += handler;
+		_enterKeyEvent.invoke(_currKey[KEY_INPUT_RETURN]);
+	}
 }

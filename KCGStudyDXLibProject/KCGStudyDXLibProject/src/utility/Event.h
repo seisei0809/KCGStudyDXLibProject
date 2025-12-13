@@ -11,33 +11,55 @@ namespace Utility {
 	public:
 
 		/// <summary>
-		/// 関数ポインタのエイリアス
+		/// デストラクタ
 		/// </summary>
-		using HandlerType = void(*)(Args...);
+		~Event() {
 
-		/// <summary>
-		/// ハンドラーを追加
-		/// </summary>
-		/// <param name="target">追加ターゲット</param>
-		void operator+=(HandlerType target) {
+			// 全部破棄
+			for (auto it = _handlers.begin(); it != _handlers.end(); it++) {
 
-			_handlers.emplace_back(target);
+				delete *it;
+			}
+			_handlers.clear();
 		}
 
 		/// <summary>
-		/// ハンドラーを削除
+		/// イベントに追加
 		/// </summary>
-		/// <param name="target">削除ターゲット</param>
-		void operator-=(HandlerType target) {
+		/// <typeparam name="T">インスタンスの型</typeparam>
+		/// <param name="object">インスタンス</param>
+		/// <param name="method">メンバ関数ポインタ</param>
+		template<typename T>
+		void add(T* object, void (T::* method)(Args...)) {
 
+			// ハンドラーを生成して登録
+			auto* h = new Handler<T>();
+			h->object = object;
+			h->method = method;
+
+			_handlers.emplace_back(h);
+		}
+
+		/// <summary>
+		/// イベントから削除する
+		/// </summary>
+		/// <typeparam name="T">インスタンスの型</typeparam>
+		/// <param name="object">インスタンス</param>
+		/// <param name="method">メンバ関数ポインタ</param>
+		template<typename T>
+		void remove(T* object, void (T::* method)(Args...)) {
+
+			// 探す
 			for (auto it = _handlers.begin(); it != _handlers.end(); it++) {
+				
+				// キャスト成功したら進む
+				auto* h = dynamic_cast<Handler<T>*>(it);
+				if (!h.equals(object,method)) continue;
 
-				if (*it == target) {
-
-					// 削除してリターン
-					_handlers.erase(it);
-					return;
-				}
+				// 消す
+				it = _handlers.erase(it);
+				delete it;
+				return;
 			}
 		}
 
@@ -47,26 +69,63 @@ namespace Utility {
 		/// <param name="...args">複数引数</param>
 		void invoke(Args... args) {
 
-			for (auto handler : _handlers) {
+			for (auto& h : _handlers) {
 
-				handler(args...);
+				h->invoke(args...);
 			}
-		}
-
-		/// <summary>
-		/// すべてのハンドラーをクリア
-		/// </summary>
-		void clear() {
-
-			_handlers.clear();
 		}
 
 	private:
 
 		/// <summary>
+		/// ハンドラーの基底(vectorであらゆる関数を管理するため)
+		/// </summary>
+		struct HandlerBase {
+
+			/// <summary>
+			/// 関数実行
+			/// </summary>
+			/// <param name="...args">複数引数</param>
+			virtual void invoke(Args... args) = 0;
+		};
+
+		/// <summary>
+		/// ハンドラー
+		/// </summary>
+		/// <typeparam name="T">インスタンスの型</typeparam>
+		template<typename T>
+		struct Handler : HandlerBase {
+
+			/// <summary>
+			/// 関数実行
+			/// </summary>
+			/// <param name="...args">複数引数</param>
+			void invoke(Args... args) override {
+
+				(object->*method)(args...);
+			}
+
+			/// <summary>
+			/// 引数に入れたものと等価か調べる
+			/// </summary>
+			/// <param name="obj">インスタンス</param>
+			/// <param name="m">メンバ関数ポインタ</param>
+			/// <returns>等価ならtrue</returns>
+			bool equals(T* obj, void (T::* m)(Args...)) const {
+
+				return object == obj && method == m;
+			}
+
+			// インスタンス
+			T* object;
+			// メンバ関数ポインタ
+			void (T::* method)(Args...);
+		};
+
+		/// <summary>
 		/// 全ハンドラーを配列管理
 		/// </summary>
-		std::vector<HandlerType> _handlers;
+		std::vector<HandlerBase*> _handlers;
 	};
 
 }

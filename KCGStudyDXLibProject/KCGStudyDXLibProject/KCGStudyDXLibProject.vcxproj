@@ -143,11 +143,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\component\UI\Button.cpp" />
+    <ClCompile Include="src\base\GameManager.cpp" />
+    <ClCompile Include="src\component\scene_manager\TitleSceneManager.cpp" />
+    <ClCompile Include="src\component\ui\Button.cpp" />
+    <ClCompile Include="src\component\ui\ButtonViewer.cpp" />
     <ClCompile Include="src\utility\InputManager.cpp" />
-    <ClCompile Include="src\component\renderer\UI\IUIRenderer.cpp" />
-    <ClCompile Include="src\component\renderer\UI\UIImage.cpp" />
-    <ClCompile Include="src\component\renderer\UI\UIText.cpp" />
+    <ClCompile Include="src\component\renderer\ui\IUIRenderer.cpp" />
+    <ClCompile Include="src\component\renderer\ui\UIImage.cpp" />
+    <ClCompile Include="src\component\renderer\ui\UIText.cpp" />
     <ClCompile Include="src\scene\TitleScene.cpp" />
     <ClCompile Include="src\utility\ModelCacheManager.cpp" />
     <ClCompile Include="src\component\renderer\Model3D.cpp" />
@@ -171,7 +174,10 @@
     <ClCompile Include="src\utility\TimeManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\component\UI\Button.h" />
+    <ClInclude Include="src\base\GameManager.h" />
+    <ClInclude Include="src\component\scene_manager\TitleSceneManager.h" />
+    <ClInclude Include="src\component\ui\Button.h" />
+    <ClInclude Include="src\component\ui\ButtonViewer.h" />
     <ClInclude Include="src\utility\InputManager.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="src\AllSettings.h" />
@@ -179,9 +185,9 @@
     <ClInclude Include="src\base\gameObject\GameObject.h" />
     <ClInclude Include="src\base\gameObject\GameObjectManager.h" />
     <ClInclude Include="src\base\gameObject\GameObjectAny.h" />
-    <ClInclude Include="src\component\renderer\UI\IUIRenderer.h" />
-    <ClInclude Include="src\component\renderer\UI\UIImage.h" />
-    <ClInclude Include="src\component\renderer\UI\UIText.h" />
+    <ClInclude Include="src\component\renderer\ui\IUIRenderer.h" />
+    <ClInclude Include="src\component\renderer\ui\UIImage.h" />
+    <ClInclude Include="src\component\renderer\ui\UIText.h" />
     <ClInclude Include="src\enum\AllEnum.h" />
     <ClInclude Include="src\scene\TitleScene.h" />
     <ClInclude Include="src\utility\ModelCacheManager.h" />

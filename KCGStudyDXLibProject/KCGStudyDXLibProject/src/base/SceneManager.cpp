@@ -28,7 +28,7 @@ void SceneManager::updateScene() {
 
 		// 新しいシーンの開始
 		_nowScene = _GetChangeSceneInstance();
-		_nowScene->SetGameObject();
+		_nowScene->setGameObject();
 		_isChange = false;
 	}
 }

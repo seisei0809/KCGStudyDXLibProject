@@ -54,9 +54,30 @@ public:
 	/// <summary>
 	/// 選択状態変更監視用
 	/// </summary>
-	/// <param name="handler">登録したい関数</param>
+	/// <typeparam name="T">型</typeparam>
+	/// <param name="obj">インスタンス</param>
+	/// <param name="method">関数</param>
 	/// <returns>メソッドチェーン用</returns>
-	Button& setSelectChangeEvent(void (*handler)(bool));
+	template<class T>
+	Button* setSelectChangeEvent(T* obj, void (T::* method)(bool)) {
+
+		_onSelectChangeEvent.add(obj, method);
+		return this;
+	}
+
+	/// <summary>
+	/// エンター状態変更監視用
+	/// </summary>
+	/// <typeparam name="T">型</typeparam>
+	/// <param name="obj">インスタンス</param>
+	/// <param name="method">関数</param>
+	/// <returns>メソッドチェーン用</returns>
+	template<class T>
+	Button* setEnterEvent(T* obj, void (T::* method)(bool)) {
+
+		_onEnterEvent.add(obj, method);
+		return this;
+	}
 
 	/// <summary>
 	/// 選択状態の変更
@@ -64,6 +85,12 @@ public:
 	/// <param name="up">上</param>
 	/// <param name="down">下</param>
 	void selectChange(bool up,bool down);
+
+	/// <summary>
+	/// エンターしたかどうか
+	/// </summary>
+	/// <param name="isEnter">trueならエンターした</param>
+	void enter(bool isEnter);
 
 private:
 
@@ -75,5 +102,7 @@ private:
 	Button** _downButton;
 	// 選択状態の変更がかかった時に起動するイベント
 	Utility::Event<bool> _onSelectChangeEvent;
+	// エンターがかかった時に起動するイベント
+	Utility::Event<bool> _onEnterEvent;
 };
 

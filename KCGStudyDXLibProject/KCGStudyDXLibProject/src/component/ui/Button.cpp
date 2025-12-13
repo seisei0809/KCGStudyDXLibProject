@@ -73,17 +73,6 @@ Button* Button::setDownButton(Button** downButton) {
 }
 
 /// <summary>
-/// 選択状態変更監視用
-/// </summary>
-/// <param name="handler">登録したい関数</param>
-/// <returns>メソッドチェーン用</returns>
-Button& Button::setSelectChangeEvent(void (*handler)(bool)) {
-
-	_onSelectChangeEvent += handler;
-	return *this;
-}
-
-/// <summary>
 /// 選択状態の変更
 /// </summary>
 /// <param name="up">上</param>
@@ -106,4 +95,13 @@ void Button::selectChange(bool up, bool down) {
 		(*_downButton)->setIsSelect(true);
 		(*_downButton)->_onSelectChangeEvent.invoke(true);
 	}
+}
+
+/// <summary>
+/// エンターしたかどうか
+/// </summary>
+/// <param name="isEnter">trueならエンターした</param>
+void Button::enter(bool isEnter) {
+
+	_onEnterEvent.invoke(isEnter);
 }

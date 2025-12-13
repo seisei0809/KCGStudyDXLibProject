@@ -7,6 +7,7 @@
 #include "RendererManager.h"
 #include "TitleScene.h"
 #include "InputManager.h"
+#include "GameManager.h"
 #include "resource.h"
 
 /// <summary>
@@ -167,7 +168,7 @@ void Game::_Run() const {
 
 	SceneManager::getInstance().changeScene<TitleScene>();
 
-	while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0) {
+	while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0 && !GameManager::getInstance().isGameEnd()) {
 
 		// 現在のフレーム時間
 		auto now = steady_clock::now();

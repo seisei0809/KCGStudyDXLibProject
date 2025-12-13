@@ -127,6 +127,27 @@ public:
 	}
 
 	/// <summary>
+	/// 位置のセット
+	/// </summary>
+	/// <param name="position">位置</param>
+	/// <returns>メソッドチェーン用</returns>
+	GameObject* setPosition(const VECTOR position);
+
+	/// <summary>
+	/// 回転のセット
+	/// </summary>
+	/// <param name="rotation">回転</param>
+	/// <returns>メソッドチェーン用</returns>
+	GameObject* setRotation(const VECTOR rotation);
+
+	/// <summary>
+	/// スケールのセット
+	/// </summary>
+	/// <param name="scale">スケール</param>
+	/// <returns>メソッドチェーン用</returns>
+	GameObject* setScale(const VECTOR scale);
+
+	/// <summary>
 	/// Transform情報の取得
 	/// </summary>
 	/// <returns>Transform</returns>

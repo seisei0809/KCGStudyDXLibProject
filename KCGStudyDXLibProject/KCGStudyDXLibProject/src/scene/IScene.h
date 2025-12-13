@@ -19,6 +19,6 @@ public:
 	/// <summary>
 	/// オブジェクト配置場所
 	/// </summary>
-	virtual void SetGameObject() = 0;
+	virtual void setGameObject() = 0;
 };
 

@@ -174,6 +174,39 @@ void GameObject::removeComponent(IComponent* component) {
 }
 
 /// <summary>
+/// 位置のセット
+/// </summary>
+/// <param name="position">位置</param>
+/// <returns>メソッドチェーン用</returns>
+GameObject* GameObject::setPosition(const VECTOR position) {
+
+	_transform.position = position;
+	return this;
+}
+
+/// <summary>
+/// 回転のセット
+/// </summary>
+/// <param name="rotation">回転</param>
+/// <returns>メソッドチェーン用</returns>
+GameObject* GameObject::setRotation(const VECTOR rotation) {
+
+	_transform.rotation = rotation;
+	return this;
+}
+
+/// <summary>
+/// スケールのセット
+/// </summary>
+/// <param name="scale">スケール</param>
+/// <returns>メソッドチェーン用</returns>
+GameObject* GameObject::setScale(const VECTOR scale) {
+
+	_transform.scale = scale;
+	return this;
+}
+
+/// <summary>
 /// Transform情報の取得
 /// </summary>
 /// <returns>Transform</returns>
