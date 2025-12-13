@@ -3,6 +3,9 @@
 #include "renderer/ui/UIText.h"
 #include "ui/Button.h"
 
+/// <summary>
+/// ボタンの見た目を決定する
+/// </summary>
 class ButtonViewer : public IComponent{
 public:
 

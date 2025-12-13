@@ -3,6 +3,9 @@
 #include "ui/Button.h"
 #include "scene_manager/TitleSceneManager.h"
 
+/// <summary>
+/// タイトルシーン
+/// </summary>
 class TitleScene : public IScene{
 public:
 

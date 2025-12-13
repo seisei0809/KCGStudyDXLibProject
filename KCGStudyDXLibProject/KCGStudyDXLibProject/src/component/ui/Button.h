@@ -2,6 +2,9 @@
 #include "IComponent.h"
 #include "utility/Event.h"
 
+/// <summary>
+/// ボタン
+/// </summary>
 class Button : public IComponent{
 public:
 

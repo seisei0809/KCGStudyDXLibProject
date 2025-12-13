@@ -103,5 +103,8 @@ void Button::selectChange(bool up, bool down) {
 /// <param name="isEnter">trueならエンターした</param>
 void Button::enter(bool isEnter) {
 
-	_onEnterEvent.invoke(isEnter);
+	if (_isSelect) {
+
+		_onEnterEvent.invoke(isEnter);
+	}
 }

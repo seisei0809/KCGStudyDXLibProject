@@ -1,6 +1,9 @@
 ﻿#pragma once
 #include "Singleton.h"
 
+/// <summary>
+/// ゲーム全体管理
+/// </summary>
 class GameManager : public Utility::Singleton<GameManager>{
 public:
 

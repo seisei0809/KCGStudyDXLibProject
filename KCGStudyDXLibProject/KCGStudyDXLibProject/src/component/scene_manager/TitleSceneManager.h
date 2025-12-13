@@ -1,6 +1,9 @@
 ﻿#pragma once
 #include "IComponent.h"
 
+/// <summary>
+/// タイトルシーン管理
+/// </summary>
 class TitleSceneManager:public IComponent{
 public:
 
