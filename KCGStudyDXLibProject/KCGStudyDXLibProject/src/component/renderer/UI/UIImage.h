@@ -3,7 +3,7 @@
 #include <string>
 
 /// <summary>
-/// UI画像描画（回転対応）
+/// UI画像描画
 /// </summary>
 class UIImage : public IUIRenderer {
 public:

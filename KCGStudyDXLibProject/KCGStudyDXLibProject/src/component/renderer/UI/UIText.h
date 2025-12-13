@@ -3,7 +3,7 @@
 #include <string>
 
 /// <summary>
-/// UIテキスト描画（回転対応）
+/// UIテキスト描画
 /// </summary>
 class UIText : public IUIRenderer {
 public:

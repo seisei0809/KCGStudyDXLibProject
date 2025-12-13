@@ -109,6 +109,8 @@ void Game::start() {
 /// </summary>
 void Game::_Setting() {
 
+	using namespace Utility;
+
 	// 初期化
 	DxLib_Init();
 
@@ -128,7 +130,8 @@ void Game::_Setting() {
 		(std::chrono::duration<double>(_frameDuration));
 
 	// 時間管理のリセット
-	Utility::TimeManager::reset();
+	TimeManager::reset();
+	TimeManager::setFixedDeltaTime(_frameDuration);
 }
 
 /// <summary>
@@ -186,7 +189,7 @@ void Game::_Run() const {
 
 		// 描画
 		std::cout << "\rFPS: " << intPart << "."
-			<< (deciPart < 10 ? "0" : "") << deciPart << "    " << std::flush;
+			<< (deciPart < 10 ? "0" : "") << deciPart << std::flush;
 #endif
 
 		// 裏画面を描画対象にする

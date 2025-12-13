@@ -16,7 +16,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	// 1280*720のウィンドウモードでビルド
 	Game* const game =Game::Builder()
 		.setWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT)
-		.setWindowTitle(TEXT(WINDOW_TITLE))
+		.setWindowTitle(WINDOW_TITLE)
 		.setScreenMode(true)
 		.setFPS(FPS)
 		.build();
