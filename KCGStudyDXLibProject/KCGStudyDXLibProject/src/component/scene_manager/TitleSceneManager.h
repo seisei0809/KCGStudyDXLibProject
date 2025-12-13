@@ -32,5 +32,11 @@ public:
 	/// </summary>
 	/// <param name="isEnd">終了させるか</param>
 	void endGame(bool isEnd);
+
+	/// <summary>
+	/// ゲームを開始させる
+	/// </summary>
+	/// <param name="isStart">開始させるか</param>
+	void startGame(bool isStart);
 };
 

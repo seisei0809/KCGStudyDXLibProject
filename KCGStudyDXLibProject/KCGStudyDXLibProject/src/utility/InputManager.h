@@ -63,6 +63,54 @@ namespace Utility {
 			_enterKeyEvent.add(object, method);
 		}
 
+		/// <summary>
+		/// UI操作の上下入力イベントを削除する
+		/// </summary>
+		/// <typeparam name="T">インスタンスの型</typeparam>
+		/// <param name="object">インスタンス</param>
+		/// <param name="method">メンバ関数のポインタ</param>
+		template<typename T>
+		static void removeUI2DirEvent(T* object, void (T::* method)(bool, bool)) {
+
+			_uiDir2DownEvent.remove(object, method);
+		}
+
+		/// <summary>
+		/// ゲーム操作の4方向入力イベントを削除する
+		/// </summary>
+		/// <typeparam name="T">インスタンスの型</typeparam>
+		/// <param name="object">インスタンス</param>
+		/// <param name="method">メンバ関数のポインタ</param>
+		template<typename T>
+		static void removeDir4Event(T* object, void (T::* method)(bool, bool, bool, bool)) {
+
+			_dir4Event.remove(object, method);
+		}
+
+		/// <summary>
+		/// ジャンプボタンイベントを削除する
+		/// </summary>
+		/// <typeparam name="T">インスタンスの型</typeparam>
+		/// <param name="object">インスタンス</param>
+		/// <param name="method">メンバ関数のポインタ</param>
+		template<typename T>
+		static void removeJumpEvent(T* object, void (T::* method)(bool)) {
+
+			_jumpEvent.remove(object, method);
+		}
+
+		/// <summary>
+		/// スペースキーイベントを削除する
+		/// </summary>
+		/// <typeparam name="T">インスタンスの型</typeparam>
+		/// <param name="object">インスタンス</param>
+		/// <param name="method">メンバ関数のポインタ</param>
+		template<typename T>
+		static void removeEnterKeyEvent(T* object, void (T::* method)(bool)) {
+
+			_enterKeyEvent.remove(object, method);
+		}
+
 	private:
 
 		// UI二方向入力イベント

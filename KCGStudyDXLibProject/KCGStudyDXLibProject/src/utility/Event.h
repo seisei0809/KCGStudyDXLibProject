@@ -53,12 +53,12 @@ namespace Utility {
 			for (auto it = _handlers.begin(); it != _handlers.end(); it++) {
 				
 				// キャスト成功したら進む
-				auto* h = dynamic_cast<Handler<T>*>(it);
-				if (!h.equals(object,method)) continue;
+				auto* h = dynamic_cast<Handler<T>*>(*it);
+				if (!h->equals(object,method)) continue;
 
 				// 消す
+				delete* it;
 				it = _handlers.erase(it);
-				delete it;
 				return;
 			}
 		}
@@ -95,6 +95,15 @@ namespace Utility {
 		/// <typeparam name="T">インスタンスの型</typeparam>
 		template<typename T>
 		struct Handler : HandlerBase {
+
+			/// <summary>
+			/// コンストラクタ
+			/// </summary>
+			Handler()
+				:object(nullptr),
+				method(nullptr) {
+
+			}
 
 			/// <summary>
 			/// 関数実行

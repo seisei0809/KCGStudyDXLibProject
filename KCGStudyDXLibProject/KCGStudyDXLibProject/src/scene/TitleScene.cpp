@@ -11,6 +11,16 @@ using namespace AllEnumSpace;
 using namespace Utility;
 
 /// <summary>
+/// コンストラクタ
+/// </summary>
+TitleScene::TitleScene()
+	:titleSceneManager(nullptr),
+	startButton(nullptr),
+	endButton(nullptr) {
+
+}
+
+/// <summary>
 /// オブジェクト配置場所
 /// </summary>
 void TitleScene::setGameObject() {
@@ -45,8 +55,10 @@ void TitleScene::setGameObject() {
 		->setIsSelect(true)
 		->setUpButton(nullptr)
 		->setDownButton(&endButton)
-		->setSelectChangeEvent(startButtonViewer,&ButtonViewer::changeView);
+		->setSelectChangeEvent(startButtonViewer,&ButtonViewer::changeView)
+		->setEnterEvent(titleSceneManager, &TitleSceneManager::startGame);
 	InputManager::addUI2DirEvent(startButton, &Button::selectChange);
+	InputManager::addEnterKeyEvent(startButton, &Button::enter);
 
 	// 終了ボタン
 	auto* const endButtonObj = GameObject::Builder()
@@ -67,4 +79,15 @@ void TitleScene::setGameObject() {
 		->setEnterEvent(titleSceneManager, &TitleSceneManager::endGame);
 	InputManager::addUI2DirEvent(endButton, &Button::selectChange);
 	InputManager::addEnterKeyEvent(endButton, &Button::enter);
+}
+
+/// <summary>
+/// シーン破棄時に呼び出される
+/// </summary>
+void TitleScene::destroy() {
+
+	InputManager::removeUI2DirEvent(startButton, &Button::selectChange);
+	InputManager::removeEnterKeyEvent(startButton, &Button::enter);
+	InputManager::removeUI2DirEvent(endButton, &Button::selectChange);
+	InputManager::removeEnterKeyEvent(endButton, &Button::enter);
 }

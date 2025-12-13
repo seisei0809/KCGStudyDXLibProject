@@ -19,12 +19,12 @@ void SceneManager::updateScene() {
 
 	// シーン変更がある場合
 	if (_isChange && _GetChangeSceneInstance) {
-		
-		// 全てのゲームオブジェクトを破棄
-		GameObjectManager::getInstance().destroyAllGameObject();
 
 		// 現在のシーンを終了
 		endScene();
+		
+		// 全てのゲームオブジェクトを破棄
+		GameObjectManager::getInstance().destroyAllGameObject();
 
 		// 新しいシーンの開始
 		_nowScene = _GetChangeSceneInstance();
@@ -49,6 +49,7 @@ void SceneManager::endScene() {
 
 	if (_nowScene) {
 
+		_nowScene->destroy();
 		delete _nowScene;
 	}
 }

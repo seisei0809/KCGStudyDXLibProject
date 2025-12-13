@@ -1,6 +1,8 @@
 ﻿#include "stdafx.h"
 #include "TitleSceneManager.h"
 #include "GameManager.h"
+#include "SceneManager.h"
+#include "ResultScene.h"
 
 /// <summary>
 /// 初期化時実行
@@ -38,6 +40,20 @@ void TitleSceneManager::endGame(bool isEnd) {
 
 	if (isEnd) {
 
+		// ゲーム終了処理
 		GameManager::getInstance().endGame();
+	}
+}
+
+/// <summary>
+/// ゲームを開始させる
+/// </summary>
+/// <param name="isStart">開始させるか</param>
+void TitleSceneManager::startGame(bool isStart) {
+
+	if (isStart) {
+
+		// ゲーム開始処理
+		SceneManager::getInstance().changeScene<ResultScene>();
 	}
 }

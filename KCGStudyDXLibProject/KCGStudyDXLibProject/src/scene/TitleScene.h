@@ -10,10 +10,21 @@ class TitleScene : public IScene{
 public:
 
 	/// <summary>
+	/// コンストラクタ
+	/// </summary>
+	TitleScene();
+
+	/// <summary>
 	/// オブジェクト配置場所
 	/// </summary>
 	void setGameObject() override;
 
+	/// <summary>
+	/// シーン破棄時に呼び出される
+	/// </summary>
+	void destroy() override;
+
+private:
 	// タイトル管理
 	TitleSceneManager* titleSceneManager;
 	// スタートボタン

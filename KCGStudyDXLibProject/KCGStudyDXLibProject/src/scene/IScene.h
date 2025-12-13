@@ -20,5 +20,10 @@ public:
 	/// オブジェクト配置場所
 	/// </summary>
 	virtual void setGameObject() = 0;
+
+	/// <summary>
+	/// シーン破棄時に呼び出される
+	/// </summary>
+	virtual void destroy() = 0;
 };
 

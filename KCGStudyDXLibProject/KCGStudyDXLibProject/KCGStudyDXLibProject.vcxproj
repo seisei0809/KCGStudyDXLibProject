@@ -147,6 +147,7 @@
     <ClCompile Include="src\component\scene_manager\TitleSceneManager.cpp" />
     <ClCompile Include="src\component\ui\Button.cpp" />
     <ClCompile Include="src\component\ui\ButtonViewer.cpp" />
+    <ClCompile Include="src\scene\ResultScene.cpp" />
     <ClCompile Include="src\utility\InputManager.cpp" />
     <ClCompile Include="src\component\renderer\ui\IUIRenderer.cpp" />
     <ClCompile Include="src\component\renderer\ui\UIImage.cpp" />
@@ -178,6 +179,7 @@
     <ClInclude Include="src\component\scene_manager\TitleSceneManager.h" />
     <ClInclude Include="src\component\ui\Button.h" />
     <ClInclude Include="src\component\ui\ButtonViewer.h" />
+    <ClInclude Include="src\scene\ResultScene.h" />
     <ClInclude Include="src\utility\InputManager.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="src\AllSettings.h" />
