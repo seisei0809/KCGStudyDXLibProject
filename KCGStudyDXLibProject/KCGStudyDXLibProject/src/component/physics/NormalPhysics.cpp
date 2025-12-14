@@ -27,7 +27,7 @@ void NormalPhysics::start() {
 	// イベント追加
 	if (_collider) {
 
-		_collider->getOnCollisionEnterEvent().add(this, &NormalPhysics::pushObject);
+		_collider->setOnCollisionEnterEvent(this, &NormalPhysics::pushObject);
 	}
 }
 
@@ -48,7 +48,7 @@ void NormalPhysics::fixedUpdate() {
 	// 最大重力越えていないなら重力加速度を加算
 	if (_nowVector.y > _maxGravity) {
 
-		_nowVector.y += _gravity * TimeManager::fixedDeltaTime();
+		_nowVector.y += _gravity * static_cast<float>(TimeManager::fixedDeltaTime());
 	}
 
 	// このフレームで加算する力の計算

@@ -42,7 +42,7 @@ public:
 	/// <param name="method">メンバ関数ポインタ</param>
 	/// <returns>メソッドチェーン用</returns>
 	template<typename T>
-	ICollider* setOnCollisionEnterEvent(T* obj, void (T::* method)(bool)) {
+	ICollider* setOnCollisionEnterEvent(T* obj, void (T::* method)(ICollider*)) {
 
 		_onCollisionEnterEvent.add(obj, method);
 	}
@@ -55,7 +55,7 @@ public:
 	/// <param name="method">メンバ関数ポインタ</param>
 	/// <returns>メソッドチェーン用</returns>
 	template<typename T>
-	ICollider* destroyOnCollisionEnterEvent(T* obj, void (T::* method)(bool)) {
+	ICollider* destroyOnCollisionEnterEvent(T* obj, void (T::* method)(ICollider*)) {
 
 		_onCollisionEnterEvent.remove(obj, method);
 	}

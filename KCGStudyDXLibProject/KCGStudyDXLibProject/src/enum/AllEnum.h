@@ -18,8 +18,10 @@ namespace AllEnumSpace
 		Enemy,
 		// 弾
 		Bullet,
-		// ステージ
-		Stage,
+		// 地面
+		Ground,
+		// 壁
+		Wall
 	};
 
 	/// <summary>

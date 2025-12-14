@@ -2,6 +2,9 @@
 #include "Singleton.h"
 #include "collider/ICollider.h"
 
+/// <summary>
+/// コライダー管理
+/// </summary>
 class ColliderManager : public Utility::Singleton<ColliderManager>{
 public:
 
