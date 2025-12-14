@@ -67,6 +67,7 @@ void NormalPhysics::fixedUpdate() {
 /// </summary>
 void NormalPhysics::destroy() {
 
+	_collider->destroyOnCollisionEnterEvent(this, &NormalPhysics::pushObject);
 }
 
 /// <summary>

@@ -28,7 +28,7 @@ void GameTimer::start() {
 void GameTimer::update() {
 
 	// 経過時間の更新
-	float time = ResultParameter::setElapsedTime(ResultParameter::getElapsedTime() + TimeManager::deltaTime());
+	float time = ResultParameter::setElapsedTime(ResultParameter::getElapsedTime() + static_cast<float>(TimeManager::deltaTime()));
 	
 	// UIテキストの更新
 	if (_uiText) {
