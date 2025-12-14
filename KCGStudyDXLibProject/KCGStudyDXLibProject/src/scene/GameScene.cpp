@@ -6,6 +6,8 @@
 #include "renderer/Model3D.h"
 #include "camera/Camera.h"
 #include "camera/CameraController.h"
+#include "collider/AABBCollider.h"
+#include "physics/NormalPhysics.h"
 
 using namespace AllEnumSpace;
 
@@ -30,9 +32,17 @@ void GameScene::setGameObject() {
 		.setName("Player")
 		.setTag(Tag::Player)
 		.build()
-		->setPosition(VGet(200,1000,200))
+		->setPosition(VGet(200, 2000, 200))
 		->setScale(VGet(100, 100, 100))->addComponent<Model3D>()
-		->loadModel(PLAYER_MODEL_PATH);
+		->loadModel(PLAYER_MODEL_PATH)
+		->getGameObject();
+	auto playerHalfScale = VScale(player->getTransform().scale,0.5f);
+	player->addComponent<AABBCollider>()
+		->setAABB(VGet(-playerHalfScale.x,-playerHalfScale.y,-playerHalfScale.z),
+			playerHalfScale);
+	player->addComponent<NormalPhysics>()
+		->setGravity(-600.0f)
+		->setMaxGravity(-3000.0f);
 
 	// カメラ
 	GameObject::Builder()
@@ -40,17 +50,23 @@ void GameScene::setGameObject() {
 		->setRotation(VGet(0, 20, 0))
 		->addComponent<Camera>()
 		->getGameObject()->addComponent<CameraController>()
-		->setTarget(player->getGameObject())
-		->setCameraOffset(VGet(0, 200, -500))
-		->setTargetOffset(VGet(0, 150, 0));
+		->setTarget(player)
+		->setCameraOffset(VGet(0, 400, -400))
+		->setTargetOffset(VGet(0, 200, 0));
 
 	// ステージメイク
-	GameObject::Builder()
+	auto* stage1 = GameObject::Builder()
+		.setName("stage1")
 		.build()
 		->setPosition(VGet(0, -200, 0))
-		->setScale(VGet(10000, 10, 10000))
+		->setScale(VGet(10000, 300, 10000))
 		->addComponent<Model3D>()
-		->loadModel(STAGE_MODEL_PATH);
+		->loadModel(STAGE_MODEL_PATH)
+		->getGameObject();
+	auto stage1HalfScale = VScale(stage1->getTransform().scale, 0.5f);
+	stage1->addComponent<AABBCollider>()
+		->setAABB(VGet(-stage1HalfScale.x, -stage1HalfScale.y, -stage1HalfScale.z),
+			stage1HalfScale);
 }
 
 /// <summary>

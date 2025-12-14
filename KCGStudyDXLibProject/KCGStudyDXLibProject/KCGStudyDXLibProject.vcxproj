@@ -143,13 +143,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\base\ColliderManager.cpp" />
     <ClCompile Include="src\base\GameManager.cpp" />
     <ClCompile Include="src\component\camera\Camera.cpp" />
     <ClCompile Include="src\component\camera\CameraController.cpp" />
+    <ClCompile Include="src\component\collider\AABBCollider.cpp" />
+    <ClCompile Include="src\component\collider\ICollider.cpp" />
+    <ClCompile Include="src\component\physics\NormalPhysics.cpp" />
     <ClCompile Include="src\component\scene_manager\TitleSceneManager.cpp" />
     <ClCompile Include="src\component\timer\GameTimer.cpp" />
     <ClCompile Include="src\component\ui\Button.cpp" />
     <ClCompile Include="src\component\ui\ButtonViewer.cpp" />
+    <ClCompile Include="src\logic\collision\Collision.cpp" />
     <ClCompile Include="src\logic\result\ResultParameter.cpp" />
     <ClCompile Include="src\scene\GameScene.cpp" />
     <ClCompile Include="src\scene\ResultScene.cpp" />
@@ -180,13 +185,18 @@
     <ClCompile Include="src\utility\TimeManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\base\ColliderManager.h" />
     <ClInclude Include="src\base\GameManager.h" />
     <ClInclude Include="src\component\camera\Camera.h" />
     <ClInclude Include="src\component\camera\CameraController.h" />
+    <ClInclude Include="src\component\collider\AABBCollider.h" />
+    <ClInclude Include="src\component\collider\ICollider.h" />
+    <ClInclude Include="src\component\physics\NormalPhysics.h" />
     <ClInclude Include="src\component\scene_manager\TitleSceneManager.h" />
     <ClInclude Include="src\component\timer\GameTimer.h" />
     <ClInclude Include="src\component\ui\Button.h" />
     <ClInclude Include="src\component\ui\ButtonViewer.h" />
+    <ClInclude Include="src\logic\collision\Collision.h" />
     <ClInclude Include="src\logic\result\ResultParameter.h" />
     <ClInclude Include="src\scene\GameScene.h" />
     <ClInclude Include="src\scene\ResultScene.h" />

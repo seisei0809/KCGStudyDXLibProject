@@ -1,6 +1,7 @@
 ﻿#include "stdafx.h"
 #include "GameObjectManager.h"
 #include "TimeManager.h"
+#include "ColliderManager.h"
 
 /// <summary>
 /// コンストラクタ
@@ -50,6 +51,9 @@ void GameObjectManager::allFixedUpdate() {
 
 			gameObject->fixedUpdate();
 		}
+
+		// コライダー更新
+		ColliderManager::getInstance().updateCollider();
 
 		_UpdateGameObjectArray();
 
