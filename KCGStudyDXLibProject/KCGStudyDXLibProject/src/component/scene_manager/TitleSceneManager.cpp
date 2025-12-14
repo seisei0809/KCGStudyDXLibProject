@@ -2,7 +2,7 @@
 #include "TitleSceneManager.h"
 #include "GameManager.h"
 #include "SceneManager.h"
-#include "ResultScene.h"
+#include "GameScene.h"
 
 /// <summary>
 /// 初期化時実行
@@ -54,6 +54,6 @@ void TitleSceneManager::startGame(bool isStart) {
 	if (isStart) {
 
 		// ゲーム開始処理
-		SceneManager::getInstance().changeScene<ResultScene>();
+		SceneManager::getInstance().changeScene<GameScene>();
 	}
 }

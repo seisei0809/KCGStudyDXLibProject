@@ -78,7 +78,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/logic;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -97,7 +97,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/logic;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -114,7 +114,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/logic;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -133,7 +133,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)src/logic;$(ProjectDir)src/utility;$(ProjectDir)src/scene;$(ProjectDir)src/component;$(ProjectDir)src/enum;$(ProjectDir)src/base;$(ProjectDir)src/base/scene;$(ProjectDir)src/base/gameObject;$(SolutionDir)DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -144,9 +144,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\base\GameManager.cpp" />
+    <ClCompile Include="src\component\camera\Camera.cpp" />
+    <ClCompile Include="src\component\camera\CameraController.cpp" />
     <ClCompile Include="src\component\scene_manager\TitleSceneManager.cpp" />
+    <ClCompile Include="src\component\timer\GameTimer.cpp" />
     <ClCompile Include="src\component\ui\Button.cpp" />
     <ClCompile Include="src\component\ui\ButtonViewer.cpp" />
+    <ClCompile Include="src\logic\result\ResultParameter.cpp" />
+    <ClCompile Include="src\scene\GameScene.cpp" />
     <ClCompile Include="src\scene\ResultScene.cpp" />
     <ClCompile Include="src\utility\InputManager.cpp" />
     <ClCompile Include="src\component\renderer\ui\IUIRenderer.cpp" />
@@ -176,9 +181,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\base\GameManager.h" />
+    <ClInclude Include="src\component\camera\Camera.h" />
+    <ClInclude Include="src\component\camera\CameraController.h" />
     <ClInclude Include="src\component\scene_manager\TitleSceneManager.h" />
+    <ClInclude Include="src\component\timer\GameTimer.h" />
     <ClInclude Include="src\component\ui\Button.h" />
     <ClInclude Include="src\component\ui\ButtonViewer.h" />
+    <ClInclude Include="src\logic\result\ResultParameter.h" />
+    <ClInclude Include="src\scene\GameScene.h" />
     <ClInclude Include="src\scene\ResultScene.h" />
     <ClInclude Include="src\utility\InputManager.h" />
     <ClInclude Include="resource.h" />

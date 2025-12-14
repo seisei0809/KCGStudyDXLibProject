@@ -13,7 +13,7 @@ void ResultScene::setGameObject() {
 	GameObject::Builder()
 		.build()
 		->setPosition(VGet(0.0f, -150.0f, 0.0f))->addComponent<UIText>()
-		->setText(L"リザルト画面")
+		->setText(L"リザルト")
 		->setColor(GetColor(255, 0, 0))
 		->setUIScale(70)
 		->setAnchor(Anchor::MiddleCenter)

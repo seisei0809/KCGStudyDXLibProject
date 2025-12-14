@@ -135,6 +135,10 @@ void Game::_Setting() {
 	// アイコン固定
 	SetWindowIconID(IDI_ICON1);
 
+	// ライトを適当につける
+	SetLightEnable(true);
+	SetLightDirection(VGet(1.0f, -1.0f, 1.0f));
+
 	// フレーム間隔秒数
 	_frameDuration = 1 / FPS;
 	// フレーム間隔ナノ秒数変換
