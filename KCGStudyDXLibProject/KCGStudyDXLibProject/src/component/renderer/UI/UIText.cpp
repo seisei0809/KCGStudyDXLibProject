@@ -8,7 +8,8 @@ UIText::UIText()
 	: IUIRenderer()
 	, _text()
 	, _color(GetColor(255, 255, 255))
-	, _fontHandle(-1) {
+	, _fontHandle(-1)
+	,_preUIScale(){
 
 }
 
