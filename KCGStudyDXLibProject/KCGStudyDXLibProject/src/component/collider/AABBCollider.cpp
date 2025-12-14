@@ -3,6 +3,13 @@
 #include "collision/Collision.h"
 
 /// <summary>
+/// コンストラクタ
+/// </summary>
+AABBCollider::AABBCollider()
+	:_aabb{} {
+}
+
+/// <summary>
 /// 初期化時実行
 /// </summary>
 void AABBCollider::start() {

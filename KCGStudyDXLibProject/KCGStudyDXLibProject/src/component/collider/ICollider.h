@@ -45,6 +45,7 @@ public:
 	ICollider* setOnCollisionEnterEvent(T* obj, void (T::* method)(ICollider*)) {
 
 		_onCollisionEnterEvent.add(obj, method);
+		return this;
 	}
 
 	/// <summary>
@@ -58,6 +59,7 @@ public:
 	ICollider* destroyOnCollisionEnterEvent(T* obj, void (T::* method)(ICollider*)) {
 
 		_onCollisionEnterEvent.remove(obj, method);
+		return this;
 	}
 
 	/// <summary>

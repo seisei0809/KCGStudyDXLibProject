@@ -33,16 +33,16 @@ void InputManager::update() {
 		_uiDir2DownEvent.invoke(_currKey[KEY_INPUT_UP], _currKey[KEY_INPUT_DOWN]);
 	}
 	// ゲーム操作の4方向入力イベント発火
-	if (_currKey[KEY_INPUT_UP] != _prevKey[KEY_INPUT_UP] ||
-		_currKey[KEY_INPUT_DOWN] != _prevKey[KEY_INPUT_DOWN] ||
-		_currKey[KEY_INPUT_RIGHT] != _prevKey[KEY_INPUT_RIGHT] ||
-		_currKey[KEY_INPUT_LEFT] != _prevKey[KEY_INPUT_LEFT]) {
+	if (_currKey[KEY_INPUT_W] != _prevKey[KEY_INPUT_W] ||
+		_currKey[KEY_INPUT_S] != _prevKey[KEY_INPUT_S] ||
+		_currKey[KEY_INPUT_D] != _prevKey[KEY_INPUT_D] ||
+		_currKey[KEY_INPUT_A] != _prevKey[KEY_INPUT_A]) {
 
 		_dir4Event.invoke(
-			_currKey[KEY_INPUT_UP],
-			_currKey[KEY_INPUT_DOWN],
-			_currKey[KEY_INPUT_RIGHT],
-			_currKey[KEY_INPUT_LEFT]);
+			_currKey[KEY_INPUT_W],
+			_currKey[KEY_INPUT_S],
+			_currKey[KEY_INPUT_D],
+			_currKey[KEY_INPUT_A]);
 	}
 	// ジャンプボタンイベント発火
 	if (_currKey[KEY_INPUT_SPACE] && !_prevKey[KEY_INPUT_SPACE]) {

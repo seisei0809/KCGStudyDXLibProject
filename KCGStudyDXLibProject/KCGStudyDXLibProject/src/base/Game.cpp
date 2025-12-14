@@ -242,13 +242,13 @@ void Game::_Run() const {
 /// <summary>
 /// 終了処理
 /// </summary>
-void Game::_End() {		
-	
-	// 全てのゲームオブジェクトを破棄
-	GameObjectManager::getInstance().destroyAllGameObject();
+void Game::_End() {
 
 	// シーン終了
 	SceneManager::getInstance().endScene();
+	
+	// 全てのゲームオブジェクトを破棄
+	GameObjectManager::getInstance().destroyAllGameObject();
 
 	// DxLib終了
 	DxLib_End();

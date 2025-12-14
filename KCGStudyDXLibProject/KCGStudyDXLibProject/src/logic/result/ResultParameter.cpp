@@ -22,3 +22,11 @@ float ResultParameter::setElapsedTime(const float time) {
 	_elapsedTime = time;
 	return _elapsedTime;
 }
+
+/// <summary>
+/// リセットする
+/// </summary>
+void ResultParameter::reset() {
+
+	_elapsedTime = 0.0f;
+}

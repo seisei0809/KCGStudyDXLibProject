@@ -19,6 +19,11 @@ public:
 	/// <returns>セットされた時間</returns>
 	static float setElapsedTime(const float time);
 
+	/// <summary>
+	/// リセットする
+	/// </summary>
+	static void reset();
+
 private:
 
 	// 経過時間

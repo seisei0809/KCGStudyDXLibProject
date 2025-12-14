@@ -19,6 +19,11 @@ public:
     };
 
 	/// <summary>
+	/// コンストラクタ
+	/// </summary>
+	AABBCollider();
+
+	/// <summary>
 	/// 初期化時実行
 	/// </summary>
 	void start() override;

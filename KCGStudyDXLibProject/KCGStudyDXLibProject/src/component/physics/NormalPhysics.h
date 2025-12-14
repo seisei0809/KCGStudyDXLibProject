@@ -60,6 +60,12 @@ public:
 	VECTOR getVector() const;
 
 	/// <summary>
+	/// 重力処理をするか決める
+	/// </summary>
+	/// <param name="isGravity">重力つけるか</param>
+	void setIsGravity(bool isGravity);
+
+	/// <summary>
 	/// ここでは単純な押し出し処理を行う
 	/// </summary>
 	/// <param name="collider">受け取ったコライダー</param>
@@ -77,5 +83,9 @@ private:
 	ICollider* _collider;
 	// 前回位置
 	VECTOR _previousPosition;
+	/// <summary>
+	/// 重力を加えるか
+	/// </summary>
+	bool _isGravity;
 };
 

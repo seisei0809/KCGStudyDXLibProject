@@ -12,7 +12,8 @@ NormalPhysics::NormalPhysics()
 	_nowVector(VGet(0.0f, 0.0f, 0.0f)),
 	_maxGravity(-30.0f),
 	_collider(nullptr),
-	_previousPosition(){
+	_previousPosition(),
+	_isGravity(true){
 
 }
 
@@ -46,13 +47,13 @@ void NormalPhysics::fixedUpdate() {
 	_previousPosition = _gameObject->getTransform().position;
 
 	// 最大重力越えていないなら重力加速度を加算
-	if (_nowVector.y > _maxGravity) {
+	if (_nowVector.y > _maxGravity && _isGravity) {
 
 		_nowVector.y += _gravity * static_cast<float>(TimeManager::fixedDeltaTime());
 	}
 
 	// このフレームで加算する力の計算
-	auto tempVector = VScale(_nowVector,TimeManager::fixedDeltaTime());
+	auto tempVector = VScale(_nowVector, static_cast<float>(TimeManager::fixedDeltaTime()));
 
 	// ベクトルたし算で力を加算
 	_gameObject->getTransform().position = VAdd(
@@ -106,6 +107,15 @@ void NormalPhysics::setVector(const VECTOR vector) {
 VECTOR NormalPhysics::getVector() const {
 
 	return _nowVector;
+}
+
+/// <summary>
+/// 重力処理をするか決める
+/// </summary>
+/// <param name="isGravity">重力つけるか</param>
+void NormalPhysics::setIsGravity(bool isGravity) {
+
+	_isGravity = isGravity;
 }
 
 /// <summary>
