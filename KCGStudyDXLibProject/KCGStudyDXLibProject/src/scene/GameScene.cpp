@@ -1,5 +1,6 @@
 ﻿#include "stdafx.h"
 #include "GameScene.h"
+#include "AllSettings.h"
 #include "renderer/ui/UIText.h"
 #include "timer/GameTimer.h"
 #include "renderer/Model3D.h"
@@ -25,20 +26,23 @@ void GameScene::setGameObject() {
 		->getGameObject()->addComponent<GameTimer>();
 
 	// プレイヤー
-	GameObject::Builder()
+	auto* player = GameObject::Builder()
 		.setName("Player")
 		.setTag(Tag::Player)
 		.build()
-		->setPosition(VGet(100,-100,300))
+		->setPosition(VGet(200,1000,200))
 		->setScale(VGet(100, 100, 100))->addComponent<Model3D>()
-		->loadModel(L"asset/model/Bullet.mv1");
+		->loadModel(PLAYER_MODEL_PATH);
 
 	// カメラ
 	GameObject::Builder()
-		.setName("MainCamera")
 		.build()
-		->setRotation(VGet(0,20,0))
-		->addComponent<Camera>();
+		->setRotation(VGet(0, 20, 0))
+		->addComponent<Camera>()
+		->getGameObject()->addComponent<CameraController>()
+		->setTarget(player->getGameObject())
+		->setCameraOffset(VGet(0, 200, -500))
+		->setTargetOffset(VGet(0, 150, 0));
 
 	// ステージメイク
 	GameObject::Builder()
@@ -46,7 +50,7 @@ void GameScene::setGameObject() {
 		->setPosition(VGet(0, -200, 0))
 		->setScale(VGet(10000, 10, 10000))
 		->addComponent<Model3D>()
-		->loadModel(L"asset/model/Stage.mv1");
+		->loadModel(STAGE_MODEL_PATH);
 }
 
 /// <summary>

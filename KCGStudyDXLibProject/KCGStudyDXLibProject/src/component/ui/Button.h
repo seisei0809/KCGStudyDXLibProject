@@ -55,7 +55,7 @@ public:
 	Button* setDownButton(Button** downButton);
 
 	/// <summary>
-	/// 選択状態変更監視用
+	/// 選択状態変更監視用追加
 	/// </summary>
 	/// <typeparam name="T">型</typeparam>
 	/// <param name="obj">インスタンス</param>
@@ -69,7 +69,21 @@ public:
 	}
 
 	/// <summary>
-	/// エンター状態変更監視用
+	/// 選択状態変更監視用破棄
+	/// </summary>
+	/// <typeparam name="T">型</typeparam>
+	/// <param name="obj">インスタンス</param>
+	/// <param name="method">関数</param>
+	/// <returns>メソッドチェーン用</returns>
+	template<class T>
+	Button* destroySelectChangeEvent(T* obj, void (T::* method)(bool)) {
+
+		_onSelectChangeEvent.remove(obj, method);
+		return this;
+	}
+
+	/// <summary>
+	/// エンター状態変更監視用追加
 	/// </summary>
 	/// <typeparam name="T">型</typeparam>
 	/// <param name="obj">インスタンス</param>
@@ -79,6 +93,20 @@ public:
 	Button* setEnterEvent(T* obj, void (T::* method)(bool)) {
 
 		_onEnterEvent.add(obj, method);
+		return this;
+	}
+
+	/// <summary>
+	/// エンター状態変更監視用破棄
+	/// </summary>
+	/// <typeparam name="T">型</typeparam>
+	/// <param name="obj">インスタンス</param>
+	/// <param name="method">関数</param>
+	/// <returns>メソッドチェーン用</returns>
+	template<class T>
+	Button* destoryEnterEvent(T* obj, void (T::* method)(bool)) {
+
+		_onEnterEvent.remove(obj, method);
 		return this;
 	}
 

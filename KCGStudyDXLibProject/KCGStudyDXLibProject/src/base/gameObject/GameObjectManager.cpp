@@ -47,6 +47,7 @@ void GameObjectManager::allFixedUpdate() {
 
 		// 全GameObjectのfixedUpdateを呼ぶ
 		for (auto& gameObject : _gameObjects) {
+
 			gameObject->fixedUpdate();
 		}
 

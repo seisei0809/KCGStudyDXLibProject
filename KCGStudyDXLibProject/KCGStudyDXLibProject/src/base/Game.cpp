@@ -136,8 +136,9 @@ void Game::_Setting() {
 	SetWindowIconID(IDI_ICON1);
 
 	// ライトを適当につける
+	SetUseLighting(true);
 	SetLightEnable(true);
-	SetLightDirection(VGet(1.0f, -1.0f, 1.0f));
+	SetLightDirection(LIGHT_DIRECTION);
 
 	// フレーム間隔秒数
 	_frameDuration = 1 / FPS;

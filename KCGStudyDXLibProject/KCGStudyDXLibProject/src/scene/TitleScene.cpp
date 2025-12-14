@@ -50,7 +50,7 @@ void TitleScene::setGameObject() {
 		->setAnchor(Anchor::MiddleCenter)
 		->setLayer(100)
 		->getGameObject();
-	auto* const startButtonViewer = startButtonObj->addComponent<ButtonViewer>();
+	startButtonViewer = startButtonObj->addComponent<ButtonViewer>();
 	startButton = startButtonObj->addComponent<Button>()
 		->setIsSelect(true)
 		->setUpButton(nullptr)
@@ -71,7 +71,7 @@ void TitleScene::setGameObject() {
 		->setAnchor(Anchor::MiddleCenter)
 		->setLayer(100)
 		->getGameObject();
-	auto* const endButtonViewer = endButtonObj->addComponent<ButtonViewer>();
+	endButtonViewer = endButtonObj->addComponent<ButtonViewer>();
 	endButton = endButtonObj->addComponent<Button>()
 		->setUpButton(&startButton)
 		->setDownButton(nullptr)
@@ -85,6 +85,11 @@ void TitleScene::setGameObject() {
 /// シーン破棄時に呼び出される
 /// </summary>
 void TitleScene::destroy() {
+
+	startButton->destroySelectChangeEvent(startButtonViewer, &ButtonViewer::changeView);
+	startButton->destoryEnterEvent(titleSceneManager, &TitleSceneManager::startGame);
+	endButton->destroySelectChangeEvent(endButtonViewer, &ButtonViewer::changeView);
+	endButton->destoryEnterEvent(titleSceneManager, &TitleSceneManager::startGame);
 
 	InputManager::removeUI2DirEvent(startButton, &Button::selectChange);
 	InputManager::removeEnterKeyEvent(startButton, &Button::enter);

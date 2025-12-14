@@ -55,9 +55,9 @@ void Camera::updateView() {
     auto rot = _gameObject->getTransform().rotation;
 
     VECTOR forward;
-    forward.x = std::sin(rot.y / 180.0f * DX_PI_F) * std::cos(rot.x / 180.0f * DX_PI_F);
-    forward.y = std::sin(rot.x / 180.0f * DX_PI_F);
-    forward.z = std::cos(rot.y / 180.0f * DX_PI_F) * std::cos(rot.x / 180.0f * DX_PI_F);
+    forward.x = std::sin(rot.y) * std::cos(rot.x);
+    forward.y = std::sin(rot.x);
+    forward.z = std::cos(rot.y) * std::cos(rot.x);
 
     VECTOR target = VAdd(pos, forward);
 

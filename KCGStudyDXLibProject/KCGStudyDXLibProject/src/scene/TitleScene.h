@@ -31,5 +31,9 @@ private:
 	Button* startButton;
 	// 終了ボタン
 	Button* endButton;
+	// スタートボタン表示用
+	ButtonViewer* startButtonViewer;
+	// 終了ボタン表示用
+	ButtonViewer* endButtonViewer;
 };
 
