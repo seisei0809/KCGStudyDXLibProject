@@ -16,6 +16,8 @@ void ColliderManager::updateCollider() {
 	
 	_UpdateColliderArray();
 
+	if (_colliders.size() < 2) return;
+
 	for (auto& colliderA : _colliders) {
 
 		for (auto& colliderB : _colliders) {

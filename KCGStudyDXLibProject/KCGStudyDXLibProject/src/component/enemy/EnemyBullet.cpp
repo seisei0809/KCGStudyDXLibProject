@@ -108,6 +108,7 @@ void EnemyBullet::Attack(ICollider* collider) {
 		// ライフを減らす
 		collider->getGameObject()->getComponent<PlayerLifeManager>()->minusLife();
 	}
-	// 何かに当たったら自分を消す
+	if (collider->getGameObject()->getTag() == Tag::Bullet)return;
+	// 弾以外に当たったら自分を消す
 	GameObjectManager::getInstance().destroyGameObject(this->getGameObject());
 }

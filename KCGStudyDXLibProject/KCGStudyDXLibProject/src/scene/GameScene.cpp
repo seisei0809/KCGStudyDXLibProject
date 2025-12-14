@@ -79,7 +79,7 @@ void GameScene::setGameObject() {
 		.setTag(Tag::Ground)
 		.build()
 		->setPosition(VGet(0, -200, 0))
-		->setScale(VGet(10000, 300, 10000))
+		->setScale(VGet(2000, 300, 2000))
 		->addComponent<Model3D>()
 		->loadModel(STAGE_MODEL_PATH)
 		->getGameObject();
@@ -91,8 +91,8 @@ void GameScene::setGameObject() {
 	auto* wall1 = GameObject::Builder()
 		.setTag(Tag::Wall)
 		.build()
-		->setPosition(VGet(5000, 1400, 0))
-		->setScale(VGet(200, 3000, 10000))
+		->setPosition(VGet(1000, 500, 0))
+		->setScale(VGet(200, 3000, 2000))
 		->addComponent<Model3D>()
 		->loadModel(STAGE_MODEL_PATH)
 		->getGameObject();
@@ -104,8 +104,8 @@ void GameScene::setGameObject() {
 	auto* wall2 = GameObject::Builder()
 		.setTag(Tag::Wall)
 		.build()
-		->setPosition(VGet(-5000, 1400, 0))
-		->setScale(VGet(200, 3000, 10000))
+		->setPosition(VGet(-1000, 500, 0))
+		->setScale(VGet(200, 3000, 2000))
 		->addComponent<Model3D>()
 		->loadModel(STAGE_MODEL_PATH)
 		->getGameObject();
@@ -117,8 +117,8 @@ void GameScene::setGameObject() {
 	auto* wall3 = GameObject::Builder()
 		.setTag(Tag::Wall)
 		.build()
-		->setPosition(VGet(0, 1400, 5000))
-		->setScale(VGet(10000, 3000, 200))
+		->setPosition(VGet(0, 500, 1000))
+		->setScale(VGet(2000, 3000, 200))
 		->addComponent<Model3D>()
 		->loadModel(STAGE_MODEL_PATH)
 		->getGameObject();
@@ -130,8 +130,8 @@ void GameScene::setGameObject() {
 	auto* wall4 = GameObject::Builder()
 		.setTag(Tag::Wall)
 		.build()
-		->setPosition(VGet(0, 1400, -5000))
-		->setScale(VGet(10000, 3000, 200));
+		->setPosition(VGet(0, 500, -1000))
+		->setScale(VGet(2000, 3000, 200));
 	auto wall4HalfScale = VScale(wall4->getTransform().scale, 0.5f);
 	wall4->addComponent<AABBCollider>()
 		->setAABB(VGet(-wall4HalfScale.x, -wall4HalfScale.y, -wall4HalfScale.z),
