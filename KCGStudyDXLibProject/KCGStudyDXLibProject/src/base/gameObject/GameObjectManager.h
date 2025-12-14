@@ -40,6 +40,25 @@ public:
 	/// </summary>
 	void destroyAllGameObject();
 
+	/// <summary>
+	/// 型でゲームオブジェクトを探す
+	/// </summary>
+	/// <typeparam name="T">型</typeparam>
+	/// <returns>インスタンス</returns>
+	template<typename T>
+	GameObject* getGameObjectByType() {
+
+		for (auto& gameObject : _gameObjects) {
+			
+			T* temp = gameObject->getComponent<T>();
+			if (temp != nullptr) {
+
+				return gameObject;
+			}
+		}
+		return nullptr;
+	}
+
 private:
 
 	/// <summary>

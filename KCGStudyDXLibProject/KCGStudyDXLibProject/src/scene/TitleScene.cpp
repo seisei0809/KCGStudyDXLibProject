@@ -14,9 +14,11 @@ using namespace Utility;
 /// コンストラクタ
 /// </summary>
 TitleScene::TitleScene()
-	:titleSceneManager(nullptr),
-	startButton(nullptr),
-	endButton(nullptr) {
+	:_titleSceneManager(nullptr),
+	_startButton(nullptr),
+	_endButton(nullptr),
+	_startButtonViewer(),
+	_endButtonViewer(){
 
 }
 
@@ -26,7 +28,7 @@ TitleScene::TitleScene()
 void TitleScene::setGameObject() {
 
 	// タイトル管理
-	titleSceneManager = GameObject::Builder()
+	_titleSceneManager = GameObject::Builder()
 		.build()->addComponent<TitleSceneManager>();
 
 	// タイトルテキスト
@@ -50,15 +52,15 @@ void TitleScene::setGameObject() {
 		->setAnchor(Anchor::MiddleCenter)
 		->setLayer(100)
 		->getGameObject();
-	startButtonViewer = startButtonObj->addComponent<ButtonViewer>();
-	startButton = startButtonObj->addComponent<Button>()
+	_startButtonViewer = startButtonObj->addComponent<ButtonViewer>();
+	_startButton = startButtonObj->addComponent<Button>()
 		->setIsSelect(true)
 		->setUpButton(nullptr)
-		->setDownButton(&endButton)
-		->setSelectChangeEvent(startButtonViewer,&ButtonViewer::changeView)
-		->setEnterEvent(titleSceneManager, &TitleSceneManager::startGame);
-	InputManager::addUI2DirEvent(startButton, &Button::selectChange);
-	InputManager::addEnterKeyEvent(startButton, &Button::enter);
+		->setDownButton(&_endButton)
+		->setSelectChangeEvent(_startButtonViewer,&ButtonViewer::changeView)
+		->setEnterEvent(_titleSceneManager, &TitleSceneManager::startGame);
+	InputManager::addUI2DirEvent(_startButton, &Button::selectChange);
+	InputManager::addEnterKeyEvent(_startButton, &Button::enter);
 
 	// 終了ボタン
 	auto* const endButtonObj = GameObject::Builder()
@@ -71,14 +73,14 @@ void TitleScene::setGameObject() {
 		->setAnchor(Anchor::MiddleCenter)
 		->setLayer(100)
 		->getGameObject();
-	endButtonViewer = endButtonObj->addComponent<ButtonViewer>();
-	endButton = endButtonObj->addComponent<Button>()
-		->setUpButton(&startButton)
+	_endButtonViewer = endButtonObj->addComponent<ButtonViewer>();
+	_endButton = endButtonObj->addComponent<Button>()
+		->setUpButton(&_startButton)
 		->setDownButton(nullptr)
-		->setSelectChangeEvent(endButtonViewer,&ButtonViewer::changeView)
-		->setEnterEvent(titleSceneManager, &TitleSceneManager::endGame);
-	InputManager::addUI2DirEvent(endButton, &Button::selectChange);
-	InputManager::addEnterKeyEvent(endButton, &Button::enter);
+		->setSelectChangeEvent(_endButtonViewer,&ButtonViewer::changeView)
+		->setEnterEvent(_titleSceneManager, &TitleSceneManager::endGame);
+	InputManager::addUI2DirEvent(_endButton, &Button::selectChange);
+	InputManager::addEnterKeyEvent(_endButton, &Button::enter);
 }
 
 /// <summary>
@@ -86,13 +88,13 @@ void TitleScene::setGameObject() {
 /// </summary>
 void TitleScene::destroy() {
 
-	startButton->destroySelectChangeEvent(startButtonViewer, &ButtonViewer::changeView);
-	startButton->destoryEnterEvent(titleSceneManager, &TitleSceneManager::startGame);
-	endButton->destroySelectChangeEvent(endButtonViewer, &ButtonViewer::changeView);
-	endButton->destoryEnterEvent(titleSceneManager, &TitleSceneManager::startGame);
+	_startButton->destroySelectChangeEvent(_startButtonViewer, &ButtonViewer::changeView);
+	_startButton->destoryEnterEvent(_titleSceneManager, &TitleSceneManager::startGame);
+	_endButton->destroySelectChangeEvent(_endButtonViewer, &ButtonViewer::changeView);
+	_endButton->destoryEnterEvent(_titleSceneManager, &TitleSceneManager::endGame);
 
-	InputManager::removeUI2DirEvent(startButton, &Button::selectChange);
-	InputManager::removeEnterKeyEvent(startButton, &Button::enter);
-	InputManager::removeUI2DirEvent(endButton, &Button::selectChange);
-	InputManager::removeEnterKeyEvent(endButton, &Button::enter);
+	InputManager::removeUI2DirEvent(_startButton, &Button::selectChange);
+	InputManager::removeEnterKeyEvent(_startButton, &Button::enter);
+	InputManager::removeUI2DirEvent(_endButton, &Button::selectChange);
+	InputManager::removeEnterKeyEvent(_endButton, &Button::enter);
 }

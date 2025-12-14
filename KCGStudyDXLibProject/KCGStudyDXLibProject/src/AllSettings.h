@@ -22,7 +22,18 @@ constexpr float PLAYER_SPEED = 1000.0f;
 constexpr float PLAYER_JUMP_POWER = 1000.0f;
 constexpr float PLAYER_GRAVITY = -800.0f;
 constexpr float PLAYER_MAX_GRAVITY = -3500.0f;
+constexpr VECTOR PLAYER_START_POSITION = { 200.0f, 2000.0f, 50.0f };
+constexpr VECTOR PLAYER_DEFAULT_SCALE = { 150.0f, 150.0f, 150.0f };
 constexpr int PLAYER_LIFE = 3;
 
-constexpr VECTOR CAMERA_DEFAULT_OFFSET = { 0.0f, 600.0f, -1200.0f };
-constexpr VECTOR CAMERA_TARGET_OFFSET = { 0.0f, 200.0f, 0.0f };
+constexpr float ENEMY_SHOT_DURATION = 2.0f;
+constexpr VECTOR ENEMY_DEFAULT_SCALE = { 75.0f, 75.0f, 75.0f };
+constexpr float ENEMY_BULLET_LIFE_TIME = 16.0f;
+constexpr float ENEMY_BULLET_SPEED = 700.0f;
+constexpr VECTOR ENEMY_BULLET_DEFAULT_SCALE = { 75.0f, 75.0f, 75.0f };
+constexpr float ENEMY_SPAWN_DURATION = 3.0f;
+constexpr VECTOR ENEMY_SPAWN_RANGE_MIN = { -4500.0f, 0.0f, -4500.0f };
+constexpr VECTOR ENEMY_SPAWN_RANGE_MAX = { 4500.0f, 500.0f, 4500.0f };
+
+constexpr VECTOR CAMERA_DEFAULT_OFFSET = { 0.0f, 900.0f, -1600.0f };
+constexpr VECTOR CAMERA_TARGET_OFFSET = { 0.0f, 100.0f, 0.0f };

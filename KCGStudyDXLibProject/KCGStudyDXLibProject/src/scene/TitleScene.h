@@ -27,14 +27,14 @@ public:
 
 private:
 	// タイトル管理
-	TitleSceneManager* titleSceneManager;
+	TitleSceneManager* _titleSceneManager;
 	// スタートボタン
-	Button* startButton;
+	Button* _startButton;
 	// 終了ボタン
-	Button* endButton;
+	Button* _endButton;
 	// スタートボタン表示用
-	ButtonViewer* startButtonViewer;
+	ButtonViewer* _startButtonViewer;
 	// 終了ボタン表示用
-	ButtonViewer* endButtonViewer;
+	ButtonViewer* _endButtonViewer;
 };
 

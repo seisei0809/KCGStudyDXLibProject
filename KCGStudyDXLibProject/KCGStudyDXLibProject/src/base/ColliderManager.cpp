@@ -13,7 +13,7 @@ ColliderManager::ColliderManager()
 /// コライダーの更新
 /// </summary>
 void ColliderManager::updateCollider() {
-
+	
 	_UpdateColliderArray();
 
 	for (auto& colliderA : _colliders) {
