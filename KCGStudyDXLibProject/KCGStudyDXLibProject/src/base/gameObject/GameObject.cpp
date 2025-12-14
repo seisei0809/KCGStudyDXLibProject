@@ -216,6 +216,24 @@ Transform& GameObject::getTransform() {
 }
 
 /// <summary>
+/// 名前の取得
+/// </summary>
+/// <returns>名前</returns>
+std::string GameObject::getName()const {
+
+	return _name;
+}
+
+/// <summary>
+/// タグの取得
+/// </summary>
+/// <returns>タグ</returns>
+AllEnumSpace::Tag GameObject::getTag() const {
+
+	return _tag;
+}
+
+/// <summary>
 /// コンポーネント配列の更新
 /// </summary>
 void GameObject::_UpdateComponentArray() {

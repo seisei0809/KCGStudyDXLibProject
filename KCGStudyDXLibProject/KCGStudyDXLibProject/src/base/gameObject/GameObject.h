@@ -153,6 +153,18 @@ public:
 	/// <returns>Transform</returns>
 	Transform& getTransform();
 
+	/// <summary>
+	/// 名前の取得
+	/// </summary>
+	/// <returns>名前</returns>
+	std::string getName()const;
+
+	/// <summary>
+	/// タグの取得
+	/// </summary>
+	/// <returns>タグ</returns>
+	AllEnumSpace::Tag getTag() const;
+
 private:
 
 	/// <summary>

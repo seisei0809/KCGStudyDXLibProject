@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include "IScene.h"
 #include "ui/Button.h"
+#include "ui/ButtonViewer.h"
 #include "scene_manager/TitleSceneManager.h"
 
 /// <summary>
