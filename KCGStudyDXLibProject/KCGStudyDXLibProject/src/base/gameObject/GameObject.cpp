@@ -207,6 +207,17 @@ GameObject* GameObject::setScale(const VECTOR scale) {
 }
 
 /// <summary>
+/// アクティブ状態のセット
+/// </summary>
+/// <param name="isActive">アクティブ化</param>
+/// <returns>メソッドチェーン用</returns>
+GameObject* GameObject::setActive(const bool isActive) {
+
+	_isActive = isActive;
+	return this;
+}
+
+/// <summary>
 /// Transform情報の取得
 /// </summary>
 /// <returns>Transform</returns>
@@ -231,6 +242,15 @@ std::string GameObject::getName()const {
 AllEnumSpace::Tag GameObject::getTag() const {
 
 	return _tag;
+}
+
+/// <summary>
+/// アクティブ状態を確かめる
+/// </summary>
+/// <returns>アクティブか</returns>
+bool GameObject::getIsActive() const {
+
+	return _isActive;
 }
 
 /// <summary>

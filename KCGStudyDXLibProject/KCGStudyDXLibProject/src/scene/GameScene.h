@@ -7,6 +7,11 @@ class GameScene : public IScene{
 public:
 
 	/// <summary>
+	/// コンストラクタ
+	/// </summary>
+	GameScene();
+
+	/// <summary>
 	/// オブジェクト配置場所
 	/// </summary>
 	void setGameObject() override;

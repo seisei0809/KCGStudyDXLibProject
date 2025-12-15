@@ -17,6 +17,7 @@ constexpr const wchar_t* PLAYER_MODEL_PATH = L"asset/model/Player.mv1";
 constexpr const wchar_t* ENEMY_MODEL_PATH = L"asset/model/Enemy.mv1";
 constexpr const wchar_t* STAGE_MODEL_PATH = L"asset/model/Stage.mv1";
 constexpr const wchar_t* BULLET_MODEL_PATH = L"asset/model/Bullet.mv1";
+constexpr const wchar_t* UI_LIFE_IMAGE_PATH = L"asset/ui/Life.png";
 
 constexpr float PLAYER_SPEED = 1000.0f;
 constexpr float PLAYER_JUMP_POWER = 1600.0f;
@@ -29,11 +30,14 @@ constexpr int PLAYER_LIFE = 3;
 constexpr float ENEMY_SHOT_DURATION = 2.0f;
 constexpr VECTOR ENEMY_DEFAULT_SCALE = { 75.0f, 75.0f, 75.0f };
 constexpr float ENEMY_BULLET_LIFE_TIME = 5.0f;
-constexpr float ENEMY_BULLET_SPEED = 700.0f;
+constexpr float ENEMY_BULLET_SPEED = 900.0f;
 constexpr VECTOR ENEMY_BULLET_DEFAULT_SCALE = { 75.0f, 75.0f, 75.0f };
-constexpr float ENEMY_SPAWN_DURATION = 5.0f;
+constexpr float ENEMY_SPAWN_DURATION = 4.3f;
 constexpr VECTOR ENEMY_SPAWN_RANGE_MIN = { -900.0f, 0.0f, -900.0f };
-constexpr VECTOR ENEMY_SPAWN_RANGE_MAX = { 900.0f, 500.0f, 900.0f };
+constexpr VECTOR ENEMY_SPAWN_RANGE_MAX = { 900.0f, 600.0f, 900.0f };
 
-constexpr VECTOR CAMERA_DEFAULT_OFFSET = { 0.0f, 900.0f, -2000.0f };
+constexpr VECTOR CAMERA_DEFAULT_OFFSET = { 200.0f, 900.0f, -2000.0f };
 constexpr VECTOR CAMERA_TARGET_OFFSET = { 0.0f, 100.0f, 0.0f };
+
+constexpr float PLAYER_LIFE_UI_SCALE = 0.05f;
+constexpr float PLAYER_LIFE_UI_OFFSET_X = 130.0f;

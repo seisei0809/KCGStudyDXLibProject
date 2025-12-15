@@ -10,8 +10,19 @@
 #include "physics/NormalPhysics.h"
 #include "player/PlayerManager.h"
 #include "enemy/EnemySpawner.h"
+#include "ui/PlayerLifeViewer.h"
 
 using namespace AllEnumSpace;
+
+/// <summary>
+/// コンストラクタ
+/// </summary>
+GameScene::GameScene()
+	:_gameSceneManager(nullptr),
+	_playerLifeManager(nullptr),
+	_playerObj(nullptr) {
+
+}
 
 /// <summary>
 /// オブジェクト配置場所
@@ -57,6 +68,12 @@ void GameScene::setGameObject() {
 		->setLife(PLAYER_LIFE)
 		->addLifeZeroEvent(_gameSceneManager, &GameSceneManager::endGameScene);
 
+	// プレイヤーのHPを可視化
+	GameObject::Builder()
+		.build()
+		->addComponent<PlayerLifeViewer>()
+		->setLifeManager(_playerLifeManager);
+
 	// 敵スポナー
 	GameObject::Builder()
 		.build()
@@ -92,7 +109,7 @@ void GameScene::setGameObject() {
 		.setTag(Tag::Wall)
 		.build()
 		->setPosition(VGet(1000, 500, 0))
-		->setScale(VGet(200, 3000, 2000))
+		->setScale(VGet(50, 3000, 2000))
 		->addComponent<Model3D>()
 		->loadModel(STAGE_MODEL_PATH)
 		->getGameObject();
@@ -105,7 +122,7 @@ void GameScene::setGameObject() {
 		.setTag(Tag::Wall)
 		.build()
 		->setPosition(VGet(-1000, 500, 0))
-		->setScale(VGet(200, 3000, 2000))
+		->setScale(VGet(50, 3000, 2000))
 		->addComponent<Model3D>()
 		->loadModel(STAGE_MODEL_PATH)
 		->getGameObject();
@@ -118,7 +135,7 @@ void GameScene::setGameObject() {
 		.setTag(Tag::Wall)
 		.build()
 		->setPosition(VGet(0, 500, 1000))
-		->setScale(VGet(2000, 3000, 200))
+		->setScale(VGet(2000, 3000, 50))
 		->addComponent<Model3D>()
 		->loadModel(STAGE_MODEL_PATH)
 		->getGameObject();

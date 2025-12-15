@@ -35,7 +35,7 @@ void GameTimer::update() {
 
 		int minutes = static_cast<int>(time) / 60;
 		int seconds = static_cast<int>(time) % 60;
-		std::wstring result = L"経過時間 " + (minutes < 10 ? std::to_wstring(0) : L"") + std::to_wstring(minutes) +
+		std::wstring result = L""+(minutes < 10 ? std::to_wstring(0) : L"") + std::to_wstring(minutes) +
 			L":" + (seconds < 10 ? std::to_wstring(0) : L"") + std::to_wstring(seconds);
 		_uiText->setText(result);
 	}

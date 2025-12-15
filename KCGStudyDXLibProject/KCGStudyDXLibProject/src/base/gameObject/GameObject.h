@@ -148,6 +148,13 @@ public:
 	GameObject* setScale(const VECTOR scale);
 
 	/// <summary>
+	/// アクティブ状態のセット
+	/// </summary>
+	/// <param name="isActive">アクティブ化</param>
+	/// <returns>メソッドチェーン用</returns>
+	GameObject* setActive(const bool isActive);
+
+	/// <summary>
 	/// Transform情報の取得
 	/// </summary>
 	/// <returns>Transform</returns>
@@ -164,6 +171,12 @@ public:
 	/// </summary>
 	/// <returns>タグ</returns>
 	AllEnumSpace::Tag getTag() const;
+
+	/// <summary>
+	/// アクティブ状態を確かめる
+	/// </summary>
+	/// <returns>アクティブか</returns>
+	bool getIsActive() const;
 
 private:
 

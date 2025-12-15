@@ -36,7 +36,10 @@ const void RendererManager::allRender()const {
 				++it;
 				continue;
 			}
-			(*it)->render();
+			if ((*it)->getGameObject()->getIsActive()) {
+				
+				(*it)->render();
+			}
 			it = temp.erase(it);
 		}
     }

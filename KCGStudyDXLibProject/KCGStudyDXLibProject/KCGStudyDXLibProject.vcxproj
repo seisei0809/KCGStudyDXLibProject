@@ -154,6 +154,8 @@
     <ClCompile Include="src\component\collider\AABBCollider.cpp" />
     <ClCompile Include="src\component\collider\ICollider.cpp" />
     <ClCompile Include="src\component\physics\NormalPhysics.cpp" />
+    <ClCompile Include="src\component\scene_manager\ResultSceneManager.cpp" />
+    <ClCompile Include="src\component\ui\PlayerLifeViewer.cpp" />
     <ClCompile Include="src\logic\enemy\EnemyShooter.cpp" />
     <ClCompile Include="src\logic\player\PlayerGroundChecker.cpp" />
     <ClCompile Include="src\component\player\PlayerManager.cpp" />
@@ -205,6 +207,8 @@
     <ClInclude Include="src\component\collider\AABBCollider.h" />
     <ClInclude Include="src\component\collider\ICollider.h" />
     <ClInclude Include="src\component\physics\NormalPhysics.h" />
+    <ClInclude Include="src\component\scene_manager\ResultSceneManager.h" />
+    <ClInclude Include="src\component\ui\PlayerLifeViewer.h" />
     <ClInclude Include="src\logic\enemy\EnemyShooter.h" />
     <ClInclude Include="src\logic\player\PlayerGroundChecker.h" />
     <ClInclude Include="src\component\player\PlayerManager.h" />

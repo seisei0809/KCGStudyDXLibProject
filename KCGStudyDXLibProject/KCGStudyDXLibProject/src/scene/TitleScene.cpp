@@ -37,7 +37,7 @@ void TitleScene::setGameObject() {
 		->setPosition(VGet(0.0f, -100.0f, 0.0f))->addComponent<UIText>()
 		->setText(WINDOW_TITLE)
 		->setColor(GetColor(255, 0, 0))
-		->setUIScale(70)
+		->setUIScale(180)
 		->setAnchor(Anchor::MiddleCenter)
 		->setLayer(100);
 
