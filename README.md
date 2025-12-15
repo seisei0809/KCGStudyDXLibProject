@@ -18,6 +18,8 @@
 
 [エントリーポイントはこちら](https://github.com/seisei0809/KCGStudyDXLibProject/blob/main/KCGStudyDXLibProject/KCGStudyDXLibProject/src/main.cpp)
 
+[Doxygenにより作成されたクラス設計関連はこちら](https://seisei0809.github.io/KCGStudyDXLibProject/inherits.html)
+
 <br><br><br><br>
 
 ## 著作権関係
