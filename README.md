@@ -3,7 +3,7 @@
 ## 制約
 ・C++14
 
-・標準ライブラリ・・・<chrono>,<string>,<thread>,<cmath>
+・標準ライブラリ右のもののみ(Release時)・・  **`<chrono>`, `<string>`, `<thread>`, `<cmath>`**
 
 ・DXライブラリ以外の
 外部ライブラリを使用しない
