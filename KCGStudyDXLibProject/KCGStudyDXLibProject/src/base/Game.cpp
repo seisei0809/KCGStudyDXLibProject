@@ -16,6 +16,12 @@
 Game::Builder::Builder()
 	:_fps(60.0f) {
 
+	// ログ出力設定
+#ifdef _DEBUG
+	SetOutApplicationLogValidFlag(true);
+#else
+	SetOutApplicationLogValidFlag(false);
+#endif
 }
 
 /// <summary>
@@ -126,6 +132,7 @@ void Game::_Setting() {
 		SetGraphMode(windowWidth, windowHeight, 32);
 	}
 
+	// ログ出さない
 	// 垂直同期は切る
 	SetWaitVSyncFlag(false);
 	// Zバッファを有効にする
