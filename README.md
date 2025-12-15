@@ -20,7 +20,13 @@
 
 [Doxygenにより作成されたクラス設計関連はこちら](https://seisei0809.github.io/KCGStudyDXLibProject/)
 
-<br><br><br><br>
+<br>
+
+## ゲームの操作方法
+・UI操作(矢印キー、エンターキー)
+・ゲーム操作(WASDキー、Spaceキー)
+
+<br>
 
 ## 著作権関係
 
