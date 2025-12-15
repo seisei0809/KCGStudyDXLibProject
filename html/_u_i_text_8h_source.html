@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: KCGStudyDXLibProject/KCGStudyDXLibProject/src/component/renderer/ui/UIText.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_u_i_text_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">UIText.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;IUIRenderer.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span></div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_u_i_text.html">    8</a></span><span class="keyword">class </span><a class="code hl_function" href="class_u_i_text.html#ab183d2cfdee2f378ced02580285f331a">UIText</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_i_u_i_renderer.html#a7f31bac773f3423ad8c2bea80b0de363">IUIRenderer</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="class_u_i_text.html#ab183d2cfdee2f378ced02580285f331a">UIText</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_function" href="class_u_i_text.html#ab183d2cfdee2f378ced02580285f331a">UIText</a>* <a class="code hl_function" href="class_u_i_text.html#a702b60fbba7e76a92d30f6e1c00c64c5">setText</a>(<span class="keyword">const</span> std::wstring&amp; text);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="class_u_i_text.html#ab183d2cfdee2f378ced02580285f331a">UIText</a>* <a class="code hl_function" href="class_u_i_text.html#adf961d4c863062a955d07e37cb6c9e08">setColor</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> color);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_i_text.html#aac8a45a45478cbb697b3406472060d27">start</a>()<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_i_text.html#a131c113f6b0d5404e4083f81a16daec1">update</a>()<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_i_text.html#a12b20a1d02db110d7e1f1e02e6c7c573">fixedUpdate</a>()<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_i_text.html#af2d551d1e72a9ca2b73b57af11d82f05">destroy</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_i_text.html#a77023705515859d0986321f654f1e230">render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// 表示テキスト</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    std::wstring _text;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// 色</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _color;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// フォントハンドル</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">int</span> _fontHandle;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// 前フレームのスケール</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">float</span> _preUIScale;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
+</div>
+<div class="ttc" id="aclass_i_u_i_renderer_html_a7f31bac773f3423ad8c2bea80b0de363"><div class="ttname"><a href="class_i_u_i_renderer.html#a7f31bac773f3423ad8c2bea80b0de363">IUIRenderer::IUIRenderer</a></div><div class="ttdeci">IUIRenderer()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> IUIRenderer.cpp:10</div></div>
+<div class="ttc" id="aclass_u_i_text_html_a12b20a1d02db110d7e1f1e02e6c7c573"><div class="ttname"><a href="class_u_i_text.html#a12b20a1d02db110d7e1f1e02e6c7c573">UIText::fixedUpdate</a></div><div class="ttdeci">void fixedUpdate() override</div><div class="ttdoc">固定間隔で実行</div><div class="ttdef"><b>Definition</b> UIText.cpp:55</div></div>
+<div class="ttc" id="aclass_u_i_text_html_a131c113f6b0d5404e4083f81a16daec1"><div class="ttname"><a href="class_u_i_text.html#a131c113f6b0d5404e4083f81a16daec1">UIText::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">毎フレーム実行</div><div class="ttdef"><b>Definition</b> UIText.cpp:48</div></div>
+<div class="ttc" id="aclass_u_i_text_html_a702b60fbba7e76a92d30f6e1c00c64c5"><div class="ttname"><a href="class_u_i_text.html#a702b60fbba7e76a92d30f6e1c00c64c5">UIText::setText</a></div><div class="ttdeci">UIText * setText(const std::wstring &amp;text)</div><div class="ttdoc">文字をセットする</div><div class="ttdef"><b>Definition</b> UIText.cpp:21</div></div>
+<div class="ttc" id="aclass_u_i_text_html_a77023705515859d0986321f654f1e230"><div class="ttname"><a href="class_u_i_text.html#a77023705515859d0986321f654f1e230">UIText::render</a></div><div class="ttdeci">void render() override</div><div class="ttdoc">描画実行</div><div class="ttdef"><b>Definition</b> UIText.cpp:74</div></div>
+<div class="ttc" id="aclass_u_i_text_html_aac8a45a45478cbb697b3406472060d27"><div class="ttname"><a href="class_u_i_text.html#aac8a45a45478cbb697b3406472060d27">UIText::start</a></div><div class="ttdeci">void start() override</div><div class="ttdoc">初期化時実行</div><div class="ttdef"><b>Definition</b> UIText.cpp:41</div></div>
+<div class="ttc" id="aclass_u_i_text_html_ab183d2cfdee2f378ced02580285f331a"><div class="ttname"><a href="class_u_i_text.html#ab183d2cfdee2f378ced02580285f331a">UIText::UIText</a></div><div class="ttdeci">UIText()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> UIText.cpp:7</div></div>
+<div class="ttc" id="aclass_u_i_text_html_adf961d4c863062a955d07e37cb6c9e08"><div class="ttname"><a href="class_u_i_text.html#adf961d4c863062a955d07e37cb6c9e08">UIText::setColor</a></div><div class="ttdeci">UIText * setColor(unsigned int color)</div><div class="ttdoc">文字の色をセットする</div><div class="ttdef"><b>Definition</b> UIText.cpp:32</div></div>
+<div class="ttc" id="aclass_u_i_text_html_af2d551d1e72a9ca2b73b57af11d82f05"><div class="ttname"><a href="class_u_i_text.html#af2d551d1e72a9ca2b73b57af11d82f05">UIText::destroy</a></div><div class="ttdeci">void destroy() override</div><div class="ttdoc">破棄時実行</div><div class="ttdef"><b>Definition</b> UIText.cpp:62</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_03f81e546ec66a978b87d34e25c14cc6.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_2a8be4742b2405ac092f9d3c6c3df0a4.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_906a5a64e1ee4c6d30d4f7e34ada3928.html">src</a></li><li class="navelem"><a href="dir_9ace505428d9963249ef787a621670cb.html">component</a></li><li class="navelem"><a href="dir_f78f7ccdd98cd50f9c41ea79be51f6fe.html">renderer</a></li><li class="navelem"><a href="dir_52f4b456a5975536edb808ee2718ea79.html">ui</a></li><li class="navelem"><b>UIText.h</b></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

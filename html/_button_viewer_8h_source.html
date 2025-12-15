@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: KCGStudyDXLibProject/KCGStudyDXLibProject/src/component/ui/ButtonViewer.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_button_viewer_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ButtonViewer.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;IComponent.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;renderer/ui/UIText.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;ui/Button.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_button_viewer.html">    9</a></span><span class="keyword">class </span><a class="code hl_function" href="class_button_viewer.html#a576dce57c28ff438ffa1f504e0435631">ButtonViewer</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_i_component.html#a5c2d271ea802d17bd8d9f688f4cd5713">IComponent</a>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_function" href="class_button_viewer.html#a576dce57c28ff438ffa1f504e0435631">ButtonViewer</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_button_viewer.html#ad6ef59527604cf657731306f993fcfe7">start</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_button_viewer.html#a79cb09d61e33deb4f213030d880190bd">update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_button_viewer.html#ade2afa1717c25acc084c78a415d3923e">fixedUpdate</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_button_viewer.html#a808d99fd05d6ad07676a6550663ba4bb">destroy</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_button_viewer.html#aef599123f3500208196d663d08e6e491">changeView</a>(<span class="keywordtype">bool</span> isSelect);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="class_button_viewer.html#a576dce57c28ff438ffa1f504e0435631">ButtonViewer</a>* <a class="code hl_function" href="class_button_viewer.html#ae37ebdd581d0d330b3e4760b5ffa492d">setSelectColor</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> selectColor);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="class_button_viewer.html#a576dce57c28ff438ffa1f504e0435631">ButtonViewer</a>* <a class="code hl_function" href="class_button_viewer.html#a094f0164cea79e205dd4fb24e8a2b6f6">setNonSelectColor</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nonSelectColor);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// ボタン</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_class" href="class_button.html">Button</a>* _button;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// ボタンの状態を表示するテキスト</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_class" href="class_u_i_text.html">UIText</a>* _stateText;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// 選択時の色</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _selectColor;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// 非選択時の色</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _nonSelectColor;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="ttc" id="aclass_button_html"><div class="ttname"><a href="class_button.html">Button</a></div><div class="ttdoc">ボタン</div><div class="ttdef"><b>Definition</b> Button.h:8</div></div>
+<div class="ttc" id="aclass_button_viewer_html_a094f0164cea79e205dd4fb24e8a2b6f6"><div class="ttname"><a href="class_button_viewer.html#a094f0164cea79e205dd4fb24e8a2b6f6">ButtonViewer::setNonSelectColor</a></div><div class="ttdeci">ButtonViewer * setNonSelectColor(unsigned int nonSelectColor)</div><div class="ttdoc">非選択時の色を設定する</div><div class="ttdef"><b>Definition</b> ButtonViewer.cpp:71</div></div>
+<div class="ttc" id="aclass_button_viewer_html_a576dce57c28ff438ffa1f504e0435631"><div class="ttname"><a href="class_button_viewer.html#a576dce57c28ff438ffa1f504e0435631">ButtonViewer::ButtonViewer</a></div><div class="ttdeci">ButtonViewer()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> ButtonViewer.cpp:7</div></div>
+<div class="ttc" id="aclass_button_viewer_html_a79cb09d61e33deb4f213030d880190bd"><div class="ttname"><a href="class_button_viewer.html#a79cb09d61e33deb4f213030d880190bd">ButtonViewer::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">毎フレーム実行</div><div class="ttdef"><b>Definition</b> ButtonViewer.cpp:28</div></div>
+<div class="ttc" id="aclass_button_viewer_html_a808d99fd05d6ad07676a6550663ba4bb"><div class="ttname"><a href="class_button_viewer.html#a808d99fd05d6ad07676a6550663ba4bb">ButtonViewer::destroy</a></div><div class="ttdeci">void destroy() override</div><div class="ttdoc">破棄時実行</div><div class="ttdef"><b>Definition</b> ButtonViewer.cpp:42</div></div>
+<div class="ttc" id="aclass_button_viewer_html_ad6ef59527604cf657731306f993fcfe7"><div class="ttname"><a href="class_button_viewer.html#ad6ef59527604cf657731306f993fcfe7">ButtonViewer::start</a></div><div class="ttdeci">void start() override</div><div class="ttdoc">初期化時実行</div><div class="ttdef"><b>Definition</b> ButtonViewer.cpp:18</div></div>
+<div class="ttc" id="aclass_button_viewer_html_ade2afa1717c25acc084c78a415d3923e"><div class="ttname"><a href="class_button_viewer.html#ade2afa1717c25acc084c78a415d3923e">ButtonViewer::fixedUpdate</a></div><div class="ttdeci">void fixedUpdate() override</div><div class="ttdoc">固定間隔で実行</div><div class="ttdef"><b>Definition</b> ButtonViewer.cpp:35</div></div>
+<div class="ttc" id="aclass_button_viewer_html_ae37ebdd581d0d330b3e4760b5ffa492d"><div class="ttname"><a href="class_button_viewer.html#ae37ebdd581d0d330b3e4760b5ffa492d">ButtonViewer::setSelectColor</a></div><div class="ttdeci">ButtonViewer * setSelectColor(unsigned int selectColor)</div><div class="ttdoc">選択時の色を設定する</div><div class="ttdef"><b>Definition</b> ButtonViewer.cpp:60</div></div>
+<div class="ttc" id="aclass_button_viewer_html_aef599123f3500208196d663d08e6e491"><div class="ttname"><a href="class_button_viewer.html#aef599123f3500208196d663d08e6e491">ButtonViewer::changeView</a></div><div class="ttdeci">void changeView(bool isSelect)</div><div class="ttdoc">見た目を変える</div><div class="ttdef"><b>Definition</b> ButtonViewer.cpp:50</div></div>
+<div class="ttc" id="aclass_i_component_html_a5c2d271ea802d17bd8d9f688f4cd5713"><div class="ttname"><a href="class_i_component.html#a5c2d271ea802d17bd8d9f688f4cd5713">IComponent::IComponent</a></div><div class="ttdeci">IComponent()=default</div><div class="ttdoc">コンストラクタ</div></div>
+<div class="ttc" id="aclass_u_i_text_html"><div class="ttname"><a href="class_u_i_text.html">UIText</a></div><div class="ttdoc">UIテキスト描画</div><div class="ttdef"><b>Definition</b> UIText.h:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_03f81e546ec66a978b87d34e25c14cc6.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_2a8be4742b2405ac092f9d3c6c3df0a4.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_906a5a64e1ee4c6d30d4f7e34ada3928.html">src</a></li><li class="navelem"><a href="dir_9ace505428d9963249ef787a621670cb.html">component</a></li><li class="navelem"><a href="dir_77ac2f5ba92b3fb6cacc018d41a647cd.html">ui</a></li><li class="navelem"><b>ButtonViewer.h</b></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: KCGStudyDXLibProject/KCGStudyDXLibProject/src/component/enemy/EnemySpawner.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_enemy_spawner_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">EnemySpawner.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;IComponent.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span></div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_enemy_spawner.html">    7</a></span><span class="keyword">class </span><a class="code hl_function" href="class_enemy_spawner.html#a4c3dac46ddd4f9e97bac15cf42b2f931">EnemySpawner</a> :  <span class="keyword">public</span> <a class="code hl_function" href="class_i_component.html#a5c2d271ea802d17bd8d9f688f4cd5713">IComponent</a>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="class_enemy_spawner.html#a4c3dac46ddd4f9e97bac15cf42b2f931">EnemySpawner</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_enemy_spawner.html#a6f47d8fa444ee86e92c0b56a6944a68c">start</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_enemy_spawner.html#a6f07734293432ff5983dd9767cc50997">update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_enemy_spawner.html#a2843361c977953d972a022d73352bb7e">fixedUpdate</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_enemy_spawner.html#af986d8c4d153c9d64652d0600eca6999">destroy</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="class_enemy_spawner.html#a4c3dac46ddd4f9e97bac15cf42b2f931">EnemySpawner</a>* <a class="code hl_function" href="class_enemy_spawner.html#a0e92104bf7fe022321ff73d5178d07d6">setSpawnDuration</a>(<span class="keywordtype">float</span> duration);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// スポーン間隔</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">float</span> _spawnDuration;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// 経過時間</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">float</span> _elapsedTime;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="ttc" id="aclass_enemy_spawner_html_a0e92104bf7fe022321ff73d5178d07d6"><div class="ttname"><a href="class_enemy_spawner.html#a0e92104bf7fe022321ff73d5178d07d6">EnemySpawner::setSpawnDuration</a></div><div class="ttdeci">EnemySpawner * setSpawnDuration(float duration)</div><div class="ttdoc">スポーン間隔のセット</div><div class="ttdef"><b>Definition</b> EnemySpawner.cpp:86</div></div>
+<div class="ttc" id="aclass_enemy_spawner_html_a2843361c977953d972a022d73352bb7e"><div class="ttname"><a href="class_enemy_spawner.html#a2843361c977953d972a022d73352bb7e">EnemySpawner::fixedUpdate</a></div><div class="ttdeci">void fixedUpdate() override</div><div class="ttdoc">固定間隔で実行</div><div class="ttdef"><b>Definition</b> EnemySpawner.cpp:70</div></div>
+<div class="ttc" id="aclass_enemy_spawner_html_a4c3dac46ddd4f9e97bac15cf42b2f931"><div class="ttname"><a href="class_enemy_spawner.html#a4c3dac46ddd4f9e97bac15cf42b2f931">EnemySpawner::EnemySpawner</a></div><div class="ttdeci">EnemySpawner()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> EnemySpawner.cpp:16</div></div>
+<div class="ttc" id="aclass_enemy_spawner_html_a6f07734293432ff5983dd9767cc50997"><div class="ttname"><a href="class_enemy_spawner.html#a6f07734293432ff5983dd9767cc50997">EnemySpawner::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">毎フレーム実行</div><div class="ttdef"><b>Definition</b> EnemySpawner.cpp:32</div></div>
+<div class="ttc" id="aclass_enemy_spawner_html_a6f47d8fa444ee86e92c0b56a6944a68c"><div class="ttname"><a href="class_enemy_spawner.html#a6f47d8fa444ee86e92c0b56a6944a68c">EnemySpawner::start</a></div><div class="ttdeci">void start() override</div><div class="ttdoc">初期化時実行</div><div class="ttdef"><b>Definition</b> EnemySpawner.cpp:25</div></div>
+<div class="ttc" id="aclass_enemy_spawner_html_af986d8c4d153c9d64652d0600eca6999"><div class="ttname"><a href="class_enemy_spawner.html#af986d8c4d153c9d64652d0600eca6999">EnemySpawner::destroy</a></div><div class="ttdeci">void destroy() override</div><div class="ttdoc">破棄時実行</div><div class="ttdef"><b>Definition</b> EnemySpawner.cpp:77</div></div>
+<div class="ttc" id="aclass_i_component_html_a5c2d271ea802d17bd8d9f688f4cd5713"><div class="ttname"><a href="class_i_component.html#a5c2d271ea802d17bd8d9f688f4cd5713">IComponent::IComponent</a></div><div class="ttdeci">IComponent()=default</div><div class="ttdoc">コンストラクタ</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_03f81e546ec66a978b87d34e25c14cc6.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_2a8be4742b2405ac092f9d3c6c3df0a4.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_906a5a64e1ee4c6d30d4f7e34ada3928.html">src</a></li><li class="navelem"><a href="dir_9ace505428d9963249ef787a621670cb.html">component</a></li><li class="navelem"><a href="dir_4729e98606c66a1f5285ded1d8250970.html">enemy</a></li><li class="navelem"><b>EnemySpawner.h</b></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<map id="IRenderer" name="IRenderer">
+<area shape="rect" id="Node000001" title="描画基底" alt="" coords="99,80,178,107"/>
+<area shape="rect" id="Node000003" href="$class_i_u_i_renderer.html" title="UI描画基底（画面比率対応・回転対応）" alt="" coords="39,155,131,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,117,96,156,92,153,118,121"/>
+<area shape="rect" id="Node000006" href="$class_model3_d.html" title="3Dモデル描画用" alt="" coords="155,155,228,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="157,117,185,154,180,154,156,122"/>
+<area shape="rect" id="Node000002" href="$class_i_component.html" title="コンポーネント基底" alt="" coords="92,5,184,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,45,141,80,136,79,137,50"/>
+<area shape="rect" id="Node000004" href="$class_u_i_image.html" title="UI画像描画" alt="" coords="5,229,77,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="72,194,51,231,46,227,67,196"/>
+<area shape="rect" id="Node000005" href="$class_u_i_text.html" title="UIテキスト描画" alt="" coords="100,229,160,256"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="102,193,125,229,120,229,100,197"/>
+</map>

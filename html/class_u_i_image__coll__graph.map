@@ -1,0 +1,11 @@
+<map id="UIImage" name="UIImage">
+<area shape="rect" id="Node000001" title="UI画像描画" alt="" coords="17,332,88,359"/>
+<area shape="rect" id="Node000002" href="$class_i_u_i_renderer.html" title="UI描画基底（画面比率対応・回転対応）" alt="" coords="6,256,99,283"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,296,55,332,50,331,50,299"/>
+<area shape="rect" id="Node000003" href="$class_i_renderer.html" title="描画基底" alt="" coords="13,180,92,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="53,219,55,256,50,255,52,224"/>
+<area shape="rect" id="Node000004" href="$class_i_component.html" title="コンポーネント基底" alt="" coords="6,104,99,131"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="53,143,55,180,50,179,52,148"/>
+<area shape="rect" id="Node000005" href="$class_game_object.html" title="ゲームオブジェクト" alt="" coords="5,5,100,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="53,45,55,104,50,104,52,50"/>
+</map>

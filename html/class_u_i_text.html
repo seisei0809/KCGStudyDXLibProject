@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: UIText クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_u_i_text.html','','class_u_i_text-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">UIText クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>UIテキスト描画  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_u_i_text_8h_source.html">UIText.h</a>&gt;</code></p>
+<div class="dynheader">
+UIText の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_u_i_text__inherit__graph.png" border="0" usemap="#a_u_i_text_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_u_i_text_inherit__map" id="a_u_i_text_inherit__map">
+<area shape="rect" title="UIテキスト描画" alt="" coords="21,229,82,256"/>
+<area shape="rect" href="class_i_u_i_renderer.html" title="UI描画基底（画面比率対応・回転対応）" alt="" coords="5,155,98,181"/>
+<area shape="poly" title=" " alt="" coords="53,195,54,230,49,228,50,199"/>
+<area shape="rect" href="class_i_renderer.html" title="描画基底" alt="" coords="12,80,91,107"/>
+<area shape="poly" title=" " alt="" coords="52,120,54,155,49,154,51,125"/>
+<area shape="rect" href="class_i_component.html" title="コンポーネント基底" alt="" coords="5,5,98,32"/>
+<area shape="poly" title=" " alt="" coords="52,45,54,80,49,79,51,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+UIText 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_u_i_text__coll__graph.png" border="0" usemap="#a_u_i_text_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_u_i_text_coll__map" id="a_u_i_text_coll__map">
+<area shape="rect" title="UIテキスト描画" alt="" coords="22,332,83,359"/>
+<area shape="rect" href="class_i_u_i_renderer.html" title="UI描画基底（画面比率対応・回転対応）" alt="" coords="6,256,99,283"/>
+<area shape="poly" title=" " alt="" coords="55,296,55,332,50,331,50,299"/>
+<area shape="rect" href="class_i_renderer.html" title="描画基底" alt="" coords="13,180,92,207"/>
+<area shape="poly" title=" " alt="" coords="53,219,55,256,50,255,52,224"/>
+<area shape="rect" href="class_i_component.html" title="コンポーネント基底" alt="" coords="6,104,99,131"/>
+<area shape="poly" title=" " alt="" coords="53,143,55,180,50,179,52,148"/>
+<area shape="rect" href="class_game_object.html" title="ゲームオブジェクト" alt="" coords="5,5,100,32"/>
+<area shape="poly" title=" " alt="" coords="53,45,55,104,50,104,52,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab183d2cfdee2f378ced02580285f331a" id="r_ab183d2cfdee2f378ced02580285f331a"><td class="memItemLeft" align="right" valign="top"><a id="ab183d2cfdee2f378ced02580285f331a" name="ab183d2cfdee2f378ced02580285f331a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UIText</b> ()</td></tr>
+<tr class="memdesc:ab183d2cfdee2f378ced02580285f331a"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ <br /></td></tr>
+<tr class="memitem:a702b60fbba7e76a92d30f6e1c00c64c5" id="r_a702b60fbba7e76a92d30f6e1c00c64c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_text.html">UIText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a702b60fbba7e76a92d30f6e1c00c64c5">setText</a> (const std::wstring &amp;text)</td></tr>
+<tr class="memdesc:a702b60fbba7e76a92d30f6e1c00c64c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字をセットする  <br /></td></tr>
+<tr class="memitem:adf961d4c863062a955d07e37cb6c9e08" id="r_adf961d4c863062a955d07e37cb6c9e08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_text.html">UIText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf961d4c863062a955d07e37cb6c9e08">setColor</a> (unsigned int color)</td></tr>
+<tr class="memdesc:adf961d4c863062a955d07e37cb6c9e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字の色をセットする  <br /></td></tr>
+<tr class="memitem:aac8a45a45478cbb697b3406472060d27" id="r_aac8a45a45478cbb697b3406472060d27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac8a45a45478cbb697b3406472060d27">start</a> () override</td></tr>
+<tr class="memdesc:aac8a45a45478cbb697b3406472060d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化時実行  <br /></td></tr>
+<tr class="memitem:a131c113f6b0d5404e4083f81a16daec1" id="r_a131c113f6b0d5404e4083f81a16daec1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a131c113f6b0d5404e4083f81a16daec1">update</a> () override</td></tr>
+<tr class="memdesc:a131c113f6b0d5404e4083f81a16daec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">毎フレーム実行  <br /></td></tr>
+<tr class="memitem:a12b20a1d02db110d7e1f1e02e6c7c573" id="r_a12b20a1d02db110d7e1f1e02e6c7c573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12b20a1d02db110d7e1f1e02e6c7c573">fixedUpdate</a> () override</td></tr>
+<tr class="memdesc:a12b20a1d02db110d7e1f1e02e6c7c573"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定間隔で実行  <br /></td></tr>
+<tr class="memitem:af2d551d1e72a9ca2b73b57af11d82f05" id="r_af2d551d1e72a9ca2b73b57af11d82f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2d551d1e72a9ca2b73b57af11d82f05">destroy</a> () override</td></tr>
+<tr class="memdesc:af2d551d1e72a9ca2b73b57af11d82f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">破棄時実行  <br /></td></tr>
+<tr class="memitem:a77023705515859d0986321f654f1e230" id="r_a77023705515859d0986321f654f1e230"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77023705515859d0986321f654f1e230">render</a> () override</td></tr>
+<tr class="memdesc:a77023705515859d0986321f654f1e230"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画実行  <br /></td></tr>
+<tr class="inherit_header pub_methods_class_i_u_i_renderer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_i_u_i_renderer')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_i_u_i_renderer.html">IUIRenderer</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a7f31bac773f3423ad8c2bea80b0de363 inherit pub_methods_class_i_u_i_renderer" id="r_a7f31bac773f3423ad8c2bea80b0de363"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>IUIRenderer</b> ()</td></tr>
+<tr class="memdesc:a7f31bac773f3423ad8c2bea80b0de363 inherit pub_methods_class_i_u_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ <br /></td></tr>
+<tr class="memitem:a9a61408c5b8e055026f84bddbf26e006 inherit pub_methods_class_i_u_i_renderer" id="r_a9a61408c5b8e055026f84bddbf26e006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_u_i_renderer.html">IUIRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_u_i_renderer.html#a9a61408c5b8e055026f84bddbf26e006">setAnchor</a> (<a class="el" href="namespace_all_enum_space.html#aad0d2a3a17e1f5b175a08102030816a8">AllEnumSpace::Anchor</a> anchor)</td></tr>
+<tr class="memdesc:a9a61408c5b8e055026f84bddbf26e006 inherit pub_methods_class_i_u_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">アンカー設定  <br /></td></tr>
+<tr class="memitem:a6b7acd498926931ed20fbe183ad97db7 inherit pub_methods_class_i_u_i_renderer" id="r_a6b7acd498926931ed20fbe183ad97db7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_u_i_renderer.html">IUIRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_u_i_renderer.html#a6b7acd498926931ed20fbe183ad97db7">setUIScale</a> (float scale)</td></tr>
+<tr class="memdesc:a6b7acd498926931ed20fbe183ad97db7 inherit pub_methods_class_i_u_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">UIスケールを設定  <br /></td></tr>
+<tr class="memitem:af1496f9768daa7395623d65473468b29 inherit pub_methods_class_i_u_i_renderer" id="r_af1496f9768daa7395623d65473468b29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_u_i_renderer.html">IUIRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_u_i_renderer.html#af1496f9768daa7395623d65473468b29">setRotation</a> (float degrees)</td></tr>
+<tr class="memdesc:af1496f9768daa7395623d65473468b29 inherit pub_methods_class_i_u_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">回転角度を設定(度数法)  <br /></td></tr>
+<tr class="inherit_header pub_methods_class_i_renderer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_i_renderer')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_i_renderer.html">IRenderer</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:ac85aef8cc6b9cd641fd06364e1aa72f0 inherit pub_methods_class_i_renderer" id="r_ac85aef8cc6b9cd641fd06364e1aa72f0"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>IRenderer</b> ()</td></tr>
+<tr class="memdesc:ac85aef8cc6b9cd641fd06364e1aa72f0 inherit pub_methods_class_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ <br /></td></tr>
+<tr class="memitem:a307731b44d9ff1470ed0228163cc351e inherit pub_methods_class_i_renderer" id="r_a307731b44d9ff1470ed0228163cc351e"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>~IRenderer</b> ()</td></tr>
+<tr class="memdesc:a307731b44d9ff1470ed0228163cc351e inherit pub_methods_class_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ <br /></td></tr>
+<tr class="memitem:a9a716a1b51498e2cfd2a3703f86c2e9e inherit pub_methods_class_i_renderer" id="r_a9a716a1b51498e2cfd2a3703f86c2e9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_renderer.html">IRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_renderer.html#a9a716a1b51498e2cfd2a3703f86c2e9e">setLayer</a> (int layer)</td></tr>
+<tr class="memdesc:a9a716a1b51498e2cfd2a3703f86c2e9e inherit pub_methods_class_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">レイヤーをセットする  <br /></td></tr>
+<tr class="memitem:a4c1f5abf851cd4a283341ba100729a14 inherit pub_methods_class_i_renderer" id="r_a4c1f5abf851cd4a283341ba100729a14"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getLayer</b> () const</td></tr>
+<tr class="memdesc:a4c1f5abf851cd4a283341ba100729a14 inherit pub_methods_class_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">レイヤーを取得する <br /></td></tr>
+<tr class="inherit_header pub_methods_class_i_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_i_component')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_i_component.html">IComponent</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a5c2d271ea802d17bd8d9f688f4cd5713 inherit pub_methods_class_i_component" id="r_a5c2d271ea802d17bd8d9f688f4cd5713"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>IComponent</b> ()=default</td></tr>
+<tr class="memdesc:a5c2d271ea802d17bd8d9f688f4cd5713 inherit pub_methods_class_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ <br /></td></tr>
+<tr class="memitem:ab1a616cdfb3812f3aabdb97666c71116 inherit pub_methods_class_i_component" id="r_ab1a616cdfb3812f3aabdb97666c71116"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IComponent</b> ()=default</td></tr>
+<tr class="memdesc:ab1a616cdfb3812f3aabdb97666c71116 inherit pub_methods_class_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ <br /></td></tr>
+<tr class="memitem:a17d06e1e629b5104934548f832062975 inherit pub_methods_class_i_component" id="r_a17d06e1e629b5104934548f832062975"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_component.html#a17d06e1e629b5104934548f832062975">setGameObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj)</td></tr>
+<tr class="memdesc:a17d06e1e629b5104934548f832062975 inherit pub_methods_class_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">アタッチされているゲームオブジェクトをセットする  <br /></td></tr>
+<tr class="memitem:a730251a5478ca092c3570e5c76a97fcb inherit pub_methods_class_i_component" id="r_a730251a5478ca092c3570e5c76a97fcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_component.html#a730251a5478ca092c3570e5c76a97fcb">getGameObject</a> () const</td></tr>
+<tr class="memdesc:a730251a5478ca092c3570e5c76a97fcb inherit pub_methods_class_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">アタッチされているゲームオブジェクトの取得  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_methods_class_i_u_i_renderer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_i_u_i_renderer')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_i_u_i_renderer.html">IUIRenderer</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:ab509bc117907d75c8232515c6c1add9a inherit pro_methods_class_i_u_i_renderer" id="r_ab509bc117907d75c8232515c6c1add9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_u_i_renderer.html#ab509bc117907d75c8232515c6c1add9a">_GetScreenPosition</a> (float &amp;x, float &amp;y, float width, float height) const</td></tr>
+<tr class="memdesc:ab509bc117907d75c8232515c6c1add9a inherit pro_methods_class_i_u_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">実際の画面座標を取得  <br /></td></tr>
+<tr class="memitem:a68671e6f214fdc1d7792683fa853befc inherit pro_methods_class_i_u_i_renderer" id="r_a68671e6f214fdc1d7792683fa853befc"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_GetRotationRadian</b> () const</td></tr>
+<tr class="memdesc:a68671e6f214fdc1d7792683fa853befc inherit pro_methods_class_i_u_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">回転角度をラジアンで取得 <br /></td></tr>
+<tr class="memitem:ab3c542371460148d8e7ae13c804c80f8 inherit pro_methods_class_i_u_i_renderer" id="r_ab3c542371460148d8e7ae13c804c80f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_u_i_renderer.html#ab3c542371460148d8e7ae13c804c80f8">_GetAnchorPoint</a> (float &amp;x, float &amp;y, float width, float height) const</td></tr>
+<tr class="memdesc:ab3c542371460148d8e7ae13c804c80f8 inherit pro_methods_class_i_u_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">アンカー基準点を取得  <br /></td></tr>
+<tr class="inherit_header pro_attribs_class_i_u_i_renderer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_i_u_i_renderer')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_i_u_i_renderer.html">IUIRenderer</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a388b8efda6ba7a656613b93c7ec8b0ef inherit pro_attribs_class_i_u_i_renderer" id="r_a388b8efda6ba7a656613b93c7ec8b0ef"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="namespace_all_enum_space.html#aad0d2a3a17e1f5b175a08102030816a8">AllEnumSpace::Anchor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_anchor</b></td></tr>
+<tr class="memitem:ab33034418ea9714ea54871e38e16e2a1 inherit pro_attribs_class_i_u_i_renderer" id="r_ab33034418ea9714ea54871e38e16e2a1"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_uiScale</b></td></tr>
+<tr class="memitem:a67ca964c66a40f0b15b5dab35bb5f535 inherit pro_attribs_class_i_u_i_renderer" id="r_a67ca964c66a40f0b15b5dab35bb5f535"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_rotation</b></td></tr>
+<tr class="inherit_header pro_attribs_class_i_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_i_component')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_i_component.html">IComponent</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:aa0466749b97f3a873a77ef064f22e3fc inherit pro_attribs_class_i_component" id="r_aa0466749b97f3a873a77ef064f22e3fc"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_gameObject</b> = nullptr</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>UIテキスト描画 </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="af2d551d1e72a9ca2b73b57af11d82f05" name="af2d551d1e72a9ca2b73b57af11d82f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d551d1e72a9ca2b73b57af11d82f05">&#9670;&#160;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UIText::destroy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>破棄時実行 </p>
+
+<p><a class="el" href="class_i_component.html#a53eceea471d99399fa679507e10ac38e">IComponent</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a12b20a1d02db110d7e1f1e02e6c7c573" name="a12b20a1d02db110d7e1f1e02e6c7c573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12b20a1d02db110d7e1f1e02e6c7c573">&#9670;&#160;</a></span>fixedUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UIText::fixedUpdate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>固定間隔で実行 </p>
+
+<p><a class="el" href="class_i_component.html#ac0fb3ab79ef78f8faadbda4c0513d84f">IComponent</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a77023705515859d0986321f654f1e230" name="a77023705515859d0986321f654f1e230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77023705515859d0986321f654f1e230">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UIText::render </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>描画実行 </p>
+
+<p><a class="el" href="class_i_renderer.html#a218212bcf025fe02c9b028baeb42943e">IRenderer</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="adf961d4c863062a955d07e37cb6c9e08" name="adf961d4c863062a955d07e37cb6c9e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf961d4c863062a955d07e37cb6c9e08">&#9670;&#160;</a></span>setColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_u_i_text.html">UIText</a> * UIText::setColor </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字の色をセットする </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>色(GetColor)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>メソッドチェーン用</dd></dl>
+
+</div>
+</div>
+<a id="a702b60fbba7e76a92d30f6e1c00c64c5" name="a702b60fbba7e76a92d30f6e1c00c64c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702b60fbba7e76a92d30f6e1c00c64c5">&#9670;&#160;</a></span>setText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_u_i_text.html">UIText</a> * UIText::setText </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字をセットする </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>文字</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>メソッドチェーン用</dd></dl>
+
+</div>
+</div>
+<a id="aac8a45a45478cbb697b3406472060d27" name="aac8a45a45478cbb697b3406472060d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac8a45a45478cbb697b3406472060d27">&#9670;&#160;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UIText::start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化時実行 </p>
+
+<p><a class="el" href="class_i_component.html#ad44a6134a6042bfcf00a18d4889f0330">IComponent</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a131c113f6b0d5404e4083f81a16daec1" name="a131c113f6b0d5404e4083f81a16daec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131c113f6b0d5404e4083f81a16daec1">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UIText::update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>毎フレーム実行 </p>
+
+<p><a class="el" href="class_i_component.html#a0bfcfb242781520bfa07cc3bf56fe0b9">IComponent</a>を実装しています。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>KCGStudyDXLibProject/KCGStudyDXLibProject/src/component/renderer/ui/<a class="el" href="_u_i_text_8h_source.html">UIText.h</a></li>
+<li>KCGStudyDXLibProject/KCGStudyDXLibProject/src/component/renderer/ui/<b>UIText.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_u_i_text.html">UIText</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="ButtonViewer" name="ButtonViewer">
+<area shape="rect" id="Node000001" title="ボタンの見た目を決定する" alt="" coords="5,80,105,107"/>
+<area shape="rect" id="Node000002" href="$class_i_component.html" title="コンポーネント基底" alt="" coords="9,5,101,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,46,58,80,52,79,53,50"/>
+</map>

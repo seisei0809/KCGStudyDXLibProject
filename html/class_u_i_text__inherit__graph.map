@@ -1,0 +1,9 @@
+<map id="UIText" name="UIText">
+<area shape="rect" id="Node000001" title="UIテキスト描画" alt="" coords="21,229,82,256"/>
+<area shape="rect" id="Node000002" href="$class_i_u_i_renderer.html" title="UI描画基底（画面比率対応・回転対応）" alt="" coords="5,155,98,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,195,54,230,49,228,50,199"/>
+<area shape="rect" id="Node000003" href="$class_i_renderer.html" title="描画基底" alt="" coords="12,80,91,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="52,120,54,155,49,154,51,125"/>
+<area shape="rect" id="Node000004" href="$class_i_component.html" title="コンポーネント基底" alt="" coords="5,5,98,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="52,45,54,80,49,79,51,50"/>
+</map>

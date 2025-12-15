@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: KCGStudyDXLibProject/KCGStudyDXLibProject/src/logic/player/PlayerMover.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_player_mover_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PlayerMover.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;GameObject.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;PlayerGroundChecker.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;physics/NormalPhysics.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_player_mover.html">    9</a></span><span class="keyword">class </span><a class="code hl_function" href="class_player_mover.html#a56f1039ee66d14810d51f6406185ca37">PlayerMover</a>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_function" href="class_player_mover.html#a56f1039ee66d14810d51f6406185ca37">PlayerMover</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="class_player_mover.html#a56f1039ee66d14810d51f6406185ca37">PlayerMover</a>* <a class="code hl_function" href="class_player_mover.html#a7e61a053741c27f2ea8b8b61fa94e7b1">setSpeed</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> speed);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="class_player_mover.html#a56f1039ee66d14810d51f6406185ca37">PlayerMover</a>* <a class="code hl_function" href="class_player_mover.html#aeaf6677984130a8506c65a14efb5f805">setJumpPower</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> jumpPower);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="class_player_mover.html#a56f1039ee66d14810d51f6406185ca37">PlayerMover</a>* <a class="code hl_function" href="class_player_mover.html#a5af333c54afd38a0254060d57137dfc8">setGroundChecker</a>(<a class="code hl_class" href="class_player_ground_checker.html">PlayerGroundChecker</a>* groundChecker);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="class_player_mover.html#a56f1039ee66d14810d51f6406185ca37">PlayerMover</a>* <a class="code hl_function" href="class_player_mover.html#ac2d6935fdc53a622279d5cc894b7bea5">setTransform</a>(<a class="code hl_struct" href="struct_transform.html">Transform</a>* transform);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_function" href="class_player_mover.html#a56f1039ee66d14810d51f6406185ca37">PlayerMover</a>* <a class="code hl_function" href="class_player_mover.html#a710ec14fcf856681b407621c99bb5278">setPhysics</a>(<a class="code hl_class" href="class_normal_physics.html">NormalPhysics</a>* physics);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_player_mover.html#afdf27667c07c60c885e3155d63dfbc55">allMove</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_player_mover.html#a155e2675dcdc2a3af3dd71643187db86">updateMoveInput</a>(<span class="keywordtype">bool</span> isMoveForward, <span class="keywordtype">bool</span> isMoveBack, <span class="keywordtype">bool</span> isMoveRight, <span class="keywordtype">bool</span> isMoveLeft);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_player_mover.html#ac974501bf3b02a6c909419c8b289fa37">updateJumpInput</a>(<span class="keywordtype">bool</span> isJump);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// スピード</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">float</span> _speed;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// ジャンプ力</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">float</span> _jumpPower;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// 移動入力状況</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">bool</span> _moveInput[4];</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// 地面判定</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_class" href="class_player_ground_checker.html">PlayerGroundChecker</a>* _groundChecker;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// transform</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_struct" href="struct_transform.html">Transform</a>* _transform;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">// ノーマル物理挙動</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_class" href="class_normal_physics.html">NormalPhysics</a>* _physics;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="ttc" id="aclass_normal_physics_html"><div class="ttname"><a href="class_normal_physics.html">NormalPhysics</a></div><div class="ttdoc">通常の物理挙動</div><div class="ttdef"><b>Definition</b> NormalPhysics.h:8</div></div>
+<div class="ttc" id="aclass_player_ground_checker_html"><div class="ttname"><a href="class_player_ground_checker.html">PlayerGroundChecker</a></div><div class="ttdoc">プレイヤー用地面判定</div><div class="ttdef"><b>Definition</b> PlayerGroundChecker.h:7</div></div>
+<div class="ttc" id="aclass_player_mover_html_a155e2675dcdc2a3af3dd71643187db86"><div class="ttname"><a href="class_player_mover.html#a155e2675dcdc2a3af3dd71643187db86">PlayerMover::updateMoveInput</a></div><div class="ttdeci">void updateMoveInput(bool isMoveForward, bool isMoveBack, bool isMoveRight, bool isMoveLeft)</div><div class="ttdoc">移動入力状況を更新する</div><div class="ttdef"><b>Definition</b> PlayerMover.cpp:123</div></div>
+<div class="ttc" id="aclass_player_mover_html_a56f1039ee66d14810d51f6406185ca37"><div class="ttname"><a href="class_player_mover.html#a56f1039ee66d14810d51f6406185ca37">PlayerMover::PlayerMover</a></div><div class="ttdeci">PlayerMover()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> PlayerMover.cpp:10</div></div>
+<div class="ttc" id="aclass_player_mover_html_a5af333c54afd38a0254060d57137dfc8"><div class="ttname"><a href="class_player_mover.html#a5af333c54afd38a0254060d57137dfc8">PlayerMover::setGroundChecker</a></div><div class="ttdeci">PlayerMover * setGroundChecker(PlayerGroundChecker *groundChecker)</div><div class="ttdoc">地面判定用</div><div class="ttdef"><b>Definition</b> PlayerMover.cpp:50</div></div>
+<div class="ttc" id="aclass_player_mover_html_a710ec14fcf856681b407621c99bb5278"><div class="ttname"><a href="class_player_mover.html#a710ec14fcf856681b407621c99bb5278">PlayerMover::setPhysics</a></div><div class="ttdeci">PlayerMover * setPhysics(NormalPhysics *physics)</div><div class="ttdoc">物理干渉のためにセット</div><div class="ttdef"><b>Definition</b> PlayerMover.cpp:72</div></div>
+<div class="ttc" id="aclass_player_mover_html_a7e61a053741c27f2ea8b8b61fa94e7b1"><div class="ttname"><a href="class_player_mover.html#a7e61a053741c27f2ea8b8b61fa94e7b1">PlayerMover::setSpeed</a></div><div class="ttdeci">PlayerMover * setSpeed(const float speed)</div><div class="ttdoc">スピードをセットする</div><div class="ttdef"><b>Definition</b> PlayerMover.cpp:28</div></div>
+<div class="ttc" id="aclass_player_mover_html_ac2d6935fdc53a622279d5cc894b7bea5"><div class="ttname"><a href="class_player_mover.html#ac2d6935fdc53a622279d5cc894b7bea5">PlayerMover::setTransform</a></div><div class="ttdeci">PlayerMover * setTransform(Transform *transform)</div><div class="ttdoc">Transformをセット</div><div class="ttdef"><b>Definition</b> PlayerMover.cpp:61</div></div>
+<div class="ttc" id="aclass_player_mover_html_ac974501bf3b02a6c909419c8b289fa37"><div class="ttname"><a href="class_player_mover.html#ac974501bf3b02a6c909419c8b289fa37">PlayerMover::updateJumpInput</a></div><div class="ttdeci">void updateJumpInput(bool isJump)</div><div class="ttdoc">ジャンプ入力を更新する</div><div class="ttdef"><b>Definition</b> PlayerMover.cpp:135</div></div>
+<div class="ttc" id="aclass_player_mover_html_aeaf6677984130a8506c65a14efb5f805"><div class="ttname"><a href="class_player_mover.html#aeaf6677984130a8506c65a14efb5f805">PlayerMover::setJumpPower</a></div><div class="ttdeci">PlayerMover * setJumpPower(const float jumpPower)</div><div class="ttdoc">ジャンプ力をセットする</div><div class="ttdef"><b>Definition</b> PlayerMover.cpp:39</div></div>
+<div class="ttc" id="aclass_player_mover_html_afdf27667c07c60c885e3155d63dfbc55"><div class="ttname"><a href="class_player_mover.html#afdf27667c07c60c885e3155d63dfbc55">PlayerMover::allMove</a></div><div class="ttdeci">void allMove()</div><div class="ttdoc">移動関係全ての処理</div><div class="ttdef"><b>Definition</b> PlayerMover.cpp:81</div></div>
+<div class="ttc" id="astruct_transform_html"><div class="ttname"><a href="struct_transform.html">Transform</a></div><div class="ttdoc">ゲームオブジェクトの位置、回転、スケール情報</div><div class="ttdef"><b>Definition</b> GameObjectAny.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_03f81e546ec66a978b87d34e25c14cc6.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_2a8be4742b2405ac092f9d3c6c3df0a4.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_906a5a64e1ee4c6d30d4f7e34ada3928.html">src</a></li><li class="navelem"><a href="dir_ca491674b6e24349fb99a868e17b52f4.html">logic</a></li><li class="navelem"><a href="dir_ed32da501636239a55b7df7f5d63106c.html">player</a></li><li class="navelem"><b>PlayerMover.h</b></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

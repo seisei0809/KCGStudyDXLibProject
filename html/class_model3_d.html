@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Model3D クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_model3_d.html','','class_model3_d-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Model3D クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>3Dモデル描画用  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_model3_d_8h_source.html">Model3D.h</a>&gt;</code></p>
+<div class="dynheader">
+Model3D の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model3_d__inherit__graph.png" border="0" usemap="#a_model3_d_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="a_model3_d_inherit__map" id="a_model3_d_inherit__map">
+<area shape="rect" title="3Dモデル描画用" alt="" coords="15,155,88,181"/>
+<area shape="rect" href="class_i_renderer.html" title="描画基底" alt="" coords="12,80,91,107"/>
+<area shape="poly" title=" " alt="" coords="53,121,54,155,49,154,50,124"/>
+<area shape="rect" href="class_i_component.html" title="コンポーネント基底" alt="" coords="5,5,98,32"/>
+<area shape="poly" title=" " alt="" coords="52,45,54,80,49,79,51,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+Model3D 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model3_d__coll__graph.png" border="0" usemap="#a_model3_d_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_model3_d_coll__map" id="a_model3_d_coll__map">
+<area shape="rect" title="3Dモデル描画用" alt="" coords="16,256,89,283"/>
+<area shape="rect" href="class_i_renderer.html" title="描画基底" alt="" coords="13,180,92,207"/>
+<area shape="poly" title=" " alt="" coords="55,220,55,256,50,255,50,223"/>
+<area shape="rect" href="class_i_component.html" title="コンポーネント基底" alt="" coords="6,104,99,131"/>
+<area shape="poly" title=" " alt="" coords="53,143,55,180,50,179,52,148"/>
+<area shape="rect" href="class_game_object.html" title="ゲームオブジェクト" alt="" coords="5,5,100,32"/>
+<area shape="poly" title=" " alt="" coords="53,45,55,104,50,104,52,50"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a75cc9004363f57ddc92008996b6de4f6" id="r_a75cc9004363f57ddc92008996b6de4f6"><td class="memItemLeft" align="right" valign="top"><a id="a75cc9004363f57ddc92008996b6de4f6" name="a75cc9004363f57ddc92008996b6de4f6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Model3D</b> ()</td></tr>
+<tr class="memdesc:a75cc9004363f57ddc92008996b6de4f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ <br /></td></tr>
+<tr class="memitem:a91e8e241a332fdf707e6a8840352fa97" id="r_a91e8e241a332fdf707e6a8840352fa97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_model3_d.html">Model3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91e8e241a332fdf707e6a8840352fa97">loadModel</a> (const std::wstring &amp;filePath)</td></tr>
+<tr class="memdesc:a91e8e241a332fdf707e6a8840352fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデルファイルを読み込む  <br /></td></tr>
+<tr class="memitem:ad1ecbe8a399e7a220bf4e994d3851c24" id="r_ad1ecbe8a399e7a220bf4e994d3851c24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1ecbe8a399e7a220bf4e994d3851c24">getModelHandle</a> () const</td></tr>
+<tr class="memdesc:ad1ecbe8a399e7a220bf4e994d3851c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデルハンドルを取得する  <br /></td></tr>
+<tr class="memitem:a0b6d6893efa659d096381bb06e8d174f" id="r_a0b6d6893efa659d096381bb06e8d174f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b6d6893efa659d096381bb06e8d174f">start</a> () override</td></tr>
+<tr class="memdesc:a0b6d6893efa659d096381bb06e8d174f"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化時実行  <br /></td></tr>
+<tr class="memitem:a9d8f848242dfce7e200c077955e80662" id="r_a9d8f848242dfce7e200c077955e80662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d8f848242dfce7e200c077955e80662">update</a> () override</td></tr>
+<tr class="memdesc:a9d8f848242dfce7e200c077955e80662"><td class="mdescLeft">&#160;</td><td class="mdescRight">毎フレーム実行  <br /></td></tr>
+<tr class="memitem:a645b3c2460e186a308393148ebf691ee" id="r_a645b3c2460e186a308393148ebf691ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a645b3c2460e186a308393148ebf691ee">fixedUpdate</a> () override</td></tr>
+<tr class="memdesc:a645b3c2460e186a308393148ebf691ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定間隔で実行  <br /></td></tr>
+<tr class="memitem:ac4a632ba84718aa053ff38ac3432e492" id="r_ac4a632ba84718aa053ff38ac3432e492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4a632ba84718aa053ff38ac3432e492">destroy</a> () override</td></tr>
+<tr class="memdesc:ac4a632ba84718aa053ff38ac3432e492"><td class="mdescLeft">&#160;</td><td class="mdescRight">破棄時実行  <br /></td></tr>
+<tr class="memitem:a37efddc83850b43237f71cda609a422b" id="r_a37efddc83850b43237f71cda609a422b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37efddc83850b43237f71cda609a422b">render</a> () override</td></tr>
+<tr class="memdesc:a37efddc83850b43237f71cda609a422b"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画実行  <br /></td></tr>
+<tr class="inherit_header pub_methods_class_i_renderer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_i_renderer')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_i_renderer.html">IRenderer</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:ac85aef8cc6b9cd641fd06364e1aa72f0 inherit pub_methods_class_i_renderer" id="r_ac85aef8cc6b9cd641fd06364e1aa72f0"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>IRenderer</b> ()</td></tr>
+<tr class="memdesc:ac85aef8cc6b9cd641fd06364e1aa72f0 inherit pub_methods_class_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ <br /></td></tr>
+<tr class="memitem:a307731b44d9ff1470ed0228163cc351e inherit pub_methods_class_i_renderer" id="r_a307731b44d9ff1470ed0228163cc351e"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>~IRenderer</b> ()</td></tr>
+<tr class="memdesc:a307731b44d9ff1470ed0228163cc351e inherit pub_methods_class_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ <br /></td></tr>
+<tr class="memitem:a9a716a1b51498e2cfd2a3703f86c2e9e inherit pub_methods_class_i_renderer" id="r_a9a716a1b51498e2cfd2a3703f86c2e9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_renderer.html">IRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_renderer.html#a9a716a1b51498e2cfd2a3703f86c2e9e">setLayer</a> (int layer)</td></tr>
+<tr class="memdesc:a9a716a1b51498e2cfd2a3703f86c2e9e inherit pub_methods_class_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">レイヤーをセットする  <br /></td></tr>
+<tr class="memitem:a4c1f5abf851cd4a283341ba100729a14 inherit pub_methods_class_i_renderer" id="r_a4c1f5abf851cd4a283341ba100729a14"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getLayer</b> () const</td></tr>
+<tr class="memdesc:a4c1f5abf851cd4a283341ba100729a14 inherit pub_methods_class_i_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">レイヤーを取得する <br /></td></tr>
+<tr class="inherit_header pub_methods_class_i_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_i_component')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_i_component.html">IComponent</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a5c2d271ea802d17bd8d9f688f4cd5713 inherit pub_methods_class_i_component" id="r_a5c2d271ea802d17bd8d9f688f4cd5713"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>IComponent</b> ()=default</td></tr>
+<tr class="memdesc:a5c2d271ea802d17bd8d9f688f4cd5713 inherit pub_methods_class_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ <br /></td></tr>
+<tr class="memitem:ab1a616cdfb3812f3aabdb97666c71116 inherit pub_methods_class_i_component" id="r_ab1a616cdfb3812f3aabdb97666c71116"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IComponent</b> ()=default</td></tr>
+<tr class="memdesc:ab1a616cdfb3812f3aabdb97666c71116 inherit pub_methods_class_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ <br /></td></tr>
+<tr class="memitem:a17d06e1e629b5104934548f832062975 inherit pub_methods_class_i_component" id="r_a17d06e1e629b5104934548f832062975"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_component.html#a17d06e1e629b5104934548f832062975">setGameObject</a> (<a class="el" href="class_game_object.html">GameObject</a> *obj)</td></tr>
+<tr class="memdesc:a17d06e1e629b5104934548f832062975 inherit pub_methods_class_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">アタッチされているゲームオブジェクトをセットする  <br /></td></tr>
+<tr class="memitem:a730251a5478ca092c3570e5c76a97fcb inherit pub_methods_class_i_component" id="r_a730251a5478ca092c3570e5c76a97fcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_component.html#a730251a5478ca092c3570e5c76a97fcb">getGameObject</a> () const</td></tr>
+<tr class="memdesc:a730251a5478ca092c3570e5c76a97fcb inherit pub_methods_class_i_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">アタッチされているゲームオブジェクトの取得  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_i_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_i_component')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_i_component.html">IComponent</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:aa0466749b97f3a873a77ef064f22e3fc inherit pro_attribs_class_i_component" id="r_aa0466749b97f3a873a77ef064f22e3fc"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_gameObject</b> = nullptr</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>3Dモデル描画用 </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="ac4a632ba84718aa053ff38ac3432e492" name="ac4a632ba84718aa053ff38ac3432e492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a632ba84718aa053ff38ac3432e492">&#9670;&#160;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model3D::destroy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>破棄時実行 </p>
+
+<p><a class="el" href="class_i_component.html#a53eceea471d99399fa679507e10ac38e">IComponent</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a645b3c2460e186a308393148ebf691ee" name="a645b3c2460e186a308393148ebf691ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a645b3c2460e186a308393148ebf691ee">&#9670;&#160;</a></span>fixedUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model3D::fixedUpdate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>固定間隔で実行 </p>
+
+<p><a class="el" href="class_i_component.html#ac0fb3ab79ef78f8faadbda4c0513d84f">IComponent</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="ad1ecbe8a399e7a220bf4e994d3851c24" name="ad1ecbe8a399e7a220bf4e994d3851c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1ecbe8a399e7a220bf4e994d3851c24">&#9670;&#160;</a></span>getModelHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Model3D::getModelHandle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モデルハンドルを取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>モデルハンドル</dd></dl>
+
+</div>
+</div>
+<a id="a91e8e241a332fdf707e6a8840352fa97" name="a91e8e241a332fdf707e6a8840352fa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91e8e241a332fdf707e6a8840352fa97">&#9670;&#160;</a></span>loadModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_model3_d.html">Model3D</a> * Model3D::loadModel </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モデルファイルを読み込む </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>モデルファイルパス</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>メソッドチェーン用</dd></dl>
+
+</div>
+</div>
+<a id="a37efddc83850b43237f71cda609a422b" name="a37efddc83850b43237f71cda609a422b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37efddc83850b43237f71cda609a422b">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model3D::render </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>描画実行 </p>
+
+<p><a class="el" href="class_i_renderer.html#a218212bcf025fe02c9b028baeb42943e">IRenderer</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a0b6d6893efa659d096381bb06e8d174f" name="a0b6d6893efa659d096381bb06e8d174f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6d6893efa659d096381bb06e8d174f">&#9670;&#160;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model3D::start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化時実行 </p>
+
+<p><a class="el" href="class_i_component.html#ad44a6134a6042bfcf00a18d4889f0330">IComponent</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a9d8f848242dfce7e200c077955e80662" name="a9d8f848242dfce7e200c077955e80662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8f848242dfce7e200c077955e80662">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model3D::update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>毎フレーム実行 </p>
+
+<p><a class="el" href="class_i_component.html#a0bfcfb242781520bfa07cc3bf56fe0b9">IComponent</a>を実装しています。</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>KCGStudyDXLibProject/KCGStudyDXLibProject/src/component/renderer/<a class="el" href="_model3_d_8h_source.html">Model3D.h</a></li>
+<li>KCGStudyDXLibProject/KCGStudyDXLibProject/src/component/renderer/<b>Model3D.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_model3_d.html">Model3D</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

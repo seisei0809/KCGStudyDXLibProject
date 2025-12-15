@@ -1,0 +1,5 @@
+<map id="TitleSceneManager" name="TitleSceneManager">
+<area shape="rect" id="Node000001" title="タイトルシーン管理" alt="" coords="5,80,139,107"/>
+<area shape="rect" id="Node000002" href="$class_i_component.html" title="コンポーネント基底" alt="" coords="26,5,118,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,46,75,80,69,79,70,50"/>
+</map>

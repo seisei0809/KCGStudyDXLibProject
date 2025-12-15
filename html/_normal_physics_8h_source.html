@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: KCGStudyDXLibProject/KCGStudyDXLibProject/src/component/physics/NormalPhysics.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_normal_physics_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NormalPhysics.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;IComponent.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;collider/ICollider.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span></div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_normal_physics.html">    8</a></span><span class="keyword">class </span><a class="code hl_function" href="class_normal_physics.html#afdadc55da5710b0c67259cb34354470d">NormalPhysics</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_i_component.html#a5c2d271ea802d17bd8d9f688f4cd5713">IComponent</a>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="class_normal_physics.html#afdadc55da5710b0c67259cb34354470d">NormalPhysics</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_normal_physics.html#a50268bc904b05e643e5afd58a9e734fc">start</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_normal_physics.html#afd40c7406cfff45e810dd2f22c1a6636">update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_normal_physics.html#a8c1b0595296103e1c0fdf16bac8c9d14">fixedUpdate</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_normal_physics.html#a14ad6bc16df8d0cc5e96d7bf4f0c65a3">destroy</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="class_normal_physics.html#afdadc55da5710b0c67259cb34354470d">NormalPhysics</a>* <a class="code hl_function" href="class_normal_physics.html#ae83369daadee979ca4ec5be94c9657a0">setGravity</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> gravity);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="class_normal_physics.html#afdadc55da5710b0c67259cb34354470d">NormalPhysics</a>* <a class="code hl_function" href="class_normal_physics.html#aa0127ac52d59f4a1ea783935550c62f8">setMaxGravity</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> maxGravity);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_normal_physics.html#a147b0c19aa8fe6e06abd996df5a4a7b5">setVector</a>(<span class="keyword">const</span> VECTOR vector);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    VECTOR <a class="code hl_function" href="class_normal_physics.html#a18d88b4772578fe470356ae69ac7b521">getVector</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_normal_physics.html#a03e4cddfedab074b682feb3dd3fdb936">setIsGravity</a>(<span class="keywordtype">bool</span> isGravity);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_normal_physics.html#a3b9c354e5883d92c1f6da30155a0f660">pushObject</a>(<a class="code hl_class" href="class_i_collider.html">ICollider</a>* collider);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// 重力加速度</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">float</span> _gravity;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// 現在かかっている力</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    VECTOR _nowVector;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// 最大重力</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">float</span> _maxGravity;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// コライダー(外から注入のため抽象化)</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_class" href="class_i_collider.html">ICollider</a>* _collider;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">// 前回位置</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    VECTOR _previousPosition;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">bool</span> _isGravity;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="ttc" id="aclass_i_collider_html"><div class="ttname"><a href="class_i_collider.html">ICollider</a></div><div class="ttdoc">コライダーインターフェース</div><div class="ttdef"><b>Definition</b> ICollider.h:10</div></div>
+<div class="ttc" id="aclass_i_component_html_a5c2d271ea802d17bd8d9f688f4cd5713"><div class="ttname"><a href="class_i_component.html#a5c2d271ea802d17bd8d9f688f4cd5713">IComponent::IComponent</a></div><div class="ttdeci">IComponent()=default</div><div class="ttdoc">コンストラクタ</div></div>
+<div class="ttc" id="aclass_normal_physics_html_a03e4cddfedab074b682feb3dd3fdb936"><div class="ttname"><a href="class_normal_physics.html#a03e4cddfedab074b682feb3dd3fdb936">NormalPhysics::setIsGravity</a></div><div class="ttdeci">void setIsGravity(bool isGravity)</div><div class="ttdoc">重力処理をするか決める</div><div class="ttdef"><b>Definition</b> NormalPhysics.cpp:117</div></div>
+<div class="ttc" id="aclass_normal_physics_html_a147b0c19aa8fe6e06abd996df5a4a7b5"><div class="ttname"><a href="class_normal_physics.html#a147b0c19aa8fe6e06abd996df5a4a7b5">NormalPhysics::setVector</a></div><div class="ttdeci">void setVector(const VECTOR vector)</div><div class="ttdoc">強制的に現在かかる力を設定</div><div class="ttdef"><b>Definition</b> NormalPhysics.cpp:99</div></div>
+<div class="ttc" id="aclass_normal_physics_html_a14ad6bc16df8d0cc5e96d7bf4f0c65a3"><div class="ttname"><a href="class_normal_physics.html#a14ad6bc16df8d0cc5e96d7bf4f0c65a3">NormalPhysics::destroy</a></div><div class="ttdeci">void destroy() override</div><div class="ttdoc">破棄時実行</div><div class="ttdef"><b>Definition</b> NormalPhysics.cpp:68</div></div>
+<div class="ttc" id="aclass_normal_physics_html_a18d88b4772578fe470356ae69ac7b521"><div class="ttname"><a href="class_normal_physics.html#a18d88b4772578fe470356ae69ac7b521">NormalPhysics::getVector</a></div><div class="ttdeci">VECTOR getVector() const</div><div class="ttdoc">現在かかっている力を取得する</div><div class="ttdef"><b>Definition</b> NormalPhysics.cpp:108</div></div>
+<div class="ttc" id="aclass_normal_physics_html_a3b9c354e5883d92c1f6da30155a0f660"><div class="ttname"><a href="class_normal_physics.html#a3b9c354e5883d92c1f6da30155a0f660">NormalPhysics::pushObject</a></div><div class="ttdeci">void pushObject(ICollider *collider)</div><div class="ttdoc">ここでは単純な押し出し処理を行う</div><div class="ttdef"><b>Definition</b> NormalPhysics.cpp:126</div></div>
+<div class="ttc" id="aclass_normal_physics_html_a50268bc904b05e643e5afd58a9e734fc"><div class="ttname"><a href="class_normal_physics.html#a50268bc904b05e643e5afd58a9e734fc">NormalPhysics::start</a></div><div class="ttdeci">void start() override</div><div class="ttdoc">初期化時実行</div><div class="ttdef"><b>Definition</b> NormalPhysics.cpp:23</div></div>
+<div class="ttc" id="aclass_normal_physics_html_a8c1b0595296103e1c0fdf16bac8c9d14"><div class="ttname"><a href="class_normal_physics.html#a8c1b0595296103e1c0fdf16bac8c9d14">NormalPhysics::fixedUpdate</a></div><div class="ttdeci">void fixedUpdate() override</div><div class="ttdoc">固定間隔で実行</div><div class="ttdef"><b>Definition</b> NormalPhysics.cpp:45</div></div>
+<div class="ttc" id="aclass_normal_physics_html_aa0127ac52d59f4a1ea783935550c62f8"><div class="ttname"><a href="class_normal_physics.html#aa0127ac52d59f4a1ea783935550c62f8">NormalPhysics::setMaxGravity</a></div><div class="ttdeci">NormalPhysics * setMaxGravity(const float maxGravity)</div><div class="ttdoc">最大重力を設定する</div><div class="ttdef"><b>Definition</b> NormalPhysics.cpp:89</div></div>
+<div class="ttc" id="aclass_normal_physics_html_ae83369daadee979ca4ec5be94c9657a0"><div class="ttname"><a href="class_normal_physics.html#ae83369daadee979ca4ec5be94c9657a0">NormalPhysics::setGravity</a></div><div class="ttdeci">NormalPhysics * setGravity(const float gravity)</div><div class="ttdoc">重力加速度を設定する</div><div class="ttdef"><b>Definition</b> NormalPhysics.cpp:78</div></div>
+<div class="ttc" id="aclass_normal_physics_html_afd40c7406cfff45e810dd2f22c1a6636"><div class="ttname"><a href="class_normal_physics.html#afd40c7406cfff45e810dd2f22c1a6636">NormalPhysics::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">毎フレーム実行</div><div class="ttdef"><b>Definition</b> NormalPhysics.cpp:38</div></div>
+<div class="ttc" id="aclass_normal_physics_html_afdadc55da5710b0c67259cb34354470d"><div class="ttname"><a href="class_normal_physics.html#afdadc55da5710b0c67259cb34354470d">NormalPhysics::NormalPhysics</a></div><div class="ttdeci">NormalPhysics()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> NormalPhysics.cpp:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_03f81e546ec66a978b87d34e25c14cc6.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_2a8be4742b2405ac092f9d3c6c3df0a4.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_906a5a64e1ee4c6d30d4f7e34ada3928.html">src</a></li><li class="navelem"><a href="dir_9ace505428d9963249ef787a621670cb.html">component</a></li><li class="navelem"><a href="dir_a6c16cc1297af0f3b27de92597b60af5.html">physics</a></li><li class="navelem"><b>NormalPhysics.h</b></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

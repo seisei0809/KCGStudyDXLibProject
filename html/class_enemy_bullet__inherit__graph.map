@@ -1,0 +1,5 @@
+<map id="EnemyBullet" name="EnemyBullet">
+<area shape="rect" id="Node000001" title="敵弾" alt="" coords="5,80,101,107"/>
+<area shape="rect" id="Node000002" href="$class_i_component.html" title="コンポーネント基底" alt="" coords="7,5,99,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,46,56,80,50,79,51,50"/>
+</map>

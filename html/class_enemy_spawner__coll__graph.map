@@ -1,0 +1,7 @@
+<map id="EnemySpawner" name="EnemySpawner">
+<area shape="rect" id="Node000001" title="敵生成" alt="" coords="5,180,119,207"/>
+<area shape="rect" id="Node000002" href="$class_i_component.html" title="コンポーネント基底" alt="" coords="16,104,108,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,144,65,180,59,179,60,148"/>
+<area shape="rect" id="Node000003" href="$class_game_object.html" title="ゲームオブジェクト" alt="" coords="15,5,109,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="63,45,65,104,59,103,61,50"/>
+</map>

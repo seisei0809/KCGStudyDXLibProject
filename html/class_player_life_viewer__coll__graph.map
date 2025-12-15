@@ -1,0 +1,7 @@
+<map id="PlayerLifeViewer" name="PlayerLifeViewer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,180,125,207"/>
+<area shape="rect" id="Node000002" href="$class_i_component.html" title="コンポーネント基底" alt="" coords="19,104,111,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,144,68,180,62,179,63,148"/>
+<area shape="rect" id="Node000003" href="$class_game_object.html" title="ゲームオブジェクト" alt="" coords="18,5,112,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="66,45,68,104,62,103,64,50"/>
+</map>

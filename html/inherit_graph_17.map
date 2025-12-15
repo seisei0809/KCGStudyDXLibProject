@@ -1,0 +1,5 @@
+<map id="クラス階層図" name="クラス階層図">
+<area shape="rect" id="Node000000" href="$class_utility_1_1_singleton.html" title=" " alt="" coords="5,5,174,48"/>
+<area shape="rect" id="Node000001" href="$class_game_object_manager.html" title="ゲームオブジェクト管理" alt="" coords="222,13,366,40"/>
+<area shape="poly" id="edge28_Node000000_Node000001" title=" " alt="" coords="189,24,224,26,218,27,189,29"/>
+</map>
