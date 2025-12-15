@@ -16,7 +16,7 @@
 
 <br>
 
-(エントリーポイントはこちら)[https://github.com/seisei0809/KCGStudyDXLibProject/blob/main/KCGStudyDXLibProject/KCGStudyDXLibProject/src/main.cpp]
+[エントリーポイントはこちら](https://github.com/seisei0809/KCGStudyDXLibProject/blob/main/KCGStudyDXLibProject/KCGStudyDXLibProject/src/main.cpp)
 
 <br><br><br><br>
 
