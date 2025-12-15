@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>KCGStudyDXLibProject: KCGStudyDXLibProject/KCGStudyDXLibProject/src/component/ui/Button.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">KCGStudyDXLibProject
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_button_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Button.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;IComponent.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;utility/Event.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span></div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_button.html">    8</a></span><span class="keyword">class </span><a class="code hl_function" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_i_component.html#a5c2d271ea802d17bd8d9f688f4cd5713">IComponent</a>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_button.html#af20597b66882388602fa34959bcd2008">start</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_button.html#abda97f1ae8e081da3dbd0b77a27cad9d">update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_button.html#a3aa133dc8314ea30996f5cb4281aa25b">fixedUpdate</a>()<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_button.html#a75a41f868afc224d5998c2e67f0c7620">destroy</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a>* <a class="code hl_function" href="class_button.html#ac153d903a063ee1e4fb5ebf7744d0914">setIsSelect</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> isSelect);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a>* <a class="code hl_function" href="class_button.html#a8484e6641b725ca33d90715f0c5a3b0d">setUpButton</a>(<a class="code hl_function" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a>** upButton);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a>* <a class="code hl_function" href="class_button.html#ad33bd291088f029e80b8fa90ece758a3">setDownButton</a>(<a class="code hl_function" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a>** downButton);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_button.html#a8ce9c45da1afc88abd33a672372ef056">   65</a></span>    <a class="code hl_function" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a>* <a class="code hl_function" href="class_button.html#a8ce9c45da1afc88abd33a672372ef056">setSelectChangeEvent</a>(T* obj, <span class="keywordtype">void</span> (T::* method)(<span class="keywordtype">bool</span>)) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        _onSelectChangeEvent.add(obj, method);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_button.html#ab22e0c6140637f9436beb4dd45a02d34">   79</a></span>    <a class="code hl_function" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a>* <a class="code hl_function" href="class_button.html#ab22e0c6140637f9436beb4dd45a02d34">destroySelectChangeEvent</a>(T* obj, <span class="keywordtype">void</span> (T::* method)(<span class="keywordtype">bool</span>)) {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        _onSelectChangeEvent.remove(obj, method);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_button.html#a3ac607b1bd305330d805304621f62098">   93</a></span>    <a class="code hl_function" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a>* <a class="code hl_function" href="class_button.html#a3ac607b1bd305330d805304621f62098">setEnterEvent</a>(T* obj, <span class="keywordtype">void</span> (T::* method)(<span class="keywordtype">bool</span>)) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        _onEnterEvent.add(obj, method);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_button.html#a661250b117a16b5f03f280d0508e9b63">  107</a></span>    <a class="code hl_function" href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button</a>* <a class="code hl_function" href="class_button.html#a661250b117a16b5f03f280d0508e9b63">destoryEnterEvent</a>(T* obj, <span class="keywordtype">void</span> (T::* method)(<span class="keywordtype">bool</span>)) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        _onEnterEvent.remove(obj, method);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
+</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_button.html#a2411b2d00cb5a62f0105df200c5f3f0b">selectChange</a>(<span class="keywordtype">bool</span> up,<span class="keywordtype">bool</span> down);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_button.html#a477dd23c152b6f4e757c122d81cdb830">enter</a>(<span class="keywordtype">bool</span> isEnter);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="comment">// 選択されているかどうか</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordtype">bool</span> _isSelect;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="comment">// 上のボタンへのポインタ</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_class" href="class_button.html">Button</a>** _upButton;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="comment">// 下のボタンへのポインタ</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <a class="code hl_class" href="class_button.html">Button</a>** _downButton;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="comment">// 選択状態の変更がかかった時に起動するイベント</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <a class="code hl_class" href="class_utility_1_1_event.html">Utility::Event&lt;bool&gt;</a> _onSelectChangeEvent;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="comment">// エンターがかかった時に起動するイベント</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <a class="code hl_class" href="class_utility_1_1_event.html">Utility::Event&lt;bool&gt;</a> _onEnterEvent;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>};</div>
+</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="ttc" id="aclass_button_html"><div class="ttname"><a href="class_button.html">Button</a></div><div class="ttdoc">ボタン</div><div class="ttdef"><b>Definition</b> Button.h:8</div></div>
+<div class="ttc" id="aclass_button_html_a2411b2d00cb5a62f0105df200c5f3f0b"><div class="ttname"><a href="class_button.html#a2411b2d00cb5a62f0105df200c5f3f0b">Button::selectChange</a></div><div class="ttdeci">void selectChange(bool up, bool down)</div><div class="ttdoc">選択状態の変更</div><div class="ttdef"><b>Definition</b> Button.cpp:80</div></div>
+<div class="ttc" id="aclass_button_html_a3aa133dc8314ea30996f5cb4281aa25b"><div class="ttname"><a href="class_button.html#a3aa133dc8314ea30996f5cb4281aa25b">Button::fixedUpdate</a></div><div class="ttdeci">void fixedUpdate() override</div><div class="ttdoc">固定間隔で実行</div><div class="ttdef"><b>Definition</b> Button.cpp:31</div></div>
+<div class="ttc" id="aclass_button_html_a3ac607b1bd305330d805304621f62098"><div class="ttname"><a href="class_button.html#a3ac607b1bd305330d805304621f62098">Button::setEnterEvent</a></div><div class="ttdeci">Button * setEnterEvent(T *obj, void(T::*method)(bool))</div><div class="ttdoc">エンター状態変更監視用追加</div><div class="ttdef"><b>Definition</b> Button.h:93</div></div>
+<div class="ttc" id="aclass_button_html_a3b36df1ae23c58aedb9e15a713159459"><div class="ttname"><a href="class_button.html#a3b36df1ae23c58aedb9e15a713159459">Button::Button</a></div><div class="ttdeci">Button()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> Button.cpp:7</div></div>
+<div class="ttc" id="aclass_button_html_a477dd23c152b6f4e757c122d81cdb830"><div class="ttname"><a href="class_button.html#a477dd23c152b6f4e757c122d81cdb830">Button::enter</a></div><div class="ttdeci">void enter(bool isEnter)</div><div class="ttdoc">エンターしたかどうか</div><div class="ttdef"><b>Definition</b> Button.cpp:104</div></div>
+<div class="ttc" id="aclass_button_html_a661250b117a16b5f03f280d0508e9b63"><div class="ttname"><a href="class_button.html#a661250b117a16b5f03f280d0508e9b63">Button::destoryEnterEvent</a></div><div class="ttdeci">Button * destoryEnterEvent(T *obj, void(T::*method)(bool))</div><div class="ttdoc">エンター状態変更監視用破棄</div><div class="ttdef"><b>Definition</b> Button.h:107</div></div>
+<div class="ttc" id="aclass_button_html_a75a41f868afc224d5998c2e67f0c7620"><div class="ttname"><a href="class_button.html#a75a41f868afc224d5998c2e67f0c7620">Button::destroy</a></div><div class="ttdeci">void destroy() override</div><div class="ttdoc">破棄時実行</div><div class="ttdef"><b>Definition</b> Button.cpp:38</div></div>
+<div class="ttc" id="aclass_button_html_a8484e6641b725ca33d90715f0c5a3b0d"><div class="ttname"><a href="class_button.html#a8484e6641b725ca33d90715f0c5a3b0d">Button::setUpButton</a></div><div class="ttdeci">Button * setUpButton(Button **upButton)</div><div class="ttdoc">上のボタンをセット</div><div class="ttdef"><b>Definition</b> Button.cpp:58</div></div>
+<div class="ttc" id="aclass_button_html_a8ce9c45da1afc88abd33a672372ef056"><div class="ttname"><a href="class_button.html#a8ce9c45da1afc88abd33a672372ef056">Button::setSelectChangeEvent</a></div><div class="ttdeci">Button * setSelectChangeEvent(T *obj, void(T::*method)(bool))</div><div class="ttdoc">選択状態変更監視用追加</div><div class="ttdef"><b>Definition</b> Button.h:65</div></div>
+<div class="ttc" id="aclass_button_html_ab22e0c6140637f9436beb4dd45a02d34"><div class="ttname"><a href="class_button.html#ab22e0c6140637f9436beb4dd45a02d34">Button::destroySelectChangeEvent</a></div><div class="ttdeci">Button * destroySelectChangeEvent(T *obj, void(T::*method)(bool))</div><div class="ttdoc">選択状態変更監視用破棄</div><div class="ttdef"><b>Definition</b> Button.h:79</div></div>
+<div class="ttc" id="aclass_button_html_abda97f1ae8e081da3dbd0b77a27cad9d"><div class="ttname"><a href="class_button.html#abda97f1ae8e081da3dbd0b77a27cad9d">Button::update</a></div><div class="ttdeci">void update() override</div><div class="ttdoc">毎フレーム実行</div><div class="ttdef"><b>Definition</b> Button.cpp:24</div></div>
+<div class="ttc" id="aclass_button_html_ac153d903a063ee1e4fb5ebf7744d0914"><div class="ttname"><a href="class_button.html#ac153d903a063ee1e4fb5ebf7744d0914">Button::setIsSelect</a></div><div class="ttdeci">Button * setIsSelect(const bool isSelect)</div><div class="ttdoc">選択状態のセット</div><div class="ttdef"><b>Definition</b> Button.cpp:47</div></div>
+<div class="ttc" id="aclass_button_html_ad33bd291088f029e80b8fa90ece758a3"><div class="ttname"><a href="class_button.html#ad33bd291088f029e80b8fa90ece758a3">Button::setDownButton</a></div><div class="ttdeci">Button * setDownButton(Button **downButton)</div><div class="ttdoc">下のボタンをセット</div><div class="ttdef"><b>Definition</b> Button.cpp:69</div></div>
+<div class="ttc" id="aclass_button_html_af20597b66882388602fa34959bcd2008"><div class="ttname"><a href="class_button.html#af20597b66882388602fa34959bcd2008">Button::start</a></div><div class="ttdeci">void start() override</div><div class="ttdoc">初期化時実行</div><div class="ttdef"><b>Definition</b> Button.cpp:17</div></div>
+<div class="ttc" id="aclass_i_component_html_a5c2d271ea802d17bd8d9f688f4cd5713"><div class="ttname"><a href="class_i_component.html#a5c2d271ea802d17bd8d9f688f4cd5713">IComponent::IComponent</a></div><div class="ttdeci">IComponent()=default</div><div class="ttdoc">コンストラクタ</div></div>
+<div class="ttc" id="aclass_utility_1_1_event_html"><div class="ttname"><a href="class_utility_1_1_event.html">Utility::Event</a></div><div class="ttdoc">イベントシステム</div><div class="ttdef"><b>Definition</b> Event.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_03f81e546ec66a978b87d34e25c14cc6.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_2a8be4742b2405ac092f9d3c6c3df0a4.html">KCGStudyDXLibProject</a></li><li class="navelem"><a href="dir_906a5a64e1ee4c6d30d4f7e34ada3928.html">src</a></li><li class="navelem"><a href="dir_9ace505428d9963249ef787a621670cb.html">component</a></li><li class="navelem"><a href="dir_77ac2f5ba92b3fb6cacc018d41a647cd.html">ui</a></li><li class="navelem"><b>Button.h</b></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

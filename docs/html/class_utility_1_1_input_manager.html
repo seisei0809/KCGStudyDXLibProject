@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>KCGStudyDXLibProject: Utility::InputManager クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">KCGStudyDXLibProject
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_utility_1_1_input_manager.html','','class_utility_1_1_input_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Utility::InputManager クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>入力管理  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_input_manager_8h_source.html">InputManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a136d6afa55ee74eeda5eb72e78e3ee97" id="r_a136d6afa55ee74eeda5eb72e78e3ee97"><td class="memItemLeft" align="right" valign="top"><a id="a136d6afa55ee74eeda5eb72e78e3ee97" name="a136d6afa55ee74eeda5eb72e78e3ee97"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memdesc:a136d6afa55ee74eeda5eb72e78e3ee97"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力状態を更新する <br /></td></tr>
+<tr class="memitem:a69211a59c505d585d2c283ffd0094149" id="r_a69211a59c505d585d2c283ffd0094149"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a69211a59c505d585d2c283ffd0094149 template"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69211a59c505d585d2c283ffd0094149">addUI2DirEvent</a> (T *object, void(T::*method)(bool, bool))</td></tr>
+<tr class="memdesc:a69211a59c505d585d2c283ffd0094149"><td class="mdescLeft">&#160;</td><td class="mdescRight">UI操作の上下入力イベントを登録する  <br /></td></tr>
+<tr class="memitem:aaba657e3013c4af0b98b110185ac3e15" id="r_aaba657e3013c4af0b98b110185ac3e15"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:aaba657e3013c4af0b98b110185ac3e15 template"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaba657e3013c4af0b98b110185ac3e15">addDir4Event</a> (T *object, void(T::*method)(bool, bool, bool, bool))</td></tr>
+<tr class="memdesc:aaba657e3013c4af0b98b110185ac3e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲーム操作の4方向入力イベントを登録する  <br /></td></tr>
+<tr class="memitem:af98483f0f08fa89a4f257b56fb296496" id="r_af98483f0f08fa89a4f257b56fb296496"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:af98483f0f08fa89a4f257b56fb296496 template"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af98483f0f08fa89a4f257b56fb296496">addJumpEvent</a> (T *object, void(T::*method)(bool))</td></tr>
+<tr class="memdesc:af98483f0f08fa89a4f257b56fb296496"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジャンプボタンイベントを登録する  <br /></td></tr>
+<tr class="memitem:abe440873f3c0360bf81cdd15946ef5ac" id="r_abe440873f3c0360bf81cdd15946ef5ac"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:abe440873f3c0360bf81cdd15946ef5ac template"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe440873f3c0360bf81cdd15946ef5ac">addEnterKeyEvent</a> (T *object, void(T::*method)(bool))</td></tr>
+<tr class="memdesc:abe440873f3c0360bf81cdd15946ef5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">スペースキーイベントを登録する  <br /></td></tr>
+<tr class="memitem:ad0e1de90be550c2faf9c28e9d0352677" id="r_ad0e1de90be550c2faf9c28e9d0352677"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:ad0e1de90be550c2faf9c28e9d0352677 template"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0e1de90be550c2faf9c28e9d0352677">removeUI2DirEvent</a> (T *object, void(T::*method)(bool, bool))</td></tr>
+<tr class="memdesc:ad0e1de90be550c2faf9c28e9d0352677"><td class="mdescLeft">&#160;</td><td class="mdescRight">UI操作の上下入力イベントを削除する  <br /></td></tr>
+<tr class="memitem:ad2d2e045c0f7442786fb13dea0398c49" id="r_ad2d2e045c0f7442786fb13dea0398c49"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:ad2d2e045c0f7442786fb13dea0398c49 template"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2d2e045c0f7442786fb13dea0398c49">removeDir4Event</a> (T *object, void(T::*method)(bool, bool, bool, bool))</td></tr>
+<tr class="memdesc:ad2d2e045c0f7442786fb13dea0398c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲーム操作の4方向入力イベントを削除する  <br /></td></tr>
+<tr class="memitem:a47e27f3238709570d17f56aca27ec9ef" id="r_a47e27f3238709570d17f56aca27ec9ef"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a47e27f3238709570d17f56aca27ec9ef template"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47e27f3238709570d17f56aca27ec9ef">removeJumpEvent</a> (T *object, void(T::*method)(bool))</td></tr>
+<tr class="memdesc:a47e27f3238709570d17f56aca27ec9ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジャンプボタンイベントを削除する  <br /></td></tr>
+<tr class="memitem:aadf68add3abdb041e4f3204cd9a04640" id="r_aadf68add3abdb041e4f3204cd9a04640"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:aadf68add3abdb041e4f3204cd9a04640 template"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadf68add3abdb041e4f3204cd9a04640">removeEnterKeyEvent</a> (T *object, void(T::*method)(bool))</td></tr>
+<tr class="memdesc:aadf68add3abdb041e4f3204cd9a04640"><td class="mdescLeft">&#160;</td><td class="mdescRight">スペースキーイベントを削除する  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>入力管理 </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="aaba657e3013c4af0b98b110185ac3e15" name="aaba657e3013c4af0b98b110185ac3e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba657e3013c4af0b98b110185ac3e15">&#9670;&#160;</a></span>addDir4Event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utility::InputManager::addDir4Event </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>method&#160;</em></span>)(bool, bool, bool, bool)&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ゲーム操作の4方向入力イベントを登録する </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>インスタンスの型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>インスタンス</td></tr>
+    <tr><td class="paramname">method</td><td>メンバ関数のポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abe440873f3c0360bf81cdd15946ef5ac" name="abe440873f3c0360bf81cdd15946ef5ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe440873f3c0360bf81cdd15946ef5ac">&#9670;&#160;</a></span>addEnterKeyEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utility::InputManager::addEnterKeyEvent </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>method&#160;</em></span>)(bool)&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スペースキーイベントを登録する </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>インスタンスの型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>インスタンス</td></tr>
+    <tr><td class="paramname">method</td><td>メンバ関数のポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af98483f0f08fa89a4f257b56fb296496" name="af98483f0f08fa89a4f257b56fb296496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af98483f0f08fa89a4f257b56fb296496">&#9670;&#160;</a></span>addJumpEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utility::InputManager::addJumpEvent </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>method&#160;</em></span>)(bool)&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ジャンプボタンイベントを登録する </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>インスタンスの型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>インスタンス</td></tr>
+    <tr><td class="paramname">method</td><td>メンバ関数のポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a69211a59c505d585d2c283ffd0094149" name="a69211a59c505d585d2c283ffd0094149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69211a59c505d585d2c283ffd0094149">&#9670;&#160;</a></span>addUI2DirEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utility::InputManager::addUI2DirEvent </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>method&#160;</em></span>)(bool, bool)&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>UI操作の上下入力イベントを登録する </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>インスタンスの型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>インスタンス</td></tr>
+    <tr><td class="paramname">method</td><td>メンバ関数のポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2d2e045c0f7442786fb13dea0398c49" name="ad2d2e045c0f7442786fb13dea0398c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d2e045c0f7442786fb13dea0398c49">&#9670;&#160;</a></span>removeDir4Event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utility::InputManager::removeDir4Event </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>method&#160;</em></span>)(bool, bool, bool, bool)&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ゲーム操作の4方向入力イベントを削除する </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>インスタンスの型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>インスタンス</td></tr>
+    <tr><td class="paramname">method</td><td>メンバ関数のポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aadf68add3abdb041e4f3204cd9a04640" name="aadf68add3abdb041e4f3204cd9a04640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf68add3abdb041e4f3204cd9a04640">&#9670;&#160;</a></span>removeEnterKeyEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utility::InputManager::removeEnterKeyEvent </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>method&#160;</em></span>)(bool)&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スペースキーイベントを削除する </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>インスタンスの型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>インスタンス</td></tr>
+    <tr><td class="paramname">method</td><td>メンバ関数のポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47e27f3238709570d17f56aca27ec9ef" name="a47e27f3238709570d17f56aca27ec9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e27f3238709570d17f56aca27ec9ef">&#9670;&#160;</a></span>removeJumpEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utility::InputManager::removeJumpEvent </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>method&#160;</em></span>)(bool)&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ジャンプボタンイベントを削除する </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>インスタンスの型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>インスタンス</td></tr>
+    <tr><td class="paramname">method</td><td>メンバ関数のポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad0e1de90be550c2faf9c28e9d0352677" name="ad0e1de90be550c2faf9c28e9d0352677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e1de90be550c2faf9c28e9d0352677">&#9670;&#160;</a></span>removeUI2DirEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Utility::InputManager::removeUI2DirEvent </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>method&#160;</em></span>)(bool, bool)&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>UI操作の上下入力イベントを削除する </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>インスタンスの型</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>インスタンス</td></tr>
+    <tr><td class="paramname">method</td><td>メンバ関数のポインタ</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>KCGStudyDXLibProject/KCGStudyDXLibProject/src/utility/<a class="el" href="_input_manager_8h_source.html">InputManager.h</a></li>
+<li>KCGStudyDXLibProject/KCGStudyDXLibProject/src/utility/<b>InputManager.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>Utility</b></li><li class="navelem"><a href="class_utility_1_1_input_manager.html">InputManager</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
